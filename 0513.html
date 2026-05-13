@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 006</title>
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 006</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.13 (수)</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">오늘의 한 줄</span>
+                <p class="text-gray-800 font-medium leading-relaxed">
+                    미국에서 'AI 모델 사전 평가'가 사흘 만에 <strong>자발적 협약(5/5) → 의무화 검토 시사(5/6) → 백악관 톤다운(5/7)</strong>으로 출렁였고, 한국에서는 라온시큐어-KETI가 <strong>OT/IoT 피지컬 AI 보안 MOU(5/11)</strong>를 체결하며 새 평가 트랙을 열었습니다. 두 흐름 모두 트리거는 동일하게 <strong>Anthropic Mythos</strong>입니다.
+                </p>
+            </div>
+        </header>
+
+        <div class="px-8 py-2">
+
+            <!-- CARD 1: 미국 AI 평가 정책 3일 시퀀스 -->
+            <article class="py-10 border-b border-gray-100 last:border-0">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Policy / Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · 3일 시퀀스</span>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    미국, 사흘 안에 'AI 사전 평가' 의무화 카드 꺼냈다가 거둬들였다
+                </h2>
+
+                <div class="bg-gray-50 border-l-4 border-gray-900 p-4 mb-6">
+                    <p class="text-base font-bold text-gray-800 leading-relaxed">
+                        5/5 NIST 산하 CAISI가 Google DeepMind·Microsoft·xAI와 자발적 사전 평가 협약을 체결해 Frontier 5개사 체제를 갖췄고, 다음 날(5/6) 백악관 NEC 위원장 Kevin Hassett이 "AI를 FDA 약품처럼 사전 검증" 행정명령 가능성을 처음 공식 거론. 하루 뒤(5/7) 백악관은 "추측이며 정부 규제보다 파트너십"이라고 톤다운했습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📰 3일 타임라인 (모두 검증된 1차 보도 기준)</h3>
+                    <ul class="space-y-3 text-gray-700 ml-1">
+                        <li class="pl-4 border-l-2 border-gray-300">
+                            <span class="block text-xs font-bold text-gray-500 mb-1">5/5 (화) · CAISI 협약 체결</span>
+                            <span class="text-sm leading-relaxed">상무부 NIST 산하 CAISI(Center for AI Standards and Innovation)가 Google DeepMind·Microsoft·xAI 3개사와 신규 협약 체결. 기존 OpenAI·Anthropic 협약과 합쳐 <strong>Frontier 5사가 모두 정부 사전 평가 라인에 편입</strong>. CAISI는 모델 출시 전 평가(pre-deployment evaluation)와 배포 후 지속 평가를 모두 수행. CAISI Director Chris Fall: <span class="quote">"독립적이고 엄정한 측정 과학이 Frontier AI와 그 국가안보적 함의를 이해하는 데 필수"</span>.</span>
+                        </li>
+                        <li class="pl-4 border-l-2 border-gray-300">
+                            <span class="block text-xs font-bold text-gray-500 mb-1">5/6 (수) · Hassett "FDA처럼" 발언</span>
+                            <span class="text-sm leading-relaxed">백악관 NEC 위원장 Kevin Hassett이 폭스 비즈니스 'Mornings with Maria' 출연. <span class="quote">"행정명령으로 명확한 로드맵을 마련하는 방안을 검토 중. 향후 취약점을 만들 수 있는 AI는 안전성이 입증된 뒤 시장에 풀려야 한다. 마치 FDA 약품처럼."</span> 행정부 고위 인사가 사전 검증 의무화 가능성을 공개 채널에서 처음 거론한 사례.</span>
+                        </li>
+                        <li class="pl-4 border-l-2 border-gray-300">
+                            <span class="block text-xs font-bold text-gray-500 mb-1">5/7 (목) · 백악관 톤다운</span>
+                            <span class="text-sm leading-relaxed">백악관 고위 관계자 익명 발언: <span class="quote">"맥락에서 약간 떼어내진 발언. 백악관은 정부 규제가 아니라 기업과의 파트너십을 추구"</span>. 비서실장 Susie Wiles도 X에 "정부는 승자와 패자를 고르지 않는다(picking winners and losers)"는 글을 게시(공식 X 개설 이래 4번째 게시물).</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🎬 트리거는 한 가지 — Anthropic Mythos</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        세 사건의 공통 트리거는 Anthropic이 4월 한정 공개한 사이버 보안 도구 <strong>Mythos</strong>입니다. Mythos는 OS·웹브라우저·인프라의 오래된 보안 취약점을 자동 발견할 수 있다고 알려졌으며, Wall Street 은행과 NIST·CISA에 한정 배포됐습니다. The Hill 보도에 따르면 Hassett은 인터뷰에서 <span class="quote">"Mythos 모델로 우리가 몰랐던 취약점이 발견될 수 있어, 시장에 풀리기 전 전수 조사할 수 있도록 범정부 협력을 가동했다"</span>고 발언. Politico는 Defense Undersecretary Emil Michael의 <span class="quote">"미토스 모먼트는 곧 사이버 모먼트"</span> 발언과, 같은 주 OpenAI가 사이버 도구 'GPT-5.5-Cyber' 제한 프리뷰를 공개한 사실도 함께 보도했습니다.
+                    </p>
+                </div>
+
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+                    <p class="text-accent-900/80 text-sm leading-relaxed mb-4">
+                        의무화 행정명령은 일단 보류됐지만, <strong>'AI는 사전 평가를 거쳐야 한다'는 원칙은 자발적 협약 형태로 5사 전체에 자리잡았습니다.</strong> 행정명령 카드가 공식 채널에서 한 번 나왔다는 사실 자체가 한국 정책 결정자들의 벤치마킹 신호이며, 5/12 호에서 다룬 KISA 시연·Anthropic 한국 지사 흐름과 한 줄로 이어집니다.
+                    </p>
+                    <ol class="space-y-2 text-sm text-accent-900/80 list-decimal list-inside">
+                        <li>한국 AI 기본법 시행령에 'FDA-like 사전 평가' 조항이 들어올 시나리오를 가정한 <strong>(역량 + 안전성 + 한국어 컴플라이언스) 3축 평가 패키지</strong>를 7월 RFP 시즌 전 시제 완성 권장.</li>
+                        <li>K-AISI·과기정통부·금융보안원 3개 채널에 <strong>'검토 단계' Contributor 진입</strong>으로 표준 작성 영향력 확보.</li>
+                    </ol>
+                </div>
+
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://www.ciodive.com/news/Google-Microsoft-xAI-to-face-security-testing/819375/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">CIO Dive — CAISI 협약 + Chris Fall 직접 인용 (5/5) →</a>
+                    <a href="https://thehill.com/policy/technology/5866292-white-house-ai-evaluation-process/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">The Hill — Hassett 인터뷰 직접 인용 (5/6) →</a>
+                    <a href="https://www.politico.com/news/2026/05/07/white-house-ai-oversight-00910837" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">Politico — 백악관 톤다운 + Wiles 트윗 (5/7) →</a>
+                    <a href="https://www.nist.gov/caisi" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">NIST CAISI 공식 페이지 →</a>
+                </div>
+            </article>
+
+            <!-- CARD 2: 라온시큐어-KETI -->
+            <article class="py-10 border-b border-gray-100 last:border-0">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Korea Watch</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · 산업 협력</span>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    라온시큐어-KETI, OT/IoT 피지컬AI 보안 MOU 체결 — 국내 평가 트랙에 '에이전틱·물리계' 축 추가
+                </h2>
+
+                <div class="bg-gray-50 border-l-4 border-gray-900 p-4 mb-6">
+                    <p class="text-base font-bold text-gray-800 leading-relaxed">
+                        2026년 5월 11일, 라온시큐어(이정아 대표)와 한국전자기술연구원(신희동 원장)이 'AI 기반 데이터 보안 및 피지컬AI 융합보안 실증·생태계 조성' MOU를 체결했습니다. 한국 OT(운영기술)/IoT 영역에서 AI 평가·레드팀 의제가 산업 협약 수준으로 공식 가시화된 첫 사례입니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🤝 협력 범위 — 3가지 구체 과제</h3>
+                    <ul class="space-y-2.5 text-gray-700 ml-4">
+                        <li class="pl-2 border-l-2 border-gray-200"><strong>① AI 문서 보안 등급 자동 분류 엔진</strong> — 인력 중심 분류의 한계를 보완. 핵심 엔진은 <strong>라온시큐어-중앙대 산학 협력</strong>으로 개발하고 KETI가 객관적 검증.</li>
+                        <li class="pl-2 border-l-2 border-gray-200"><strong>② 피지컬AI 보안 체계 고도화</strong> — 로봇·드론 등 실제 기기와 연동되는 AI 보안. 특히 <strong>물리적 시스템을 직접 통제하는 에이전틱 AI</strong>의 현장 적용 보안 기준·방향을 공동 검증.</li>
+                        <li class="pl-2 border-l-2 border-gray-200"><strong>③ 클린룸 + 비식별화 적용</strong> — 협력 과정의 민감 데이터 보호를 위해 격리 환경과 비식별화 기술을 적용, 신뢰 환경에서 AI 학습·실증.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong>이정아 라온시큐어 대표 인용</strong> — <span class="quote">"AI가 현실 세계의 시스템을 직접 제어하는 단계로 진화하면서, 보안은 사후 대응이 아닌 <strong>AI의 신원·권한·행동을 통제하는 체계</strong>로 확장되고 있다."</span> (전자신문·보안뉴스 공통 인용)
+                    </p>
+                </div>
+
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+                    <p class="text-accent-900/80 text-sm leading-relaxed mb-4">
+                        국내 AI 평가 시장이 그동안 'IT 망 + 문서·텍스트' 중심이었다면, 이번 MOU의 의미는 <strong>'에이전틱 AI의 신원·권한·행동' 평가</strong>와 <strong>'로봇·드론 등 물리계 통제 AI' 평가</strong>가 산업 협약 수준의 의제로 명시됐다는 점입니다. 5/12 호에서 다룬 과기정통부의 '정보보호 패러다임' 5말~6초 발표와 시점이 겹칩니다.
+                    </p>
+                    <ol class="space-y-2 text-sm text-accent-900/80 list-decimal list-inside">
+                        <li>라온시큐어-KETI 실증 사업에 <strong>'평가 전문 파트너' 참여 가능성 타진</strong> — 라온은 보안 인증·플랫폼, KETI는 연구, Datumo는 평가 전문 영역으로 보완 가능.</li>
+                        <li>'에이전틱 AI 신원·권한·행동 평가셋'을 <strong>한국어 시나리오 기반</strong>으로 6월 내 PoC 시작 권장. 글로벌에서도 아직 표준화되지 않은 영역이라 선점 여지가 큼.</li>
+                        <li>OT 도메인 파트너 후보군(한국전력공사·한국수자원공사·KETI 등) 중 최소 1곳과 6월 내 협의 개시.</li>
+                    </ol>
+                </div>
+
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://www.etnews.com/20260511000427" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">전자신문 (5/11 17:02) →</a>
+                    <a href="https://www.boannews.com/media/view.asp?idx=143545&skind=8" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">보안뉴스 — 상세 인용 (5/11 10:08) →</a>
+                </div>
+            </article>
+        </div>
+
+        <footer class="bg-gray-900 text-white px-8 py-8 text-center mt-4">
+            <p class="text-sm text-gray-400 font-bold tracking-widest uppercase mb-2">AEOP Daily</p>
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
