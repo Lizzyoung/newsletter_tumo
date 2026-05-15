@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 008</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .term { border-bottom: 1px dotted #9CA3AF; cursor: help; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <!-- HEADER -->
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 008</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.15 (금)</span>
+                </div>
+            </div>
+            <!-- 오늘의 한 줄 -->
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 mb-4">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">오늘의 한 줄</span>
+                <p class="text-gray-800 font-medium leading-relaxed">
+                    "AI 한 대보다 AI 100대 팀이 더 잘 한다" — Microsoft가 5/12 발표한 <strong>MDASH</strong>(에이전트 100개 묶음)가 보안 시험에서 Anthropic Claude Mythos Preview를 처음으로 앞질렀습니다. 같은 주 한국 정부는 <strong>2035년까지의 AI 전략</strong>을 짤 17명 위원회를 출범시켰습니다(5/13).
+                </p>
+            </div>
+            <!-- 30초 스캔 -->
+            <div class="bg-gray-900 text-white rounded-xl p-5">
+                <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-3 block">⏱️ 30초 스캔 — 오늘의 카드 3개</span>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="inline-block w-6 font-bold text-accent-500">①</span><span class="font-bold">평가축이 바뀐다</span> — 단일 모델 점수가 아니라 '100개 에이전트 시스템' 점수가 새 1위. <span class="text-gray-400">(Datumo: RFP 산출물에 시스템 통합 점수 칸 신설 필요)</span></li>
+                    <li><span class="inline-block w-6 font-bold text-accent-500">②</span><span class="font-bold">한국 장기 정책</span> — 의료·교육·법률까지 포함한 17명 위원회 출범. <span class="text-gray-400">(즉시 액션 없음 · 6~12개월 시계의 정책 신호)</span></li>
+                    <li><span class="inline-block w-6 font-bold text-accent-500">③</span><span class="font-bold">컨설팅이 평가 채널로</span> — PwC가 Claude를 직원 36만 명에 깐다. <span class="text-gray-400">(Datumo: 한국 Big4와 6월 내 파트너십 협의)</span></li>
+                </ul>
+            </div>
+        </header>
+        <div class="px-8 py-2">
+            <!-- =================== CARD 1: MDASH =================== -->
+            <article class="py-10 border-b border-gray-100 last:border-0">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">평가 방법론</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · 새 평가 단위</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    "AI 한 대"가 아니라 "AI 100대 팀"이 1등 — Microsoft MDASH가 Claude Mythos Preview를 처음으로 앞질렀다
+                </h2>
+                <!-- 한 줄 요약 (검정) -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        Microsoft가 100개 이상의 AI 에이전트를 묶어 만든 보안 도구 <strong class="text-white">MDASH</strong>가 보안 시험(CyberGym)에서 <strong class="text-white">88.4%</strong>를 받으며, Anthropic Claude Mythos Preview(83.1%)와 OpenAI GPT-5.5(81.8%)를 동시에 제쳤습니다. 같은 발표에서 Windows 신규 취약점 16개(치명적 4개)도 찾아냈고, 5/12 패치가 즉시 배포됐습니다.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 (노랑) -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        지금까지 AI 보안 시험은 "어떤 모델이 가장 잘 푸나"라는 <strong>1인 시험</strong>이었습니다. 그런데 Microsoft는 100개가 넘는 에이전트(각각 다른 역할의 작은 AI)를 한 팀으로 묶어, 사람이 토론하듯 서로 검증하게 했습니다. 결과는 <strong>"단일 모델보다 팀이 더 강하다"</strong>. 그 효과로 진짜 Windows에서 사람이 놓친 결함 16개를 찾아냈고, 그중 4개는 인터넷에서 PC를 원격으로 장악할 수 있는 <strong>'치명적(Critical)' 수준</strong>이었습니다.
+                    </p>
+                </div>
+                <!-- 표: CyberGym 리더보드 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 같은 시험지, 다른 점수</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5">시스템</th>
+                                    <th class="px-4 py-2.5">구조</th>
+                                    <th class="px-4 py-2.5 text-right">점수</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Microsoft MDASH</td>
+                                    <td class="px-4 py-2.5">에이전트 100+ 팀</td>
+                                    <td class="px-4 py-2.5 text-right font-bold text-accent-900">88.4%</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-medium">Anthropic Agent<br><span class="text-xs text-gray-500 font-normal">(Claude Mythos Preview)</span></td>
+                                    <td class="px-4 py-2.5">단일 AI 모델</td>
+                                    <td class="px-4 py-2.5 text-right">83.1%</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-medium">OpenAI Agent<br><span class="text-xs text-gray-500 font-normal">(GPT-5.5)</span></td>
+                                    <td class="px-4 py-2.5">단일 AI 모델</td>
+                                    <td class="px-4 py-2.5 text-right">81.8%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">※ <span class="term" title="UC 버클리가 만든 보안 평가 — 실제 오픈소스 소프트웨어의 취약점 1,507개를 AI 가 재현해 내는지 시험">CyberGym</span> — UC 버클리가 만든 실세계 보안 시험. 188개 오픈소스 프로젝트의 진짜 취약점 1,507개를 재현하는 과제.</p>
+                    <p class="text-xs text-gray-500 mt-1">※ 경쟁사 점수는 CyberGym 공식 리더보드 발췌(2026.05.12 기준). Microsoft 블로그 본문은 "다음 순위 83.1%"만 명시하고 모델명을 표기하지 않음.</p>
+                </div>
+                <!-- 실제 발견 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🛠️ 시험만이 아니다 — 진짜 Windows에서 16개 결함 발견</h3>
+                    <ul class="space-y-2 text-sm text-gray-700 ml-1">
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>CVE-2026-33827</strong> (tcpip.sys) — SSRR IPv4 패킷으로 인증 없이 원격 트리거되는 Use-After-Free 결함. Critical · Remote Code Execution.</li>
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>CVE-2026-33824</strong> (ikeext.dll) — IKEv2 SA_INIT + fragmentation 단계의 double-free로 LocalSystem RCE 도달. RRAS VPN·DirectAccess·Always-On VPN에 영향. Critical.</li>
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>CVE-2026-41089</strong> (netlogon.dll) · <strong>CVE-2026-41096</strong> (dnsapi.dll) — 둘 다 Microsoft 분류상 <strong>Critical · Remote Code Execution</strong>으로 등록(CVSS 점수는 Microsoft 보도자료에 미명시).</li>
+                        <li class="pl-4 border-l-2 border-gray-300">위 4건 포함 총 <strong>16개 신규 취약점</strong>이 5/12 Patch Tuesday로 일괄 패치 완료.</li>
+                    </ul>
+                </div>
+                <!-- 한계 박스 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계와 맥락:</strong> MDASH는 Microsoft 사내 도구라서 외부 연구자가 같은 결과를 재현하기 어렵습니다. 또 5/13 호(Issue 006)에서 다뤘던 미·한 AI 정책 사이클은 그동안 Claude Mythos를 사실상 단일 기준점으로 삼아왔는데, 이 자리에 처음으로 '시스템 단위' 경쟁자가 등장한 셈입니다.
+                    </p>
+                </div>
+                <!-- So What -->
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo — 권고 액션 3개</h3>
+                    <ol class="space-y-3 text-sm text-accent-900/90 list-decimal list-inside">
+                        <li><strong>RFP 산출물 칸 분리</strong> — '모델 단독 점수'와 '에이전트 시스템 통합 점수'를 분리해 표기. </li>
+                        <li><strong>한국어 시드셋 PoC</strong> — CyberGym 한국어판(가칭 KoCyberBench) 100~300개 시드부터 준비.</li>
+                    </ol>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">Microsoft Security 블로그 (5/12) →</a>
+                    <a href="https://www.cybergym.io/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">CyberGym 공식 리더보드 (UC Berkeley) →</a>
+                    <a href="https://www.helpnetsecurity.com/2026/05/13/microsoft-mdash-agentic-ai-security-system/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">Help Net Security — CVE 상세 (5/13) →</a>
+                </div>
+            </article>
+            <!-- =================== CARD 2: 미래전략회의 =================== -->
+            <article class="py-10 border-b border-gray-100 last:border-0">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Korea Watch</span>
+                    <span class="text-sm text-accent-600 font-bold">정책 · 2035 어젠다</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    한국 정부가 'AGI 시대 위원회'를 띄웠다 — 의료·교육·법률까지 들어간 17명 민간위
+                </h2>
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        2026년 5월 13일, 과기정통부가 <strong class="text-white">'과학기술·AI 미래전략회의'</strong>를 출범시켰습니다. 위원 17명 중에는 의료·교육·법률·문화 전문가까지 들어가 있어, "AI 기술 위원회"가 아니라 <strong class="text-white">"2035년까지 AI가 사회 전 영역을 어떻게 바꿀지" 어젠다를 짜는 범부처 채널</strong>로 해석됩니다.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        보통 정부의 AI 자문기구는 공학·산업 전문가 중심입니다. 그런데 이번 위원회에는 의사·교육자·법률가가 끼었습니다. 의미는 단순합니다 — 정부가 <strong>"AI가 병원, 학교, 법원을 어떻게 바꿀지"를 평가 항목으로 만들겠다</strong>는 신호. 당장 평가 RFP가 쏟아지는 자리는 아니지만, <strong>6~12개월 안에 영역별 한국어 평가셋 수요가 동시에 늘어날 가능성</strong>이 큽니다.
+                    </p>
+                </div>
+                <!-- 같은 주 인접 사건 타임라인 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📰 이번 주 한국 정책 사이클 — 4일 타임라인</h3>
+                    <ul class="space-y-3 text-gray-700 ml-1">
+                        <li class="pl-4 border-l-2 border-gray-300">
+                            <span class="block text-xs font-bold text-gray-500 mb-1">5/11 (월) · 라온시큐어-KETI MOU</span>
+                            <span class="text-sm leading-relaxed">OT/IoT 피지컬 AI 보안 산학 협약 (5/13 호 보도).</span>
+                        </li>
+                        <li class="pl-4 border-l-2 border-gray-300">
+                            <span class="block text-xs font-bold text-gray-500 mb-1">5/12 (화) · Anthropic 한국 지사</span>
+                            <span class="text-sm leading-relaxed">상반기 개설 정부 통보 + 5말~6초 정보보호 패러다임 발표 예고 (5/12 호 보도).</span>
+                        </li>
+                        <li class="pl-4 border-l-2 border-gray-300">
+                            <span class="block text-xs font-bold text-gray-500 mb-1">5/13 (수) · 미래전략회의 출범 ← 오늘 카드</span>
+                            <span class="text-sm leading-relaxed">민간 위원 17명(전자신문 보도 기준 학계 8명·산업계 7명 실명 공개, 나머지 2명 분류는 비공개), 6개 영역(경제·산업·교육·의료·문화·법률). 분기별 개최. 배경훈 부총리(과기정통부 장관)는 첫 회의에서 <span class="quote">"<strong>우리 손으로 Mythos 같은 모델을 만들 수 있는지 자문해야 한다</strong>"</span>고 발언(Seoul Economic Daily 인용) — Mythos 의제가 정부 자문기구 1호 회의의 공식 발언대까지 도달.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://www.etnews.com/20260513000321" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">전자신문 — 출범식·17명 위원 명단 (5/13) →</a>
+                    <a href="https://en.sedaily.com/technology/2026/05/13/korea-launches-science-and-ai-future-strategy-council-for" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">Seoul Economic Daily — 배경훈 Mythos 발언 (5/13) →</a>
+                </div>
+            </article>
+            <!-- =================== CARD 3: PwC-Anthropic =================== -->
+            <article class="py-10 border-b border-gray-100 last:border-0">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">산업 · 컨설팅이 평가 채널로</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    PwC, "Claude를 전 직원에게 깐다" — 컨설팅 채널이 평가 채널로 변신 중
+                </h2>
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        2026년 5월 14일, PwC와 Anthropic이 동맹을 확장해 <strong class="text-white">미국 직원 3만 명을 Claude로 교육·인증</strong>하고 <strong class="text-white">PwC 글로벌 인력 36만 4천 명(136개국)에게 단계적 보급</strong>한다고 발표. 컨설팅 회사가 '자체 평가 표준'을 들고 고객사에 직접 들어가는 <strong class="text-white">제3의 RFP 채널</strong>이 가시화됐습니다.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        이게 왜 중요할까요? 삼성, 현대 같은 대기업들이 AI를 도입하고 싶어도 "어떤 AI가 좋은지, 도입해도 안전한지" 스스로 평가를 못 합니다. 이때 PwC 같은 대형 컨설팅 회사가 나타나서 "우리가 써보니 보험 심사 기간이 10주에서 10일로 줄어들더라. 우리 기준대로 너희 회사 AI도 세팅하고 평가해 줄게"라고 영업을 뛰게 된다는 뜻입니다. 즉, 컨설팅 회사가 'AI 평가의 권력'을 쥐게 됩니다. PwC 한국 법인도 글로벌 롤아웃 대상이라, <strong>1~2분기 안에 국내 대기업·금융권 RFP에 도달</strong>할 가능성. 먼저 들어간 평가사업자가 표준이 됩니다.
+                    </p>
+                </div>
+                <!-- 표: 측정 가능한 결과 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📈 PwC가 공개한 4개 실고객 결과</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5">영역</th>
+                                    <th class="px-4 py-2.5">결과</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr><td class="px-4 py-2.5 font-medium">보험 언더라이팅</td><td class="px-4 py-2.5"><strong>10주 → 10일</strong></td></tr>
+                                <tr><td class="px-4 py-2.5 font-medium">메인프레임 현대화</td><td class="px-4 py-2.5">COBOL 마이그레이션이 일정·예산 내 진행</td></tr>
+                                <tr><td class="px-4 py-2.5 font-medium">HR 트랜스포메이션</td><td class="px-4 py-2.5"><strong>1주 프로토타입, 2개월 풀 앱</strong></td></tr>
+                                <tr><td class="px-4 py-2.5 font-medium">사이버 인시던트 대응</td><td class="px-4 py-2.5"><strong>시간 단위 → 분 단위</strong></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">※ 수치는 PwC 발표 기반의 사례. 외부에서 표준화된 검증을 거친 자료는 아님.</p>
+                </div>
+                <!-- So What -->
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo — 권고 액션 2개</h3>
+                    <ol class="space-y-3 text-sm text-accent-900/90 list-decimal list-inside">
+                        <li>PwC가 한국 대기업들에게 영업하러 올 때, 한국어 기반의 AI 평가용 데이터가 반드시 필요할 것입니다. 그러니까 우리가 선수를 쳐서 국내 대형 컨설팅 4사(PwC코리아, 삼정KPMG, EY한영, 딜로이트)에게 "너희가 대기업 컨설팅할 때, 우리가 만든 한국어 AI 시험지(평가셋)를 독점으로 쓰자"고 빠르게 제휴를 맺어야 합니다.</li>
+                        <li>그러기 위해서는, <strong>4개 영역 평가셋 흡수</strong> — 보험 언더라이팅·메인프레임·HR·사이버 IR. PwC 공개 ROI 스토리를 한국어로 재현할 기준선 됨</li>
+                    </ol>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">PwC 공식 보도자료 (5/14) →</a>
+                    <a href="https://siliconangle.com/2026/05/14/pwc-expands-anthropic-alliance-will-train-30000-staff-claude/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">SiliconANGLE — 3만 명 교육 →</a>
+                    <a href="https://www.prnewswire.com/news-releases/anthropic-and-pwc-expand-alliance-driving-impact-across-client-work-and-the-firm-302772321.html" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">PR Newswire — 공동 발표문 →</a>
+                </div>
+            </article>
+        </div>
+        <footer class="bg-gray-900 text-white px-8 py-8 text-center mt-4">
+            <p class="text-sm text-gray-400 font-bold tracking-widest uppercase mb-2">AEOP Daily</p>
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
