@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 010</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        concept: { 50: '#F5F3FF', 100: '#EDE9FE', 600: '#7C3AED', 700: '#6D28D9', 900: '#4C1D95' },
+                        confirm: { 50: '#ECFDF5', 100: '#D1FAE5', 600: '#059669', 700: '#047857' },
+                        uncertain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.8; }
+        .term { border-bottom: 1px dotted #9CA3AF; cursor: help; }
+        .body-text { font-size: 0.95rem; line-height: 1.85; color: #374151; }
+        .body-text strong { color: #111827; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+
+        <!-- HEADER -->
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 010</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.18 (월)</span>
+                </div>
+            </div>
+
+            <!-- 오늘의 한 줄 -->
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">오늘의 한 줄</span>
+                <p class="text-gray-800 font-medium leading-relaxed">
+                    마이크로소프트(MS)와 OpenAI의 <strong>'독점 동맹'이 두 차례 계약 개정으로 공식 해체</strong>되고 있습니다 — 2025년 말 개정(MS의 독자 AGI 개발 허용), 2026년 4월 개정(OpenAI가 아마존 등 MS 경쟁사와 <strong>일부 제품 공동 개발 가능</strong>). 그 결과 MS는 이미 <strong>'OpenAI 이후'</strong>를 위해 AI 스타트업 인수를 물색 중 — Cursor 검토는 규제 우려로 포기했고, <strong>디퓨전 LLM 스타트업 Inception과는 논의 진행 중</strong>(로이터 5/13 단독, deal 성사 미보장 명시). 평가 회사 관점에선 <strong>Azure 안 멀티 모델 시대</strong>가 다가오고 있다는 구조적 시그널입니다.
+                </p>
+            </div>
+        </header>
+
+        <div class="px-8 py-2">
+
+            <!-- =================== MAIN CARD =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Foundation Model · 파트너십 구조</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · "OpenAI 이후" 전환</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-3">
+                    마이크로소프트–OpenAI 7년 독점 동맹이 <strong>공식적으로 해체 단계</strong>에 진입 — MS는 이미 'OpenAI 이후' AI 회사들을 물색 중
+                </h2>
+                <p class="text-base text-gray-500 font-medium mb-5">2025년 말·2026년 4월 두 차례 계약 개정으로 양사 출구 공식 개방. 디퓨전 LLM 스타트업 Inception과 논의 진행 중이지만 <strong class="text-gray-700">deal 성사는 미보장</strong>(로이터통신 5/13 단독).</p>
+
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-6 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-3 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        2026년 5월 13일 로이터통신이 익명 5인 소스 기반으로 단독 보도. 핵심은 <strong class="text-white">MS-OpenAI 파트너십 구조가 두 차례 계약 개정으로 공식 해체 단계에 진입</strong>한 점입니다 — (1) 2025년 말 개정: MS의 독자 AGI 개발 허용. (2) 2026년 4월 개정: OpenAI가 아마존 등 MS 경쟁사와 <strong class="text-white">"일부 제품을 함께 만들" 자유</strong> 확보. 그 결과 MS는 이미 'OpenAI 이후'를 위해 AI 스타트업 인수를 물색 중이며, 그중 Stanford 출신 디퓨전 LLM 스타트업 <strong class="text-white">Inception과 논의가 진행 중</strong>(Inception 측 희망가 10억 달러/약 1조 4천억 원 이상). 단, 같은 봄 MS는 코딩 AI 스타트업 <strong class="text-white">Cursor 인수를 검토했다가 GitHub Copilot 보유로 인한 규제 우려로 포기</strong>했고, 로이터는 이번 Inception 논의에 대해서도 <strong class="text-white">"deal 성사가 보장되지 않는다"</strong>고 명시했습니다.
+                    </p>
+                </div>
+
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-6 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-3 block">💡 쉽게 풀면 — 진짜 변곡점은 'Inception 인수'가 아니라 'MS-OpenAI 관계 변화'</span>
+                    <div class="body-text space-y-3">
+                        <p>
+                            마이크로소프트는 <strong>약 7년간 "AI 사업 = OpenAI"</strong>였습니다. 2019년 첫 10억 달러 투자 이후, 약속한 130억 달러 중 <strong>118억 달러를 이미 OpenAI에 지급</strong>했고(2026.04.29 증권 신고서), <strong>OpenAI 직접 투자에 인프라 구축·호스팅 비용을 모두 합치면 1,000억 달러(약 138조 원) 이상</strong>을 이 한 생태계에 베팅했습니다 — MS 기업개발 책임자 Michael Wetter가 5/13 법정에서 증언한 수치.
+                        </p>
+                        <p>
+                            이번 보도의 <strong>진짜 핵심은 두 차례의 계약 변경</strong>입니다 — (1) 2025년 말 개정으로 MS가 <strong>독자적인 AGI 개발</strong>이 가능해졌고, (2) 2026년 4월 추가 계약으로 거꾸로 <strong>OpenAI도 아마존 등 MS 경쟁사와 일부 제품을 함께 만들 수 있게</strong> 됐습니다. 양사가 <strong>서로의 출구를 공식적으로 열어준 것</strong>.
+                        </p>
+                        <p>
+                            로이터 보도가 보여주는 건 — MS가 이미 <strong>'OpenAI 이후'를 준비 중</strong>이라는 점입니다. 단, <strong>어떤 회사를 살지는 아직 불확실</strong>해요. 올봄 MS는 Cursor 인수를 검토하다 규제 우려로 포기했고, 현재 Inception과 논의 중이지만 <strong>로이터 명시상 deal 성사가 보장되지 않습니다</strong>. 의미 있는 건 <strong>구체 deal</strong>이 아니라 <strong>"MS가 OpenAI 외에도 베팅을 분산한다"는 전략 방향</strong>입니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 핵심 사실 표 1 - 확정된 변곡점 -->
+                <div class="mb-5">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">✅ 확정된 변곡점 — 공식 발표·법정 증언 기반</h3>
+                    <div class="overflow-hidden border border-confirm-100 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-confirm-50 border-b border-confirm-100 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-3 w-2/5">항목</th>
+                                    <th class="px-4 py-3">내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">2025년 말 계약 개정</td>
+                                    <td class="px-4 py-3"><strong>MS의 독자 AGI 개발 허용</strong> — 그 전까지 MS는 OpenAI와 경쟁할 파운데이션 모델 구축이 계약상 금지됐음.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">2026년 4월 계약 개정</td>
+                                    <td class="px-4 py-3"><strong>OpenAI가 아마존 등 MS 경쟁사와 일부 제품을 함께 만들 자유 확보</strong>. 즉 양방향으로 출구가 열림.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">MS-OpenAI 약정·지급</td>
+                                    <td class="px-4 py-3">약정 <strong>130억 달러 / 지급 118억 달러</strong> (2026.04.29 증권 신고서). 약 91% 이행 완료.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">MS의 총 베팅 규모</td>
+                                    <td class="px-4 py-3"><strong>OpenAI 직접 투자 + 인프라 구축 + 호스팅 비용 모두 합쳐 1,000억 달러(약 138조 원) 이상</strong> — Michael Wetter MS 기업개발 책임자 5/13 법정 증언.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">MS의 AI 전략 라인</td>
+                                    <td class="px-4 py-3">전 DeepMind 공동창업자 <strong>Mustafa Suleyman</strong>이 이끄는 AI 팀이 MS 내부에 별도 가동 중(로이터 본문 명시).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 핵심 사실 표 2 - 진행 중·미확정 -->
+                <div class="mb-5">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🟡 진행 중·미확정 시도 — deal 성사 보장 안 됨</h3>
+                    <div class="overflow-hidden border border-uncertain-100 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-uncertain-50 border-b border-uncertain-100 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-3 w-2/5">항목</th>
+                                    <th class="px-4 py-3">내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">Cursor 검토 → <span class="text-uncertain-700">포기 (무산)</span></td>
+                                    <td class="px-4 py-3">올봄 MS가 코딩 AI 스타트업 Cursor 인수 검토. <strong>GitHub Copilot(이미 MS 소유)으로 인한 규제 통과 우려로 포기</strong>. 이후 SpaceX가 Cursor와 별도 계약 체결.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">Inception 논의 <span class="text-uncertain-700">진행 중 (결과 미정)</span></td>
+                                    <td class="px-4 py-3">Stanford 출신, <strong>2024년 중반</strong> 창립. <strong>Inception 측 희망가 10억 달러(약 1조 4천억 원) 이상</strong> — 합의 가격이 아님. 로이터 본문 직접 인용: <em>"논의는 진행 중이며 deal 성사 미보장"</em>.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">SpaceX 동시 접근</td>
+                                    <td class="px-4 py-3">SpaceX(2026년 2월 xAI 흡수 완료)도 <strong>Inception에 접근했음</strong>(원문 "courted", 과거형). MS 단독 협상자가 아님.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">Inception–MS 기존 관계</td>
+                                    <td class="px-4 py-3">MS의 벤처 펀드 <strong>M12</strong>가 2025년 말 Inception의 5천만 달러(약 700억 원) 시드 라운드에 이미 참여 — 이번이 첫 접점이 아님.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 원문 외 보조 정보 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📎 원문 외 보조 정보 (별도 출처)</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-3 w-2/5">항목</th>
+                                    <th class="px-4 py-3">내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">Mustafa Suleyman MS 합류</td>
+                                    <td class="px-4 py-3">로이터 본문엔 "MS 내부 AI 팀 리드"만 명시. <strong>2024년 3월 MS 합류</strong>는 별도 공개 사실.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-bold align-top">MS의 Azure 멀티 모델 라인업</td>
+                                    <td class="px-4 py-3">로이터 본문 외 공개 정보 기준 — OpenAI + 자체 모델 + <strong>Inflection AI 핵심 인력(2024년 3월 MS 흡수)</strong> + (인수 시) Inception 등. Azure가 점점 <strong>"멀티 모델 클라우드"</strong>로 진화 중.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 한계 박스 -->
+                <div class="bg-gray-50 rounded-lg p-5 mb-6">
+                    <span class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-2">⚠️ 한계와 맥락 (반드시 같이 볼 점)</span>
+                    <ul class="text-xs text-gray-700 leading-relaxed space-y-2 list-disc list-inside">
+                        <li><strong>익명 5인 소스 기반의 단독 보도</strong>. Inception은 <strong>"코멘트 거절"</strong>, SpaceX는 <strong>"즉시 응답 없음"</strong>. MS의 코멘트 응답 여부는 로이터 본문에 명시되지 않음.</li>
+                        <li>로이터 본문이 명시: <strong>"논의는 진행 중이며 deal 성사가 보장되지 않는다"</strong>. <strong>Cursor 케이스가 같은 단계에서 무산된 전례</strong>이므로 Inception 논의도 동일 결말 가능성 있음.</li>
+                        <li>$1B+는 <strong>MS와의 합의 가격이 아니라 Inception 측이 원하는 가격</strong>. MS가 이를 수용했는지는 원문에 명시 없음.</li>
+                        <li>디퓨전 텍스트 LLM이 <strong>엔터프라이즈 프로덕션에 들어간 사례는 아직 없음</strong>. 안정성·확장성 검증은 모두 미래 시점(로이터 인용 연구자들).</li>
+                    </ul>
+                </div>
+
+                <!-- So What -->
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-4">🎯 So What for Datumo — 권고 액션 3개</h3>
+                    <p class="text-xs text-accent-900/70 mb-4 leading-relaxed">※ 아래 액션들은 <strong>Inception deal 성사 여부와 무관하게 살아남는 시그널</strong> 기반 — 진짜 변곡점인 MS-OpenAI 관계 변화·Azure 멀티 모델화에 초점.</p>
+                    <ol class="space-y-4 text-sm text-accent-900/90 list-decimal list-inside leading-relaxed">
+                        <li>
+                            <strong>'멀티 모델 비교 평가' 라인 우선순위 상향</strong><br>
+                            <span class="block mt-1 ml-5 text-accent-900/75">이번 로이터 보도가 보여준 가장 큰 변곡점은 <strong>Azure가 점점 멀티 모델 클라우드로 진화 중</strong>이라는 점입니다 — OpenAI 모델 + MS 자체 모델 + Inflection 인력 흡수 + 향후 추가 인수. 구체적으로 <strong>어떤 회사가 들어갈지는 불확실</strong>해도, "같은 작업을 다른 모델로 돌렸을 때 결과 비교" 수요는 <strong>deal 결과와 무관하게</strong> 폭발적으로 늘어남. Datumo의 <strong>모델 간 비교 평가(cross-model benchmarking)</strong> 상품을 6~8월 RFP 시즌 전에 정비할 시점.</span>
+                        </li>
+                        <li>
+                            <strong>'생성 방식별 평가' 차원을 RFP 응답 템플릿에 명시</strong><br>
+                            <span class="block mt-1 ml-5 text-accent-900/75">Inception 인수가 무산되더라도 <strong>디퓨전 LLM은 시장 트렌드로 살아남음</strong>(SpaceX도 같은 회사에 접근). 현재 평가 파이프라인은 대부분 <strong>"한 토큰씩 점수 매기는 방식"</strong>(token-by-token logprob)에 맞춰져 있어요. 디퓨전 모델은 <strong>여러 토큰이 동시에 만들어지는 단계에서의 일관성</strong>, <strong>정제 단계 수에 따른 품질 변동</strong>이 새로운 실패 모드. RFP 응답서에 <strong>"자기회귀(Autoregressive) / 디퓨전(Diffusion) / 하이브리드"</strong> 모델 패밀리 분류 컬럼을 미리 박아두면, 1년 내 엔터프라이즈 도입 흐름과 즉시 매핑됩니다.</span>
+                        </li>
+                        <li>
+                            <strong>"방법론적 차별화 = 시장 관심" 시그널 학습</strong><br>
+                            <span class="block mt-1 ml-5 text-accent-900/75">Inception은 <strong>아직 팔린 게 아니라 $1B+ 희망가에 시장 관심을 받는 단계</strong>입니다. 단, <strong>디퓨전이라는 생성 방식 차별화 하나만으로</strong> 이 가격대의 관심을 받는다는 사실은 <strong>시장 valuation 시그널</strong>로 충분히 의미가 있어요. 평가·관측 회사도 <strong>"방법론적으로 분명한 차별화"</strong>가 외부에 명시화되어 있으면 비슷한 관심을 받을 가능성. Datumo의 <strong>심리·인지 기반 행동 평가</strong> 같은 차별화 축을 외부에 명시화해 두면, 향후 펀딩·M&amp;A 협상 시 valuation 근거 자료로 활용 가능.</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- 주니어 노트 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-4 mt-5">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">📝 주니어 노트</span>
+                    <p class="text-xs text-gray-800 leading-relaxed">
+                        <strong>자기회귀(autoregressive)</strong> = 다음 <strong>토큰</strong>(단어 조각 — 예: "running"은 보통 1~2개 토큰)을 직전 토큰들로부터 하나씩 생성. GPT/Claude/Gemini 등 대부분의 LLM이 이 방식. <strong>디퓨전(diffusion)</strong>은 노이즈에서 시작해 여러 토큰을 동시에 정제 — 이미지 생성(Stable Diffusion)에서 검증된 수학적 프레임워크를 텍스트에 적용한 것이 Inception. 평가 관점의 자세한 시사점은 본 호 하단 <strong>"빠른 개념"</strong> 박스에서 별도 정리.
+                    </p>
+                </div>
+
+                <div class="mt-6 flex flex-wrap gap-3 justify-end">
+                    <a href="https://money.usnews.com/investing/news/articles/2026-05-13/exclusive-microsoft-eyeing-startup-deals-for-life-after-openai" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">로이터/U.S. News 단독 (5/13) →</a>
+                    <a href="https://winbuzzer.com/2026/05/15/microsoft-reportedly-seeking-to-acquire-ai-startup-xcxwbn/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">WinBuzzer — Inception 인수 검토 (5/15) →</a>
+                    <a href="https://www.pymnts.com/acquisitions/2026/microsoft-eyes-ai-acquisitions-before-openai-split/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">PYMNTS — OpenAI 분리 전 인수 (5/14) →</a>
+                </div>
+            </article>
+
+            <!-- =================== 빠른 개념: Diffusion LLM =================== -->
+            <article class="py-10">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-2.5 py-1 bg-concept-100 text-concept-700 text-xs font-bold uppercase tracking-wider rounded-md">빠른 개념</span>
+                    <span class="text-sm text-concept-600 font-bold">3분 · 디퓨전 LLM이 뭔지 완전히 이해하기</span>
+                </div>
+
+                <h2 class="text-xl sm:text-2xl font-extrabold text-gray-900 leading-snug mb-2">
+                    디퓨전 LLM (Diffusion-based Language Model)
+                </h2>
+                <p class="text-sm text-gray-500 mb-6">이번 호 메인 카드의 핵심 기술. Inception deal 성사 여부와 무관하게 시장 트렌드로 살아남는 영역. 평가 회사 관점에서 알아야 할 3가지만.</p>
+
+                <div class="space-y-5">
+                    <!-- 비교 -->
+                    <div class="bg-concept-50 border border-concept-100 rounded-xl p-5">
+                        <span class="text-[10px] font-bold tracking-widest text-concept-700 uppercase mb-3 block">⚖️ 두 가지 방식 — 한눈 비교</span>
+                        <div class="overflow-hidden border border-concept-200 rounded-lg bg-white">
+                            <table class="min-w-full text-left text-sm">
+                                <thead class="bg-concept-50 border-b border-concept-200 text-gray-900 font-bold">
+                                    <tr>
+                                        <th class="px-4 py-2.5 w-1/2">자기회귀 (Autoregressive)</th>
+                                        <th class="px-4 py-2.5 w-1/2">디퓨전 (Diffusion)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white">
+                                    <tr class="border-b border-concept-100">
+                                        <td class="px-4 py-3 align-top text-gray-700"><strong>한 토큰씩 차례로</strong> 만듦. 앞 토큰을 보고 다음 토큰을 예측.</td>
+                                        <td class="px-4 py-3 align-top text-gray-700"><strong>여러 토큰을 한꺼번에</strong> 만듦. 노이즈에서 시작해 점점 또렷한 토큰으로 정제.</td>
+                                    </tr>
+                                    <tr class="border-b border-concept-100">
+                                        <td class="px-4 py-3 align-top text-gray-700">사용 예: <strong>ChatGPT, Claude, Gemini</strong> 등 대부분의 LLM.</td>
+                                        <td class="px-4 py-3 align-top text-gray-700">사용 예: <strong>Inception Labs의 Mercury Coder</strong>, 스탠포드·CMU의 SEDD·Diffusion-LM.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 align-top text-gray-700">속도: 1초에 토큰 약 50개 생성(예).</td>
+                                        <td class="px-4 py-3 align-top text-gray-700">속도: 잠재적으로 같은 시간에 <strong>250–500개 동시 정제</strong> (Inception Labs 자체 발표 기준 · 독립 검증 부재).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">※ <strong>"토큰"</strong>은 LLM이 텍스트를 자르는 최소 단위 — 단어 한 개일 수도, "running"처럼 여러 조각으로 나뉠 수도 있음. ※ 디퓨전은 원래 <strong>이미지 생성(Stable Diffusion, DALL-E)</strong>에서 검증된 방식. 그 수학적 프레임워크를 텍스트에 적용한 것이 디퓨전 LLM.</p>
+                    </div>
+
+                    <!-- 비유 -->
+                    <div class="bg-concept-50 border border-concept-100 rounded-xl p-5">
+                        <span class="text-[10px] font-bold tracking-widest text-concept-700 uppercase mb-3 block">🎨 비유로 이해하기</span>
+                        <div class="body-text space-y-2">
+                            <p>
+                                <strong>자기회귀</strong>는 <strong>한 토큰씩 받아쓰기하는 사람</strong>처럼 글을 씁니다. 앞 토큰을 다 만든 다음에야 다음 토큰을 생각해요.
+                            </p>
+                            <p>
+                                <strong>디퓨전</strong>은 <strong>희미한 사진을 점점 또렷하게 만드는 보정</strong>과 비슷합니다. 처음엔 안개 같은 노이즈 상태에서 시작해, 여러 단계에 걸쳐 동시에 "이 자리엔 이 토큰, 저 자리엔 저 토큰"으로 점점 또렷하게 만들어 갑니다.
+                            </p>
+                            <p>
+                                결과적으로 <strong>속도는 빠를 수 있지만, "여러 토큰을 동시에 결정"하기 때문에 토큰들끼리 일관성이 깨질 위험</strong>이 있어요. 이게 평가의 새 과제로 떠오릅니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 평가 관점 -->
+                    <div class="bg-concept-50 border border-concept-100 rounded-xl p-5">
+                        <span class="text-[10px] font-bold tracking-widest text-concept-700 uppercase mb-3 block">🎯 평가 회사가 반드시 기억할 3가지</span>
+                        <ol class="text-sm text-gray-800 leading-relaxed space-y-3 list-decimal list-inside">
+                            <li>
+                                <strong>"한 토큰씩 점수 매기는 방식"이 그대로 안 통합니다.</strong><br>
+                                <span class="block ml-5 mt-1 text-gray-600 text-[13px]">기존 평가 메트릭의 핵심인 <em>token-level logprob</em>(각 토큰이 얼마나 자연스러운지 점수)이 디퓨전에는 그대로 적용 안 됨. 메트릭 재설계 필요.</span>
+                            </li>
+                            <li>
+                                <strong>"정제 단계 수 vs 품질" 트레이드오프가 새 평가 축입니다.</strong><br>
+                                <span class="block ml-5 mt-1 text-gray-600 text-[13px]">디퓨전은 정제를 몇 단계 거치느냐(예: 10단계 vs 50단계)에 따라 결과 품질·속도·일관성이 달라집니다. 단계 수가 새로운 평가 차원으로 추가됨.</span>
+                            </li>
+                            <li>
+                                <strong>"같은 입력에 같은 답이 나오는가" 평가가 필수입니다.</strong><br>
+                                <span class="block ml-5 mt-1 text-gray-600 text-[13px]">디퓨전은 노이즈에서 시작하기 때문에 <strong>같은 질문에 매번 다른 답</strong>이 나올 수 있음(variance). 자기회귀보다 변동성이 클 가능성. 일관성·재현성(reliability·repeatability) 평가가 핵심 차원이 됨.</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+        <footer class="bg-gray-900 text-white px-8 py-8 text-center">
+            <p class="text-sm text-gray-400 font-bold tracking-widest uppercase mb-2">AEOP Daily</p>
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
