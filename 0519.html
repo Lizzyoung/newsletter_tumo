@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 011</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .term { border-bottom: 1px dotted #9CA3AF; cursor: help; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+        .star1 { color: #9CA3AF; font-weight: 700; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+
+        <!-- HEADER -->
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 011</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.19 (화)</span>
+                </div>
+            </div>
+
+            <!-- 오늘의 한 줄 -->
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <ul class="space-y-3 text-sm text-gray-800 leading-relaxed">
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">①</span><span><strong>5/17 SiliconANGLE</strong>의 Jason Bloomberg 칼럼이 <strong>"Eval Engineering(에발 엔지니어링)"</strong>을 별도 직무 카테고리로 명명하고, Galileo·Maxim·Confident AI·Arize 등 평가 벤더 지형을 (1) 테스트용 / (2) 의사결정 지원 / (3) 풀-라이프사이클 거버넌스 3그룹으로 정리하며 <strong>Cisco의 Galileo AI 인수 임박</strong>을 짚었습니다.</span></li>
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">②</span><span><strong>5/18 Dell Technologies World 2026</strong>이 <strong>"Deskside Agentic AI"</strong>(책상 위 에이전트)를 메인 발표하며, 위탁 분석(Signal 65/Futurum Group) 기준 <strong>퍼블릭 클라우드 API 대비 3개월 손익분기 / 2년간 최대 87% 절감</strong>을 제시했습니다.</span></li>
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">③</span><span><strong>5/15 OpenAI</strong>가 <strong>미국 ChatGPT Pro 일부 사용자</strong>를 대상으로 <strong>Plaid 연동 + 1.2만 금융기관 계좌</strong>를 직접 연결하는 개인 재무 도구 프리뷰를 출시했습니다.</span></li>
+                </ul>
+            </div>
+
+            <!-- 카테고리/Confidence 범례 -->
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리(5고정)</strong>: Foundation Model · Competitor Watch · Enterprise Eval · Korea Watch · Methodology/Research &nbsp; · &nbsp;
+                <strong>Confidence</strong>: <span class="star3">★★★ 직접 발표·문서 확인</span> / <span class="star2">★★ 해석 보도 다중 교차</span> / <span class="star1">★ 추정·단일 매체</span>
+            </div>
+        </header>
+
+        <div class="px-8 py-2">
+
+            <!-- =================== CARD 1: Eval Engineering =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Methodology</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Competitor Watch</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★ 변곡점</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    "Eval Engineering"이 별도 직무 카테고리로 명명되다 — Galileo는 Cisco가 임박 인수, 평가가 옵저버빌리티에 흡수되는 분기
+                </h2>
+
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">5/17 SiliconANGLE</strong>의 Jason Bloomberg(Intellyx 창립자) 칼럼이 <strong class="text-white">"Eval Engineering(에발 엔지니어링)"</strong>을 별도 직무·기술 카테고리로 명명하고, 평가 벤더 지형을 <strong class="text-white">(1) 테스트용 / (2) 의사결정 지원 / (3) 풀-라이프사이클 거버넌스</strong> 3그룹으로 정리. <strong class="text-white">다중 적대적 검증자(multiple diverse adversarial validators)</strong> 구도를 에이전트 거버넌스의 "state of the art"로 제시하면서도, <strong class="text-white">"여전히 드로잉 보드 단계 — 일부 벤더만 구현 중"</strong>이라고 한계를 명시. 더불어 <strong class="text-white">4/9 발표된 Cisco의 Galileo AI 인수가 'imminent'</strong>(임박)라며 평가가 옵저버빌리티 진영으로 흡수되는 흐름을 짚음.
+                    </p>
+                </div>
+
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        지금까지 "AI 평가"는 한 회사가 자기 모델을 자체 점검하는 <strong>기능 단위</strong>였습니다. 이 칼럼이 정리한 그림은 한 단계 위 — <strong>"평가하는 AI를 만드는 일"이 별도의 엔지니어링 직무로 떨어져 나왔다</strong>는 것. (a) 평가 데이터셋 설계, (b) <strong>LLM-as-a-judge</strong>(LLM이 판정자가 되는 기법) 운영, (c) 환각·드리프트 탐지 파이프라인, (d) CI/CD 통합까지 묶어 <strong>"에발 엔지니어"</strong> 역할이 시장에서 형식적으로 인정됐다는 신호. Datumo가 한국에서 표방해 온 "AI 신뢰성 평가 자동화"가 글로벌에서도 같은 이름의 카테고리로 잡혔다는 점이 핵심.
+                    </p>
+                </div>
+
+                <!-- 벤더 지형 표 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🗺️ 3그룹 벤더 지형 (SiliconANGLE 정리)</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5">그룹</th>
+                                    <th class="px-4 py-2.5">용도</th>
+                                    <th class="px-4 py-2.5">대표 벤더</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">테스트용 평가</td>
+                                    <td class="px-4 py-2.5">배포 전 평가 파이프라인. 정상·엣지·적대적 데이터셋. 운영 부담 없음</td>
+                                    <td class="px-4 py-2.5">Comet ML / Confident AI / Evidently AI / GoodEye Labs / <strong>MLflow</strong>(Linux Foundation)</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">의사결정 지원</td>
+                                    <td class="px-4 py-2.5">자율 자동화 대신 "근거 있는 응답" 생성. 시간 압박 없음</td>
+                                    <td class="px-4 py-2.5">Klover AI (창업자 Dany Kitishian)</td>
+                                </tr>
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">풀-라이프사이클 거버넌스</td>
+                                    <td class="px-4 py-2.5">운영 환경 에이전트 워크플로우 평가. 비용·지연 병목이 최대 과제</td>
+                                    <td class="px-4 py-2.5"><strong>Maxim AI</strong> / <strong>Arize AI</strong> / Conscium / <strong>Confident AI</strong> / <strong>Galileo AI</strong> (Cisco 인수 임박)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Galileo 차별점 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🔥 Galileo의 차별점 — ChainPoll + Luna</h3>
+                    <ul class="space-y-2 text-sm text-gray-700 ml-1">
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>ChainPoll</strong> — 환각 탐지를 위해 chain-of-thought 추론 + 여러 번 폴링(다른 모델 가능)을 결합. yes/no·pass/fail 결과를 cost-효율적으로 생산.</li>
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>Luna</strong> — ChainPoll 원리를 살린 <strong>전용 평가 모델</strong>(purpose-built evaluation model). LLM-as-a-judge 대비 토큰 소모가 크게 작음. RAG(검색 증강) 출력의 환각 탐지에 특화.</li>
+                        <li class="pl-4 border-l-2 border-gray-300">결과: <strong>운영 환경에서 100% 샘플링 가능</strong>. 경쟁사(Maxim/Arize/Confident AI)는 비용 때문에 트래픽 샘플링 + 비동기 처리로 우회.</li>
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>Cisco가 인수 임박</strong>(4/9 보도) → <strong>Splunk 조직에 편입</strong>. 옵저버빌리티 시장 최상위 플레이어가 평가 레이어를 흡수.</li>
+                    </ul>
+                </div>
+
+                <!-- 인용 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🗣️ 칼럼의 핵심 인용</h3>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">"Without eval engineering, however, it would be impossible to implement the diverse adversarial validators so important for successful governance, thus limiting the ability for vendors to deliver effective agentic AI governance solutions at scale."</p>
+                        <p class="text-xs text-gray-500 mt-2">— Jason Bloomberg, <em>Eval engineering: The missing piece of agentic AI governance</em>, SiliconANGLE (5/17)</p>
+                    </blockquote>
+                </div>
+
+                <!-- 한계 박스 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계와 맥락:</strong> (1) 글은 <strong>GUEST COLUMN</strong>(Intellyx 컨설팅사 창립자 기고)이며 인터뷰 기반. 칼럼 말미에 <strong>"IBM·Microsoft·Splunk는 Intellyx의 전 고객"</strong>이라는 이해상충 디스클로저 존재. Cisco-Galileo 거래는 같은 매체 4/9 별도 기사와 Cisco 공식 블로그가 1차 출처. (2) <strong>Datumo Eval은 글에서 직접 언급되지 않음</strong> — 한국 시장이 영문 매체 레이더에서 빠져 있다는 단서.
+                    </p>
+                </div>
+
+                <!-- So What -->
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo — 권고 액션 3개</h3>
+                    <ol class="space-y-3 text-sm text-accent-900/90 list-decimal list-inside">
+                        <li><strong>7월 내 "Datumo Eval vs. 6개 글로벌 벤더" 매트릭스 1쪽 작성</strong> — Maxim·Arize·Confident AI·Conscium·Galileo(Cisco)·MLflow 6벤더에 대해 (a) 테스트 vs. 풀-라이프사이클 위치, (b) LLM-as-a-judge vs. 전용 평가 모델, (c) 한국어/금융/망분리 환경 지원, (d) 가격 모델 4축으로 매트릭스. <strong>글로벌 RFP·CES 후속 영문 자료에서 즉시 활용</strong>.</li>
+                        <li><strong>"Luna급 전용 평가 모델" 로드맵 PoC 1건</strong> — Galileo의 차별점은 범용 LLM-as-a-judge를 버리고 <strong>평가 전용 소형 모델</strong>을 따로 만들어 비용·지연을 잡았다는 점. <strong>한국어 금융·법무 도메인 전용 evaluator 모델</strong>의 PoC를 7월 내 1건 확보하면 "고비용 LLM 의존도 = Datumo가 회피한다"는 차별화 메시지가 정량적으로 잡힘.</li>
+                        <li><strong>Cisco-Galileo 인수 종결 시점에 맞춰 "Splunk 외 옵저버빌리티 파트너십" 1건 타진</strong> — Galileo가 Splunk로 편입되면 비-Splunk 진영(Datadog·New Relic·Elastic·국내 SKT/네이버 클라우드 모니터링)이 평가 파트너를 찾을 가능성. 인수 종결 1~2개월 전 사전 미팅을 잡아두면 공백이 떨어질 때 가장 먼저 옮길 수 있음.</li>
+                    </ol>
+                </div>
+
+                <!-- Theme Tracker -->
+                <div class="mt-4 bg-gray-50 rounded-lg p-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧵 Theme Tracker</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Theme: "에이전트 거버넌스 → 평가가 별도 직무로 분화"</strong> · 누적 카드: Issue 008(Apollo Research "Science of Scheming") → Issue 010(Frontier 3사 사이버보안 평가 동시 출시) → <strong>Issue 011(SiliconANGLE 'Eval Engineering' 카테고리 명명 + Cisco-Galileo 인수 임박) ← 오늘</strong>. <strong>다음 트리거</strong>: Cisco-Galileo 거래 종결 발표 / Maxim AI·Confident AI 추가 펀딩 / Anthropic·OpenAI의 자체 평가 도구 정식 외부 공개.
+                    </p>
+                </div>
+
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://siliconangle.com/2026/05/17/eval-engineering-missing-piece-agentic-ai-governance/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">SiliconANGLE — Eval Engineering 카테고리 (5/17) →</a>
+                    <a href="https://siliconangle.com/2026/04/09/cisco-buys-galileo-strengthen-splunks-agentic-monitoring-capabilities/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">SiliconANGLE — Cisco의 Galileo 인수 (4/9) →</a>
+                </div>
+            </article>
+
+            <!-- =================== CARD 2: Dell Deskside Agentic AI =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Foundation Model</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★ 변곡점</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Dell이 책상 위로 에이전트를 옮긴다 — Deskside Agentic AI · 한 개발자가 24시간에 10억 토큰·$3,400을 태운 후
+                </h2>
+
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">5/18 Dell Technologies World 2026</strong> 개막. 메인 발표는 <strong class="text-white">Dell Deskside Agentic AI</strong> — Dell 고성능 워크스테이션 + Nvidia <strong class="text-white">NemoClaw</strong> + Dell 서비스로 <strong class="text-white">에이전트를 클라우드가 아니라 책상 위에서 돌리는 패키지</strong> (<strong class="text-white">now available</strong> · 즉시 출시). SVP가 "<strong class="text-white">Most enterprises don't have an AI ambition problem. They have an AI execution problem</strong>"이라 명명하며, 한 개발자가 24시간 동안 <strong class="text-white">10억 토큰·$3,400</strong> 클라우드 청구서를 태운 사례를 공개. Dell-위탁 분석(Signal 65/Futurum Group)은 <strong class="text-white">퍼블릭 클라우드 API 대비 3개월 만에 손익분기</strong>, <strong class="text-white">2년간 최대 87% 비용 절감</strong>을 제시. <strong class="text-white">AI Factory 고객 5,000곳</strong>(2026.4 기준 Dell 자체 집계).
+                    </p>
+                </div>
+
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        지금까지 "기업이 AI를 쓴다"의 99%는 <strong>OpenAI·Anthropic·Google의 클라우드 API</strong>를 사용한다는 뜻이었습니다. Dell의 메시지는 두 가지: (1) <strong>에이전트는 챗봇과 달리 멈추지 않고 토큰을 태웁니다</strong> — 그래서 클라우드 비용이 폭발한다, (2) <strong>민감 데이터·주권·전력</strong>까지 따져 보면 "<strong>책상 위 + 데이터센터 + 엣지 + 클라우드"의 4겹 분산</strong>이 합리적이다. 한국 금융권에 비유하면 정확히 <strong>망분리 환경</strong>의 논리 — 한국 시중은행이 이미 "AI는 내부망에서 돌려야 한다"를 강제받고 있는 상황과 같은 결론에 글로벌 인프라 벤더가 도달했다는 신호.
+                    </p>
+                </div>
+
+                <!-- 발표 핵심 표 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 5/18 Dell Technologies World 발표 핵심</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5">발표</th>
+                                    <th class="px-4 py-2.5">내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Dell Deskside Agentic AI</td>
+                                    <td class="px-4 py-2.5">Dell Pro Precision 타워 / Pro Max(GB10·GB300) / PowerEdge XE 라인업. Nvidia <strong>OpenShell</strong>(에이전트용 보안 런타임)이 Dell AI Factory 전반에 통합되어 로컬 sandbox·테스트·파인튜닝 가능. <span class="text-xs text-gray-500">※ 워크스테이션 타워가 최대 1조 파라미터 모델을 지원한다는 표현은 SiliconANGLE 정리.</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">Dell AI Data Platform 업데이트</td>
+                                    <td class="px-4 py-2.5">비정형 파일 <strong>수십억 건 인덱싱</strong>, <strong>GPU 가속 SQL 분석</strong>(Starburst 협업, Nvidia Blackwell에서 최대 <strong>6배</strong> 빠른 쿼리). Nvidia <strong>Omniverse</strong>(디지털 트윈) 통합.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">PowerRack (turnkey)</td>
+                                    <td class="px-4 py-2.5">컴퓨팅·네트워킹·스토리지·쿨링·관리가 사전 통합된 <strong>랙 단위 시스템</strong>. SVP "<strong>components and hope they work together는 끝났다</strong>".</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">PowerCool CDU C7000</td>
+                                    <td class="px-4 py-2.5">첫 <strong>랙-마운트 4U 쿨링 분배 유닛</strong>. Nvidia 차세대 <strong>Vera Rubin NVL72</strong> 플랫폼 지원.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">에코시스템 통합</td>
+                                    <td class="px-4 py-2.5">헤드라인 5사: Google <strong>Gemini 3 Flash</strong>(Google Distributed Cloud on Dell) / <strong>OpenAI Codex</strong> + Dell AI Data Platform / Palantir Foundry·AIP 온프레미스 / ServiceNow / Hugging Face Dell Enterprise Hub(DeepSeek-V4·MiniMax-M2.7·GLM 5.1·Kimi K2.6 큐레이션). 외 <strong>Reflection·SpaceXAI(Grok)·Mistral·CrowdStrike·F5·JFrog</strong> 등. 신설된 <strong>Dell AI Ecosystem Program</strong>이 파트너 앱을 Dell 인프라에서 사전 검증.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 인용 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🗣️ Dell 측 직접 인용 (SiliconANGLE 보도, 5/18)</h3>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2 mb-3">
+                        <p class="quote text-sm leading-relaxed">"Most enterprises don't have an AI ambition problem. They have an AI execution problem."</p>
+                        <p class="text-xs text-gray-500 mt-2">— Sam Grocott, SVP of product marketing, Dell Technologies</p>
+                    </blockquote>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">"We had a single developer burn through 1 billion tokens in 24 hours. That was a $3,400 cloud bill."</p>
+                        <p class="text-xs text-gray-500 mt-2">— Jon Siegal, SVP, Dell Client Solutions Group</p>
+                    </blockquote>
+                </div>
+
+                <!-- 한계 박스 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계와 맥락:</strong> (1) 87% 절감·3개월 손익분기 수치는 <strong>Dell이 위탁한 Signal 65 + Futurum Group 분석</strong>(2026.5) 결과 — 보도자료 footnote 4에 명시. 가정에는 멀티 연도 배포, 일부 워크로드(general knowledge·sales·software development), 5일 근무 기준이 포함되며 클라우드 디스카운트·인프라 호스팅·에너지·관리·Dell 서포트 비용을 모두 반영했다고 표기. <strong>개별 결과는 가정에 따라 크게 변동</strong>. (2) Deskside Agentic AI는 즉시 출시지만, AI Data Platform 신기능(Q2 2026), Blackwell·Vera용 Data Analytics Engine(Q1 2027), Pro Precision 7 R1(2026.7) 등 다수 항목은 단계 출시. (3) 한국 시장 도입 시 <strong>국내 SI 파트너(LG CNS·삼성SDS·SK C&C 등)의 통합 검증</strong>과 망분리 환경 검증이 별도로 필요한 점은 발표에 빠져 있음.
+                    </p>
+                </div>
+
+                <!-- So What -->
+                <div class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+                    <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo — 권고 액션 3개</h3>
+                    <ol class="space-y-3 text-sm text-accent-900/90 list-decimal list-inside">
+                        <li><strong>7월 내 "Datumo Eval 망분리 패키지" 1쪽 정리</strong> — Issue 010의 다투모 이밸 시중은행 도입(신한·우리·NH농협)을 <strong>Dell Deskside + NemoClaw 환경에서 그대로 돌리는 옵션</strong>으로 1쪽 작성. 금융보안원 7월 시범평가 직전이라 <strong>"평가도 망분리 + 평가도 로컬"</strong>이 자연스러운 다음 질문이 됨.</li>
+                        <li><strong>Dell AI Ecosystem Program 진입 검토 — 6월 내 1차 적격성 확인</strong> — 새로 발표된 Dell AI Ecosystem Program이 <strong>파트너 앱을 Dell 인프라에서 사전 검증</strong>한다고 명시. Datumo Eval이 등록되면 (a) Dell의 5,000 AI Factory 고객 도달, (b) Palantir·ServiceNow·Hugging Face와 같은 노출 트랙. 적격성 1차 확인을 6월 내 메일 1통으로 시작.</li>
+                        <li><strong>OpenAI Codex × Dell AI Data Platform 통합 → "Codex 자체에 대한 평가" 시장</strong> — 발표에 <strong>Codex가 Dell AI Data Platform·AI Factory 인프라와 통합</strong>된다고 명시. 즉 Codex가 기업 내부망에서 돌게 됨 → "자율 코딩 에이전트의 결과를 평가하는 evaluator"가 다음 필수 레이어. 6월 내 Codex 출력 평가 데이터셋(보안 패치·테스트 커버리지·라이선스 위반) 5종 PoC를 만들어 두면 7월 영업 미팅의 첫 자료로 직결.</li>
+                    </ol>
+                </div>
+
+                <!-- Theme Tracker -->
+                <div class="mt-4 bg-gray-50 rounded-lg p-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧵 Theme Tracker</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Theme: "AI 인프라가 클라우드 단일 의존 → 데스크/엣지/온프렘 분산으로 분기"</strong> · 누적 카드: Issue 010(MS-Anthropic-OpenAI Frontier 사이버 3사 + Inception 디퓨전 LLM 인수설) → <strong>Issue 011(Dell Deskside Agentic AI + AI Factory 5,000고객 + Codex/Palantir 온프레미스 통합) ← 오늘</strong>. <strong>다음 트리거</strong>: 한국 시중은행의 Dell·HPE·삼성SDS 온프레미스 AI 인프라 RFP / Dell AI Ecosystem Program 한국 파트너 1호 / OpenAI Codex의 망분리 환경 정식 지원.
+                    </p>
+                </div>
+
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://siliconangle.com/2026/05/18/dell-targets-enterprise-ai-execution-gap-local-agentic-ai-systems-integrated-ai-infrastructure/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">SiliconANGLE — Dell Deskside Agentic AI (5/18) →</a>
+                    <a href="https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-closes-the-gap-between-ai-ambition-and-ai-outcomes.htm" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">Dell — Closes the Gap Between AI Ambition and AI Outcomes (5/18) →</a>
+                </div>
+            </article>
+
+            <!-- =================== CARD 3: ChatGPT Personal Finance =================== -->
+            <article class="py-10 last:border-0">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Foundation Model</span>
+                    <span class="text-sm text-gray-600 font-bold">사이드 · ★★ 도메인 분기</span>
+                    <span class="ml-auto text-xs"><span class="star2">★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    ChatGPT Pro가 1.2만 금융기관 계좌에 직접 연결된다 — Plaid 연동 미국 프리뷰, GPT-5.5 Thinking + "개인 재무 벤치마크"
+                </h2>
+
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">5/15(금) OpenAI</strong>가 <strong class="text-white">미국 ChatGPT Pro 일부 사용자</strong>를 대상으로 <strong class="text-white">개인 재무 도구</strong> 프리뷰를 출시. <strong class="text-white">Plaid</strong> 연동을 통해 <strong class="text-white">Schwab·Fidelity·Chase·Robinhood·American Express·Capital One</strong> 등 <strong class="text-white">1.2만 개 이상 금융기관</strong>의 계좌를 연결할 수 있고, 연결 후 <strong class="text-white">포트폴리오 성과·지출·구독·예정 결제</strong>를 대시보드에서 확인 가능. OpenAI는 <strong class="text-white">GPT-5.5의 컨텍스트 추론</strong> 능력이 금융 질문 답변에 중요하다고 설명하며, 금융 전문가들과 함께 <strong class="text-white">개인 재무 벤치마크</strong>를 만들었다고 밝힘. 향후 <strong class="text-white">Intuit 연동</strong>(세금 영향 분석·신용카드 승인 가능성 추정 등)과 더 능동적인 금융 작업 지원은 "future versions"로 예고.
+                    </p>
+                </div>
+
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        이번 출시는 <strong>범용 챗봇이 금융·헬스케어 같은 민감 도메인별 제품으로 분화하는 흐름이 개인 재무 영역으로 확장된 사례</strong>입니다. 특히 (1) 계좌 직접 연결, (2) 개인화된 재무 분석, (3) <strong>도메인 전문가 기반 벤치마크</strong>가 함께 등장했다는 점에서, 앞으로 <strong>금융 특화 LLM의 성능·안전성·책임 범위를 어떻게 평가할지</strong>가 더 중요해질 가능성이 있습니다. 한국 금융권 관점에서는, 글로벌 AI 서비스가 개인 금융 데이터와 직접 연결되는 흐름이 커질수록 <strong>5/13 금융보안원 33개 항목 같은 금융 특화 LLM 평가 기준의 필요성</strong>이 더 커진다는 신호로 읽을 수 있습니다.
+                    </p>
+                </div>
+
+                <!-- 핵심 수치 리스트 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 핵심 수치</h3>
+                    <ul class="space-y-2 text-sm text-gray-700 ml-1">
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>금융기관 1.2만 곳 이상</strong> 연결 가능 (Plaid 경유) — Schwab·Fidelity·Chase·Robinhood·American Express·Capital One 포함</li>
+                        <li class="pl-4 border-l-2 border-gray-300"><strong>월 200M+ 사용자</strong>가 ChatGPT에 금융 질문 중 (OpenAI 자체 추산, TechCrunch)</li>
+                        <li class="pl-4 border-l-2 border-gray-300">모델: <strong>GPT-5.5 Thinking</strong>(추론 최적화). 외부 벤치마크 <strong>FinanceAgent 60%</strong>(어닝 리포트 분석 등 측정), <strong>FrontierMath Tier 4</strong>(박사 수준 수학) 신기록 (SiliconANGLE 정리)</li>
+                        <li class="pl-4 border-l-2 border-gray-300">평가셋: 외부 벤치마크와 <strong>별개</strong>로, OpenAI가 <strong>50명 이상의 금융 전문가</strong>와 함께 <strong>자체 개인 재무 벤치마크</strong>를 제작했다고 명시 (SiliconANGLE)</li>
+                        <li class="pl-4 border-l-2 border-gray-300">데이터 해제 시 <strong>30일 내 동기화 데이터 삭제</strong> (개인정보 관리 측면 고지)</li>
+                    </ul>
+                </div>
+
+                <!-- 핵심 진술 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🗣️ 핵심 진술 (TechCrunch / SiliconANGLE 보도, 5/15)</h3>
+                    <div class="bg-gray-50 border-l-4 border-gray-300 pl-4 py-3 pr-3 rounded-r">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            OpenAI는 <strong>모델의 개인 재무 질문 답변 능력을 끌어올리기 위해 금융 전문가들과 함께 벤치마크를 만들었다</strong>고 진술(TechCrunch 정리). SiliconANGLE은 이 벤치마크에 <strong>50명 이상의 금융 전문가</strong>가 참여했다고 보도하며, 별도로 GPT-5.5 Thinking이 외부 벤치마크 <strong>FinanceAgent에서 60%</strong>·<strong>FrontierMath Tier 4 신기록</strong>을 냈다고 정리.
+                        </p>
+                        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                            <strong>의미</strong>: OpenAI가 도메인 특화 기능을 설명하면서 <strong>외부 벤치마크 점수 + 자체 전문가 평가 체계</strong>를 함께 제시한 사례. 단, OpenAI 자체 벤치마크의 항목·평가 방법·통과 기준은 비공개.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 한계 박스 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계와 맥락:</strong> (1) <strong>OpenAI의 자체 개인 재무 벤치마크는 비공개</strong> — 평가 항목·방법·통과 기준 미공개로 외부 검증 불가. (2) <strong>미국 ChatGPT Pro 일부 사용자 한정 + Plaid 의존</strong>이라는 점에서 한국 즉시 영향은 없음. 다만 카카오뱅크·토스 등 한국 핀테크가 Plaid형 통합 계좌 액세스 API 모델을 추종할 가능성은 남아 있음. (3) 금융 도메인의 환각·잘못된 조언은 <strong>소비자 보호·투자자 보호 관점의 규제 리스크</strong>로 이어질 수 있어, OpenAI의 책임 고지와 제한 범위를 어떻게 표시할지가 다음 관전 포인트.
+                    </p>
+                </div>
+
+                <!-- 관찰 메모 (So What 미채택) -->
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                    <h3 class="text-xs font-black text-gray-700 uppercase tracking-widest mb-2">📝 관찰 메모 (So What 미채택)</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong>6~12개월 시계의 거시 신호</strong> — 본 카드는 "OpenAI가 도메인 특화로 분기"라는 <strong>거시 트렌드</strong>이며, Datumo가 30일 내에 뗄 구체적 1보가 본문에서 직접 도출되지 않음(§4-1 기준 차별성·즉시 실행 가능성 부분 미통과). 다음 트리거에서 So What을 채운다 — (a) <strong>OpenAI가 금융 벤치마크를 공개</strong>할 때, (b) <strong>카카오뱅크·토스·KB가 ChatGPT API 직결</strong>을 발표할 때, (c) <strong>Perplexity Computer 금융 에이전트</strong>가 한국에 진입할 때. 그 시점에 "Datumo의 한국어·KRW·세제 특화 금융 평가셋"이 가장 빠른 후속 카드가 됨.
+                    </p>
+                </div>
+
+                <div class="mt-5 flex flex-wrap gap-3 justify-end">
+                    <a href="https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">TechCrunch — ChatGPT 개인 재무 도구 출시 (5/15) →</a>
+                    <a href="https://siliconangle.com/2026/05/15/openai-previews-personal-finance-features-chatgpt-pro/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 underline decoration-gray-300 underline-offset-4 transition-colors">SiliconANGLE — ChatGPT Pro 개인 재무 프리뷰 (5/15) →</a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="px-8 py-6 border-t border-gray-100 text-center">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+
+    </main>
+</body>
+</html>
