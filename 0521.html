@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PO회의 - 논의 정리 및 조사 계획</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fafafa;
+    color: #1f1f1f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    line-height: 1.75;
+    font-size: 15.5px;
+    -webkit-font-smoothing: antialiased;
+  }
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 56px 48px 72px;
+    border: 1px solid #ececec;
+  }
+  header.doc-header {
+    border-bottom: 1px solid #1f1f1f;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  header.doc-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+  }
+  .meta {
+    font-size: 13px;
+    color: #6a6a6a;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .meta span { white-space: nowrap; }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 44px 0 18px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e8e8e8;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 15.5px;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    color: #2a2a2a;
+  }
+  p {
+    margin: 10px 0;
+    color: #2a2a2a;
+  }
+  ul, ol {
+    margin: 10px 0;
+    padding-left: 22px;
+  }
+  ul ul, ul ol, ol ul, ol ol {
+    margin: 6px 0;
+  }
+  li {
+    margin-bottom: 6px;
+    color: #2a2a2a;
+  }
+  a {
+    color: #1f4e79;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+  a:hover {
+    color: #143655;
+  }
+  .todo {
+    color: #8a8a8a;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-left: 4px;
+  }
+  .todo-note {
+    background: #f7f6f2;
+    border-left: 3px solid #c7c2b3;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #5a5a5a;
+    font-style: italic;
+    margin: 16px 0 4px;
+  }
+  .title-note {
+    font-size: 0.78em;
+    color: #8a8a8a;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 4px;
+  }
+  .frame-block {
+    background: #fbfaf6;
+    border: 1px solid #efece2;
+    padding: 16px 20px;
+    margin: 14px 0;
+    border-radius: 3px;
+  }
+  .frame-block .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .frame-block ol {
+    margin: 4px 0 0;
+  }
+  footer.doc-footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 13px;
+    color: #8a8a8a;
+    text-align: right;
+  }
+  @media (max-width: 640px) {
+    article { padding: 32px 22px 48px; border: none; }
+    header.doc-header h1 { font-size: 21px; }
+    h2 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<article>
+
+  <header class="doc-header">
+    <h1>PO회의 - 논의 정리 및 조사 계획</h1>
+    <div class="meta">
+      <span>작성자: 이지영</span>
+      <span>일자: 2026년 5월 21일</span>
+      <span>용도: PO팀 공유</span>
+    </div>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section>
+    <h2>1. 회의록 — 제품 방향 논의</h2>
+
+    <h3>1.1 글로벌 타겟 결정</h3>
+    <p>글로벌 타겟으로 넓게 잡는다. 국내와 글로벌이 제품 측면에서 큰 차이가 없기 때문이다.</p>
+
+    <h3>1.2 우선순위: 제품 (전략·제작)</h3>
+    <ul>
+      <li>글로벌 확정. Enterprise 대상은 소거한다.</li>
+      <li>다만 제품이 확실히 정해지지 않은 현재 단계에서는, Enterprise의 요청을 선별적으로 거절하며 레슨런으로 활용할 수 있다. 단, 일정 수준의 시장성이 있고 재활용이 가능한 경우에 한한다.</li>
+    </ul>
+
+    <h3>1.3 시장성 판단 — 어떤 길을 먼저 가야 하는가 <span class="todo">(조사 예정)</span></h3>
+    <p>어떤 요청을 먼저 받아야 하는가, 어떤 길을 먼저 가야 하는가에 대한 후보:</p>
+    <ol>
+      <li>기존 가설: <b>기획자 대상 통합 Eval 플랫폼</b></li>
+      <li><b>Agent build + eval + monitoring</b>  <span class="todo"> (수요, 매출, 이들의 고충은?)</li>
+      <li><b>Safety</b> (redteaming, 가드레일, 규제, 거버넌스 등)  <span class="todo">(수요, 매출, 이들의 고충은?)</li>
+    </ol>
+
+    <h3>1.4 부가적 고민과 질문</h3>
+    <ul>
+      <li>기획자들이 과연 진짜 필요로 하는가? <span class="todo">(조사 예정)</span></li>
+      <li>빅테크 및 대기업과 연동 가능한 포지션은 무엇인가? <span class="todo">(조사 예정)</span></li>
+      <li>이 시장에서 잘 나가는 기업은 무엇을 하고 있는가? <span class="todo">(조사 예정)</span></li>
+    </ul>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section>
+    <h2>2. 부가적 인사이트</h2>
+
+    <h3>2.1 의사결정의 신중함에 대한 관찰</h3>
+    <p>"잘 나가는 제품을 만들고 싶다"는 마음으로 신중함으로 인해 선택이 길어지고 기능이 산발적으로 분산되며, 정보가 부족한 상태에서 선택의 어려움이 누적되는 순환이 발생할 수 있다고 본다.</p>
+
+    <h3>2.2 기획자들이 진짜 필요로 하는가</h3>
+    <p>전례 없는 시도를 하려다 보니 레퍼런스가 부족하다. 다만 다음의 신호들이 확인된다.</p>
+    <ul>
+      <li><a href="https://www.eleken.co/blog-posts/ai-product-manager">Eleken</a>에서 AI PM 수가 많다는 점을 명시하고 있다.</li>
+      <li>Lenny's Newsletter의 <a href="https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete">Beyond vibe checks: A PM's complete guide to evals</a>에서 PM의 평가 중요성과 PM AI 평가 강의를 소개하고 있다.</li>
+      <li>해당 PM AI 평가 강의는 <a href="https://maven.com/p/e55ece/mastering-evals-as-an-ai-product-manager?utm_campaign=MzgyNTQ0&amp;utm_medium=ll_share_link&amp;utm_source=instructor">Mastering Evals as an AI Product Manager</a> — Arize로 무료 강의 진행 중이다.</li>
+    </ul>
+
+    <p>구체적인 수요 파악이 어려운 상황을 가정하여 다음과 같이 도식을 정리할 수 있다.</p>
+    <ol>
+      <li>필요하다.</li>
+      <li>필요없다.
+        <ul>
+          <li>2-1. 필요하게 만든다.
+            <ul>
+              <li>2-1-1. 책임·명분을 제공한다.</li>
+              <li>2-1-2. 수요 있는 기능을 제공한다 (인터뷰, 수요 조사 등).</li>
+            </ul>
+          </li>
+          <li>2-2. 필요하다고 한다.
+            <ul>
+              <li>2-2-1. 교육 과정에 포함시킨다. 당연한 절차인 것처럼 "익숙하게 만든다." 예시: PM 부트캠프 커리큘럼 추가 (레퍼런스 확인됨).</li>
+              <li>2-2-2. 당위성을 부여한다 ("해야만 한다"). 규제 관련 언급을 통해 마케팅에 활용한다. 현업자들이 당장 필요하지 않다고 판단한다면, 예비 PM에게 인식을 심어주는 방향으로 접근할 수 있다. 이 경우 즉시 타겟 우선순위에서는 제외되지만, 작은 모션으로 좋은 성과를 낼 수 있을 것으로 보인다.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>2.3 각 후보에 대한 평가 프레임</h3>
+    <p>다음 세 후보 각각에 대해 평가 항목을 적용한다.</p>
+
+    <div class="frame-block">
+      <span class="label">대상</span>
+      <ol>
+        <li>기존 가설 — 기획자 대상 통합 Eval 플랫폼</li>
+        <li>Agent build + eval + monitoring</li>
+        <li>Safety (redteaming, 가드레일, 규제, 거버넌스 등)</li>
+      </ol>
+    </div>
+
+    <div class="frame-block">
+      <span class="label">평가 항목</span>
+      <ul>
+        <li>2-필터
+          <ol>
+            <li>있으면 왜 좋은가</li>
+            <li>없으면 어떤 리스크가 발생하는가</li>
+          </ol>
+        </li>
+        <li>4-필터
+          <ol>
+            <li>돈이 되는가</li>
+            <li>돈이 될 가능성이 있는가</li>
+            <li>다른 기업들도 하고 있는가</li>
+            <li>오래 할 수 있는가</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+
+    <p class="todo-note">각 후보별 2-필터·4-필터 적용 결과 (조사 예정)</p>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section>
+    <h2>3. 결론 — 지영이라면 어떻게 했을까? (조심스럽게 말하며)</span></h2>
+    <ol>
+      <li><b>기획자 대상</b>: 현재 갖춰진 기능을 가시성 있고 컴팩트한 형태로 제공한다. 빠르게 만들어 무료로 먼저 배포한다. 새로운 영역을 다룬다는 점의 이점은 선제 진입에 있으며, 홍보 측면에서 강점을 가지기 때문이다. 현업자에게는 홍보 용도로, 예비 PM에게는 교육 용도로 활용된다. 이 단계는 PM의 AI Eval 필요성에 대한 시장 인식 조성 단계로 정의한다.</li>
+      <li><b>Pro plan</b>: 고급(full) 기능은 Pro plan으로 제공한다. 사용자 피드백을 기반으로 기능을 추가하며, 개발이 완성되는 대로 순차적으로 반영한다.</li>
+      <li><b>Enterprise 대응</b>: Enterprise 요청이 발생할 경우 취사선택한다.</li>
+      <li><b>글로벌 파트너십</b>: 글로벌 Enterprise와의 파트너십을 지속적으로 모색한다.</li>
+    </ol>
+  </section>
+
+  <footer class="doc-footer">
+    이지영 · Datumo Eval PO팀
+  </footer>
+
+</article>
+</body>
+</html>
