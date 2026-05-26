@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 016</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <!-- HEADER -->
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 016</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.26 (화)</span>
+                </div>
+            </div>
+            <!-- 오늘의 한 줄 -->
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <ul class="space-y-3 text-sm text-gray-800 leading-relaxed">
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">①</span><span><strong>5/21 트럼프 백악관</strong>이 'AI 사전평가 행정명령'을 서명 몇 시간 전 전격 보류. 프런티어 모델에 대한 <strong>공개 전 자발적 정부 검토·협력</strong> 체계였으나, 막판에 <strong>Musk·Zuckerberg·Sacks 등 업계 인사의 접촉</strong>이 영향을 줬다는 보도가 나왔다(당사자 측 일부는 부인).</span></li>
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">②</span><span><strong>5/20 Microsoft</strong>가 에이전트 안전 테스트 오픈소스 2종 <strong>RAMPART</strong>(Pytest 네이티브 안전 시험)·<strong>Clarity</strong>(설계 단계 안전 질문 자동화)를 GitHub에 공개. <em>"AI 안전은 분기 점검이 아니라 연속 엔지니어링 규율"</em>.</span></li>
+                </ul>
+            </div>
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리(5고정)</strong>: Foundation Model · Competitor Watch · Enterprise Eval · Korea Watch · Methodology/Research &nbsp; · &nbsp;
+                <strong>Confidence</strong>: <span class="star3">★★★ 직접 발표·문서 확인</span> / <span class="star2">★★ 해석 보도 다중 교차</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * 본 호는 Issue 015(2026.05.26 오전·연휴 통합호) 이후의 미국 정책·빅테크 안전 도구 두 영역을 보강한다.
+            </div>
+        </header>
+        <div class="px-8 py-2">
+            <!-- =================== CARD 1: Trump AI EO 보류 =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Korea/US Policy</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★</span>
+                    <span class="ml-auto text-xs"><span class="star2">★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    트럼프 5/21 'AI 사전평가 EO' 서명 몇 시간 전 전격 보류
+                </h2>
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        트럼프가 <strong class="text-white">5/21(목) 오후</strong> 서명 예정이던 AI 사전평가·사이버보안 행정명령을 <strong class="text-white">몇 시간 전 보류</strong>했다. 막판에 <strong class="text-white">Musk·Zuckerberg·Sacks 등 업계 인사의 접촉</strong>이 영향을 줬다는 보도가 나왔으나, 당사자 측은 일부 부인.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        핵심 질문은 <strong>"미국 정부가 프런티어 AI 모델을 공개 전에 들여다볼 권한을 가질 것인가"</strong>다. 명령안은 기업이 강력한 모델을 공개하기 전 정부와 <strong>자발적으로 협력해 보안·국가안보 위험을 검토</strong>하는 틀이다 — 라이선스나 출시 승인제가 아니라 회사가 합의해야 정부가 들여다보는 구조. 미국엔 이미 NIST/CAISI 중심의 자발적 평가 협력이 있었고, 이번 명령안은 그 방식을 행정명령 단위로 공식화하려 한 시도로 읽힌다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        명령이 서명 직전 멈추면서 미국 연방 차원의 AI 사전평가 논의는 속도 조절 국면에 들어갔다. 다만 매체별로 보류·취소·철회 표현이 엇갈리는 만큼, 완전 폐기인지 수정 후 재추진인지는 단정하기 어렵다. Semafor는 Musk·Zuckerberg·Sacks가 백악관 가속주의 진영(National Economic Council 등)에 호소해 막판 보류에 영향을 줬다고 보도했다. 다만 <strong>Musk는 X에 "내가 아니다"라고 반박</strong>했고, <strong>Meta는 "Zuckerberg는 명령 철회 후에 트럼프와 통화했다"고 부인</strong>해 당사자 측 설명은 엇갈린다(Manila Times/AFP).
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-3">
+                        <em>용어 풀이 — <strong>행정명령(EO)</strong>(대통령이 의회 없이 발하는 행정 지시), <strong>사전평가</strong>(모델 공개 전에 정부·외부 기관이 위험 능력을 검증 · 강제·자발 여부와 적용 범위는 제도마다 다름), <strong>CAISI</strong>(NIST 산하 미국 AI 표준·평가 센터 · 명령안의 평가 라인 1차 후보로 NBC 언급), <strong>가속주의</strong>(AI 발전 속도를 늦추지 말자는 입장 · Musk·Sacks·a16z 등이 대표).</em>
+                    </p>
+                </div>
+                <!-- 표 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 핵심 사실</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/3">항목</th>
+                                    <th class="px-4 py-2.5">내용 (출처)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">서명 예정 → 보류</td>
+                                    <td class="px-4 py-2.5"><strong>5/21(목) 오후</strong> 서명 예정 → 같은 날 몇 시간 전 보류 <span class="text-gray-500">(NBC)</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">명령 2개 트랙</td>
+                                    <td class="px-4 py-2.5">①사이버보안 ②<strong>프런티어 AI 사전평가</strong> <span class="text-gray-500">(NBC, Manila Times)</span></td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">사전평가 작동</td>
+                                    <td class="px-4 py-2.5">공개 전 정부가 자발적으로 접근·검토할 수 있는 협력 프레임워크 <span class="text-gray-500">(Manila Times, AFP)</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">관여 기관</td>
+                                    <td class="px-4 py-2.5">CISA · ONCD(국가사이버국장실) · OSTP · CAISI/NIST/상무부 <span class="text-gray-500">(NBC)</span></td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">누가 막았나</td>
+                                    <td class="px-4 py-2.5">Musk·Zuckerberg·Sacks의 막판 접촉 영향 보도 <span class="text-gray-500">(Semafor)</span> · <strong>Musk·Meta 측 부인</strong> <span class="text-gray-500">(Manila Times/AFP)</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">트럼프의 사유</td>
+                                    <td class="px-4 py-2.5">"중국을 앞서고 있는데 그 길을 가로막고 싶지 않다" <span class="text-gray-500">(NBC)</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 인용 -->
+                <div class="mb-6">
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">"We're leading China, we're leading everybody, and I don't want to do anything that's going to get in the way of that lead. I really thought [the order] could have been a blocker."</p>
+                        <p class="text-xs text-gray-500 mt-2">— Donald Trump, 5/21 백악관 기자 코멘트 (NBC News)</p>
+                    </blockquote>
+                </div>
+                <!-- 한계 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계:</strong> 행정명령 <strong>전문은 공식 공개되지 않았다</strong> — 3사 보도 교차 확인에 의존.
+                    </p>
+                </div>
+                <!-- Datumo 의의 -->
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 의의</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        미국 연방 차원의 프런티어 모델 사전 검토 기준이 빠르게 단일 표준으로 굳어질 가능성은 일단 낮아졌다. 평가·검증 회사 입장에서는 단기적으로 국내 규제·산업별 요구사항에 맞춘 평가 체계를 선명하게 만드는 것이 중요하다. 동시에 미국 CAISI, Korea AISI, EU AI Office 등 각국 평가기관의 방향은 계속 이어지고 있으므로, 장기적으로는 <strong>국내 도메인 평가 + 국제 평가 프레임 정합성</strong>을 함께 제시할 수 있어야 한다.
+                    </p>
+                </div>
+                <!-- 출처 -->
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong> ·
+                    <a href="https://www.nbcnews.com/tech/tech-news/trump-scraps-signing-landmark-executive-order-regulating-ai-rcna346288" class="text-accent-600 hover:underline">NBC News (T1, 5/21)</a> ·
+                    <a href="https://www.semafor.com/article/05/21/2026/elon-musk-mark-zuckerberg-derail-trump-ai-order" class="text-accent-600 hover:underline">Semafor (T1, 5/21)</a> ·
+                    <a href="https://www.manilatimes.net/2026/05/23/world/who-killed-trumps-ai-order-musk-says-it-wasnt-him/2350322" class="text-accent-600 hover:underline">Manila Times/AFP (T2, 5/23)</a>
+                </div>
+            </article>
+            <!-- =================== CARD 2: Microsoft RAMPART + Clarity =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Methodology / Research</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Microsoft, 5/20 'RAMPART · Clarity' 오픈소스 공개
+                </h2>
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        Microsoft가 5/20 AI 에이전트 안전 점검 도구 2종을 <strong class="text-white">누구나 가져다 쓸 수 있게(오픈소스로)</strong> 풀었다. <strong class="text-white">RAMPART</strong>는 <em class="text-white">코드를 바꿀 때마다 자동으로 안전 시험을 돌리는</em> 도구, <strong class="text-white">Clarity</strong>는 <em class="text-white">코드를 짜기 전에 "정말 이걸 만들어도 되나" 질문을 던지는</em> 도구.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        <strong>지금까지의 'AI 안전 점검'은 이랬다 —</strong> 컨설팅 회사가 분기마다 한 번 와서 "이 AI 안전한가?"를 검사하고 빨간색 보고서를 들고 갔다. 문제는 이 사이에 코드는 매주 바뀌고, 새 기능이 들어가고, <strong>안전 문제가 생겨도 다음 분기 점검 때까지 발견되지 않았다</strong>는 것.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        <strong>Microsoft의 메시지는 정반대다 —</strong> <em>"분기 점검이 아니라, 코드를 바꿀 때마다 자동으로 돌아가는 시험으로 바꿔야 한다"</em>. 마치 자동차 공장에서 부품 하나 바꿀 때마다 충돌 테스트를 자동으로 돌리는 것처럼.
+                    </p>
+                    <h4 class="text-sm font-bold text-gray-900 mt-5 mb-2">🔧 RAMPART — "코드 바꿀 때마다 자동 안전 시험"</h4>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        개발자가 AI 에이전트 코드를 수정하면, RAMPART로 팀이 정의한 안전 시나리오를 반복 실행하고 통과/실패 신호를 CI에서 확인할 수 있다. CI 게이트로 설정하면 위험 행동이 발견된 변경사항을 병합 전에 막는 방식으로 운영할 수 있다. 예를 들어:
+                    </p>
+                    <ul class="list-disc pl-5 text-sm text-gray-800 leading-relaxed mt-2 space-y-1">
+                        <li>"외부에서 들어온 이메일에 '비밀번호 다 보내라'는 문장이 숨겨져 있어도 에이전트가 따르지 않는가?"</li>
+                        <li>"고객 데이터를 묻는 질문에 절대 새지 않는가?"</li>
+                        <li>"예전 버전엔 없던 새 위험 행동이 업데이트로 생기지 않았는가?"</li>
+                    </ul>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        LLM은 한 번 안전했다고 매번 안전하지 않다(확률적 동작). 그래서 RAMPART는 <strong>"같은 시험을 여러 번 돌려서 80% 이상 안전해야 통과"</strong> 같은 정책도 지원한다. Microsoft 내부에선 보안 연구자가 발견한 취약점 1개를 <strong>약 100개 변형으로 자동 확장하고, 약 300번 반복 검증</strong>하는 데 썼다고 밝혔다(The Register Kumar 인터뷰).
+                    </p>
+                    <h4 class="text-sm font-bold text-gray-900 mt-5 mb-2">💬 Clarity — "코드 짜기 전 '정말 이거 만들어도 되나?' 질문"</h4>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        RAMPART가 "다 만든 다음" 시험하는 도구라면, Clarity는 반대로 <strong>시작하기 전에</strong> 개발팀을 멈춰 세운다. 예를 들어 "문서 편집기에 실시간 공동 편집 기능을 추가하겠다"고 하면, Clarity는 묻는다:
+                    </p>
+                    <ul class="list-disc pl-5 text-sm text-gray-800 leading-relaxed mt-2 space-y-1">
+                        <li>"두 사람이 같은 문단을 동시에 편집하면 어떻게 처리할 건가?"</li>
+                        <li>"정말 실시간(커서·접속 표시 포함)이 필요한가, 아니면 <em>'아무도 작업물 잃지 않으면 된다'</em>가 진짜 요구사항인가?"</li>
+                    </ul>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        대화 결과는 코드와 같은 폴더(<code>.clarity-protocol/</code>)에 저장돼 동료가 리뷰할 수 있다. <strong>안전 사고의 상당수는 "무엇을 만들지를 너무 빨리 결정"한 데서 시작</strong>되기 때문에, 이 단계에서 노련한 PM·아키텍트·안전 엔지니어가 던질 법한 질문을 강제하는 게 핵심.
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-4">
+                        <em>용어 풀이 — <strong>AI 에이전트</strong>(질문에 답만 하는 챗봇과 달리 <em>실제 행동을 하는</em> AI · 이메일 보내기·코드 실행·CRM 조작 등). <strong>오픈소스</strong>(누구나 무료로 가져다 쓰고 수정할 수 있게 코드를 공개). <strong>CI 파이프라인</strong>(개발자가 코드를 올릴 때마다 자동으로 빌드·테스트가 돌아가는 시스템). <strong>크로스-프롬프트 인젝션</strong>(외부 이메일·문서·웹페이지에 숨겨진 악성 지시를 AI가 본문 처리할 때 마치 사용자의 명령처럼 따라버리는 공격).</em>
+                    </p>
+                </div>
+                <!-- 표 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 RAMPART vs. Clarity 한눈 비교</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/4">항목</th>
+                                    <th class="px-4 py-2.5">RAMPART</th>
+                                    <th class="px-4 py-2.5">Clarity</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">한 줄 정의</td>
+                                    <td class="px-4 py-2.5">다 만든 AI를 <em>자동으로 안전 시험</em></td>
+                                    <td class="px-4 py-2.5">만들기 전에 <em>안전 질문을 강제</em></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">작동 시점</td>
+                                    <td class="px-4 py-2.5">코드 수정 후 → 자동 실행</td>
+                                    <td class="px-4 py-2.5">코드 짜기 전 → 설계·기획 단계</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">주 사용자</td>
+                                    <td class="px-4 py-2.5">엔지니어·QA 팀</td>
+                                    <td class="px-4 py-2.5">PM·아키텍트·기획자</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">산출물</td>
+                                    <td class="px-4 py-2.5">통과/실패 신호 (실패 시 코드 거부 가능)</td>
+                                    <td class="px-4 py-2.5">마크다운 문서 (동료 리뷰 가능)</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">공개 위치</td>
+                                    <td class="px-4 py-2.5">github.com/microsoft/RAMPART</td>
+                                    <td class="px-4 py-2.5">github.com/microsoft/clarity-agent</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 인용 -->
+                <div class="mb-6">
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">"AI safety has to become a continuous engineering discipline rather than a periodic checkpoint, and we think the best way to make that happen is to put practical, open tools in the hands of the people doing the building."</p>
+                        <p class="text-xs text-gray-500 mt-2">— Ram Shankar Siva Kumar(Microsoft AI Red Team 창립자), Microsoft Security Blog (5/20)</p>
+                    </blockquote>
+                </div>
+                <!-- 한계 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계:</strong> (1) 공개 <strong>첫 주차</strong> — 실제 활용 사례·운영 노이즈·통합 마찰은 미검증. (2) RAMPART는 프레임워크이므로 한국어·산업별 시나리오와 평가 기준은 도입 팀이 별도로 설계해야 한다. (3) Clarity는 "안전 질문 자동 생성" 보조 도구이지 "안전 보장"이 아니다.
+                    </p>
+                </div>
+                <!-- Datumo 의의 -->
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 의의</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        빅테크가 RAMPART 같은 기본 테스트 프레임워크를 공개하면, 단순한 "우리가 테스트해드립니다"식 외부 감사만으로는 차별성이 약해질 수 있다. 반대로 Datumo가 가져갈 수 있는 가치는 더 선명해진다: <strong>(a) 한국어·한국 산업 도메인 시나리오 (b) 금융·공공·의료 등 규제 매핑 (c) 운영 데이터 기반 실패 유형 분석 (d) 트리아지와 개선 워크플로우</strong>다. 즉, 오픈소스 표면 위에 고객사가 바로 쓸 수 있는 산업별 평가 패키지를 얹는 쪽이 실질적 포지셔닝이 된다.
+                    </p>
+                </div>
+                <!-- 출처 -->
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong> ·
+                    <a href="https://www.microsoft.com/en-us/security/blog/2026/05/20/introducing-rampart-and-clarity-open-source-tools-to-bring-safety-into-agent-development-workflow/" class="text-accent-600 hover:underline">Microsoft Security Blog (T1, 5/20)</a> ·
+                    <a href="https://www.theregister.com/security/2026/05/21/microsoft-open-sources-agentic-ai-safety-tools/5243822" class="text-accent-600 hover:underline">The Register (T2, 5/21)</a>
+                </div>
+            </article>
+        </div>
+        <!-- FOOTER -->
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
