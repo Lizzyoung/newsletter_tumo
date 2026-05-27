@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 017</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <!-- HEADER -->
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 017</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.27 (수)</span>
+                </div>
+            </div>
+            <!-- 오늘의 한 줄 -->
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <p class="text-sm text-gray-800 leading-relaxed mb-3"><strong>5/22가 글로벌·한국 양쪽에서 평가·LLM 자본의 분기점이 됐다.</strong> 같은 날 두 사건이 동시에 닫혔다.</p>
+                <ul class="space-y-3 text-sm text-gray-800 leading-relaxed">
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">①</span><span><strong>글로벌</strong> — Cisco가 AI 에이전트 평가·관측 플랫폼 <strong>Galileo Technologies 인수를 공식 완료</strong>. 4/9 의향 발표 후 약 6주 만에 클로징, Splunk Observability 아래로 편입.</span></li>
+                    <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-accent-600">②</span><span><strong>한국</strong> — SK네트웍스가 업스테이지 시리즈C에 <strong>약 500억원을 추가 납입</strong>했다고 공시. 2024년 시리즈B 250억 + 2/27 콜옵션 470억 + 5/22 시리즈C 500억 = 누적 <strong>약 1,220억원·지분 12.9%</strong>. 5/26 SK네트웍스 주가 <strong>27.4% 급등</strong>, 장중 52주 신고가.</span></li>
+                </ul>
+            </div>
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리(5고정)</strong>: Foundation Model · Competitor Watch · Enterprise Eval · Korea Watch · Methodology/Research &nbsp; · &nbsp;
+                <strong>Confidence</strong>: <span class="star3">★★★ 직접 발표·1차 출처 확인</span> / <span class="star2">★★ 해석 보도 다중 교차</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * 본 호는 5/22 글로벌 평가 산업 M&amp;A 클로징 · 한국 LLM 자본 사이클 두 영역을 다룬다.
+            </div>
+        </header>
+        <div class="px-8 py-2">
+
+            <!-- =================== CARD 1: Cisco-Galileo Closing =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Competitor Watch</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Cisco, Galileo 인수 완료 — AI 평가가 Splunk Observability 포트폴리오로 들어갔다
+                </h2>
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        Cisco가 <strong class="text-white">5/22 Galileo 인수를 완료</strong>했다. Galileo의 AI 평가·가드레일·에이전트 관측 기능은 <strong class="text-white">Splunk Observability</strong> 포트폴리오에 더해지고, 인수가는 공개되지 않았다.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면 — 왜 중요한가</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        Galileo는 <em>"AI가 잘 작동하고 있는지 채점하고, 위험 응답이 사용자에게 가기 전에 막는"</em> 도구를 만드는 회사다. 지금까지 이런 'AI 평가' 도구는 별도 카테고리로 팔렸는데, Cisco는 이를 <strong>"네트워크·서버를 모니터링하는 옵저버빌리티의 일부"</strong>로 묶어버렸다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Cisco가 직접 쓴 표현이 가장 분명하다 — <em>"평가는 있으면 좋은 부속이 아니라 AI 개발의 핵심 기둥"</em>. 결과적으로 AI 평가가 옵저버빌리티 진영의 한 기능으로 들어가는 흐름이 한 단계 더 굳어졌다.
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-3">
+                        <em>용어 풀이 — <strong>Galileo Technologies</strong>(2021년 미국 설립 · 전직 Google Cloud AI · Uber AI · Apple 출신 3인 공동창업 · AI 품질 평가·실시간 가드레일·헛소리 탐지). <strong>Splunk Observability</strong>(Cisco가 2024년 인수한 SRE·모니터링 SaaS). <strong>옵저버빌리티</strong>(시스템이 지금 어떻게 작동하는지를 로그·메트릭·트레이스로 들여다보는 분야). <strong>가드레일</strong>(응답 생성 중 위험·정책 위반을 차단하는 런타임 필터).</em>
+                    </p>
+                </div>
+
+                <!-- 핵심 사실 표 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 거래 핵심 사실 — 1차 출처 기준</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/4">항목</th>
+                                    <th class="px-4 py-2.5">내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">발표 → 클로징</td>
+                                    <td class="px-4 py-2.5"><strong>4/9 의향 발표</strong> → <strong>5/22 인수 공식 완료</strong> (Cisco 블로그 본문 상단 업데이트)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">합류 위치</td>
+                                    <td class="px-4 py-2.5">Splunk Observability 포트폴리오 · 기존 AI Agent Monitoring 라인 강화</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Galileo가 다루는 범위</td>
+                                    <td class="px-4 py-2.5">프롬프트 최적화 → 모델 선택 → 평가 → 운영 모니터링 → 가드레일 (단일 플랫폼)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">사전 협력 관계</td>
+                                    <td class="px-4 py-2.5">AGNTCY 컨소시엄 (Cisco + Galileo + LangChain · 신뢰 가능한 AI 에이전트 오픈소스 아키텍처)</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">인수가</td>
+                                    <td class="px-4 py-2.5">미공개</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 인용 -->
+                <div class="mb-6">
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">"Galileo was purpose-built to solve one of the hardest and most consequential problems in AI: Trust. From day 1, its platform has given AI teams the tools to evaluate AI quality, detect AI failures before they reach users, and continuously improve AI behavior in production — turning observability from a nice-to-have into a core pillar of AI development."</p>
+                        <p class="text-xs text-gray-500 mt-2">— Kamal Hathi, SVP &amp; GM, Splunk (a Cisco company), Cisco Blogs (4/9 본문 · 5/22 클로징 업데이트)</p>
+                    </blockquote>
+                </div>
+
+                <!-- 한계 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계:</strong> 인수가·구체적 통합 일정·기존 Galileo 단독 SaaS 라인의 유지 여부는 모두 미공개. <em>"Galileo의 플랫폼·서비스는 거래 완료 시까지 독립적으로 운영"</em>이라는 Cisco 발표 외에 통합 이후 모양에 대한 정보는 없다.
+                    </p>
+                </div>
+
+                <!-- Datumo 관점 -->
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 관점에서의 맥락</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        <strong>이 거래의 신호는 단순한 M&amp;A 한 건이 아니다.</strong> Galileo는 글로벌 AI 평가 시장의 대표 독립 플레이어 중 하나였고, 그 회사가 단독 SaaS에서 <em>Splunk 옵저버빌리티의 한 기능</em>으로 들어갔다는 것은 "AI 평가가 독자 카테고리로 존재할 수 있는가"라는 질문을 시장이 직접 던진 사건이다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        독립 평가 회사 입장에서 보면 두 가지 좌표가 동시에 흔들린다. <strong>(1) 가격 좌표</strong>: 옵저버빌리티 계약에 평가가 끼워 파는 부속이 되면, 독립 평가 도구의 단가 협상력은 압박받는다. <strong>(2) 차별화 좌표</strong>: 옵저버빌리티가 잘하지 못하는 영역 — 한국어·금융·법무 같은 도메인 지식, 정부·금융 규제 매핑, RFP 산출물 형식 — 이 독립 평가 회사가 남는 자리로 더 분명히 부각된다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        한국 시장 측면에서 또 하나 — Cisco-Splunk는 한국 대기업·금융권의 인프라 모니터링 표준 중 하나다. 이 같은 흐름이 한국 RFP의 평가 항목 구성에 어떻게 반영될지(즉 <em>"옵저버빌리티 연동"</em>이 RFP 비교 항목으로 들어오는 시점)를 지켜볼 가치가 있다.
+                    </p>
+                </div>
+
+                <!-- 출처 -->
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong> ·
+                    <a href="https://blogs.cisco.com/news/cisco-announces-the-intent-to-acquire-galileo" class="text-accent-600 hover:underline">Cisco Blogs / Kamal Hathi (T1, 4/9 · 5/22 클로징 업데이트)</a> ·
+                    <a href="https://www.networkworld.com/article/4156855/cisco-to-acquire-galileo-for-ai-observability.html" class="text-accent-600 hover:underline">Network World (T2, 4/9)</a> ·
+                    <a href="https://siliconangle.com/2026/04/09/cisco-buys-galileo-strengthen-splunks-agentic-monitoring-capabilities/" class="text-accent-600 hover:underline">SiliconANGLE (T2, 4/9)</a>
+                </div>
+            </article>
+
+            <!-- =================== CARD 2: SK Networks - Upstage Series C =================== -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Korea Watch</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    SK네트웍스, 업스테이지 시리즈C 500억 납입 완료 — 누적 1,220억·지분 12.9%
+                </h2>
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        SK네트웍스가 <strong class="text-white">3/31</strong> 업스테이지 시리즈C 500억원 투자를 결의했고, <strong class="text-white">5/22</strong> 대금 납입을 완료한 것으로 보도됐다. 2024년 시리즈B, 2월 콜옵션 행사, 이번 시리즈C까지 합산하면 누적 투자액은 <strong class="text-white">약 1,220억원</strong>, 지분율은 <strong class="text-white">12.9%</strong>다. 5/26 주가는 업스테이지 투자 확대 기대감으로 <strong class="text-white">27%대 급등</strong>했다.
+                    </p>
+                </div>
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면 — 왜 중요한가</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        <strong>업스테이지</strong>는 자체 LLM <strong>솔라(Solar)</strong>를 보유한 한국 대표 LLM 스타트업(허깅페이스 'Open LLM Leaderboard' 1위 기록). <strong>SK네트웍스</strong>는 본래 종합상사·렌터카 회사지만 <em>"AI 중심 사업지주회사 전환"</em>을 공식 추진 중이며, 업스테이지 베팅은 그 전환의 핵심 자산이다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        이번 5/22 클로징은 단순 한 라운드 마감이 아니다 — 같은 흐름에서 업스테이지는 <strong>4/30 국민성장펀드 직접투자 2호 기업</strong>으로 선정돼 <strong>5,600억원</strong> 투자가 예고됐고, AMD 인스팅트 MI355 도입으로 GPU 공급망을 다변화하며, <strong>Solar LLM과 문서처리 엔진 고도화</strong> 및 정부 <strong>소버린 AI(국가 주권형 AI) 파운데이션 모델 개발</strong>을 GPU 인프라로 지원할 계획이다. 5/26 SK네트웍스 주가가 하루 만에 27% 급등한 것은 시장이 이 흐름을 <em>"AI 자회사 가치 재평가"</em>로 받아들였다는 신호다.
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-3">
+                        <em>용어 풀이 — <strong>시리즈C</strong>(시리즈B 다음 라운드 · IPO 1~3년 전 단계). <strong>콜옵션</strong>(미리 정한 가격에 추후 주식을 살 권리). <strong>솔라(Solar)</strong>(업스테이지 자체 개발 LLM). <strong>소버린 AI</strong>(국가가 자체 AI 모델·데이터·인프라를 보유해 외국 의존을 줄이는 정책 방향). <strong>국민성장펀드</strong>(2026년 출범한 한국 정부 산하 직접투자 펀드).</em>
+                    </p>
+                </div>
+
+                <!-- 표 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 SK네트웍스의 업스테이지 누적 투자 — 3단 사다리</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/5">시점</th>
+                                    <th class="px-4 py-2.5">단계</th>
+                                    <th class="px-4 py-2.5 w-1/4">금액</th>
+                                    <th class="px-4 py-2.5">의미</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">2024</td>
+                                    <td class="px-4 py-2.5">시리즈B 리드 투자</td>
+                                    <td class="px-4 py-2.5">약 250억원</td>
+                                    <td class="px-4 py-2.5">SK가 업스테이지 전략 파트너로 자리매김</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">2026.02.27</td>
+                                    <td class="px-4 py-2.5">콜옵션 행사</td>
+                                    <td class="px-4 py-2.5">약 470억원 (16만3445주)</td>
+                                    <td class="px-4 py-2.5">사전 합의 가격에 추가 매집</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">2026.05.22</td>
+                                    <td class="px-4 py-2.5"><strong>시리즈C 납입 완료</strong><br><span class="text-xs text-gray-500">3/31 이사회 결의 → 5/22 납입 완료 보도</span></td>
+                                    <td class="px-4 py-2.5">약 500억원 (10만3054주)</td>
+                                    <td class="px-4 py-2.5">3/31 당시 취득 예정일은 5/29로 제시됐으나, 최신 보도 기준 5/22 납입 완료로 정리</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">합산</td>
+                                    <td class="px-4 py-2.5"><strong>2년 사이 3단 사다리</strong></td>
+                                    <td class="px-4 py-2.5"><strong>약 1,220억원</strong></td>
+                                    <td class="px-4 py-2.5">지분 <strong>12.9%(42만8647주)</strong></td>
+                                </tr>
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">2026.05.26</td>
+                                    <td class="px-4 py-2.5">주가 반응</td>
+                                    <td class="px-4 py-2.5">+27.4%, 52주 신고가</td>
+                                    <td class="px-4 py-2.5">장중 1만920원, 1만700원 마감</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 인용 -->
+                <div class="mb-6">
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">"SK네트웍스는 2024년 업스테이지 시리즈B 라운드 리드 투자자로 참여한 이후 올해 들어 콜옵션 행사와 시리즈C 투자 참여 등을 통해 지분율을 12.9%까지 확대했다. 이에 따라 올해 2분기 업스테이지 관련 평가차익 등이 발생할 수 있을 것."</p>
+                        <p class="text-xs text-gray-500 mt-2">— 이상헌 iM증권 연구원, 아주경제 (5/26)</p>
+                    </blockquote>
+                </div>
+
+                <!-- 한계 -->
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>한계·맥락:</strong> 업스테이지는 <strong>2025년 매출 139억원·당기순손실 363억700만원</strong>으로 아직 매출보다 성장 기대가 크게 반영된 회사다. 3/31 공시·보도 당시 취득 예정일은 5/29로 제시됐으나, 5/26 보도에서는 5/22 대금 납입 완료로 정리됐다. 시리즈C 전체 규모·다른 참여사 명단·정부 프로젝트 적용 시점·계약 규모는 모두 미공개다. 5/26 주가 급등도 1일 반응이므로, 지속 여부는 분기 실적·평가차익 인식 여부를 함께 봐야 한다.
+                    </p>
+                </div>
+
+                <!-- Datumo 관점 -->
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 관점에서의 맥락</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        <strong>이 거래의 신호는 "한국 LLM 시장이 자본 단계에서 매출·배포 단계로 넘어가는 분기점에 도달했다"는 것이다.</strong> 업스테이지 5,600억원(국민성장펀드) + SK네트웍스 1,220억원이 같은 사이클에서 동시에 흐르고, 그 끝에는 정부 소버린 AI 프로젝트와 SK그룹 전사 AI 도입이라는 실수요가 있다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        평가 회사 입장에서 의미 있는 변화는 두 가지다. <strong>(1) 평가 대상의 다극화</strong> — 그동안 한국 기업·정부의 LLM 선택지가 OpenAI·Anthropic·Google 위주였다면, 솔라가 본격 배포 단계에 들어서면 <em>"국내 모델과 글로벌 모델을 같은 기준으로 비교한 평가 리포트"</em>가 RFP의 표준 첨부물로 자리잡을 가능성이 높다. <strong>(2) 자본 흐름과 평가 수요의 연동</strong> — 정부·민간 대규모 자본이 한국 LLM에 들어오는 만큼, 그 자본이 도달하는 도입처(금융·정부·대기업)에서 검증·평가 산출물을 요구하는 RFP 양이 함께 증가하는 흐름을 추적할 가치가 있다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Issue 010(5/18)의 다투모 이밸 시중은행 도입 보도와 함께 보면 한 그림이 보인다 — <em>한국 LLM이 본격 깔리는 라인과, 한국 평가 회사가 본격 깔리는 라인이 같은 시기에 가동했다.</em> 두 라인이 어디서 만나는지가 향후 1~2분기 RFP 흐름을 결정한다.
+                    </p>
+                </div>
+
+                <!-- 출처 -->
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong> ·
+                    <a href="https://www.ajunews.com/view/20260526143824602" class="text-accent-600 hover:underline">아주경제 (T1·5/22 납입 완료 공시, 5/26)</a> ·
+                    <a href="https://biz.heraldcorp.com/article/10706078" class="text-accent-600 hover:underline">헤럴드경제 (T1·이사회 결의 공시, 3/31)</a> ·
+                    <a href="https://www.yna.co.kr/view/AKR20260502045100002" class="text-accent-600 hover:underline">연합뉴스 (T1·국민성장펀드 직접투자, 5/2)</a> ·
+                    <a href="https://www.amd.com/en/newsroom/press-releases/2026-3-18-amd-and-upstage-expand-strategic-collaboratio.html" class="text-accent-600 hover:underline">AMD 공식 보도자료 (T1·MI355·Solar·소버린 AI, 3/18)</a>
+                </div>
+            </article>
+
+        </div>
+        <!-- FOOTER -->
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
