@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 018</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        safe: { 50: '#ECFDF5', 100: '#D1FAE5', 600: '#059669', 700: '#047857' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 760px; margin: 0 auto; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .body-text { font-size: 0.95rem; line-height: 1.85; color: #374151; }
+        .body-text strong { color: #111827; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+        code { background: #F3F4F6; padding: 0.1rem 0.25rem; border-radius: 0.25rem; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+
+        <!-- HEADER -->
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 018</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.28 (목)</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <p class="text-sm text-gray-800 leading-relaxed">
+                    <strong>OpenAI가 5/27 서울에서 ‘한국 사이버 액션 플랜’을 발표했다.</strong> 한국은 일본과 함께 미국·캐나다에 이어 OpenAI의 정부·공공기관용 사이버 신뢰 접근 트랙(<strong>GTAC</strong>)에 합류했고, 참여 기관은 <strong>GPT-5.5-Cyber</strong> 등 OpenAI의 사이버 특화 모델을 제한적으로 활용할 수 있게 된다. 한국 측 실무 운영은 <strong>KISA</strong>가 맡는 것으로 보도됐다.
+                </p>
+            </div>
+
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리(5고정)</strong>: Foundation Model · Competitor Watch · Enterprise Eval · Korea Watch · Methodology/Research &nbsp; · &nbsp;
+                <strong>Confidence</strong>: <span class="star2">★★ 공식 발표 현장 보도 교차 + OpenAI 공식 Daybreak/TAC 문서 확인</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * 본 호는 단일 카드. Korea-specific 세부사항은 OpenAI 현장 브리핑 보도 기반이며, Daybreak·TAC·GPT-5.5-Cyber 구조는 OpenAI 공식 문서로 교차 확인했다.
+            </div>
+        </header>
+
+        <div class="px-8 py-2">
+            <article class="py-10">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Korea Watch</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Cyber Eval Standard</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★</span>
+                    <span class="ml-auto text-xs"><span class="star2">★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    OpenAI, 5/27 서울에서 ‘한국 사이버 액션 플랜’ 발표<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— 한국·일본, 미국·캐나다에 이어 GTAC 아시아 첫 참여</span>
+                </h2>
+
+                <!-- 한 줄 요약 -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        OpenAI는 5/27 서울 기자간담회에서 한국 정부·공공기관·기업이 OpenAI의 사이버 방어 프로그램에 참여하는 <strong class="text-white">Korea Cyber Action Plan</strong>을 발표했다. 핵심은 한국이 일본과 함께 OpenAI의 정부·공공기관용 사이버 신뢰 접근 트랙인 <strong class="text-white">GTAC</strong>에 합류하고, KISA가 한국 내 실무 운영을 맡는다는 점이다.
+                    </p>
+                </div>
+
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="body-text">
+                        OpenAI의 <strong>Daybreak</strong>는 사이버 방어자가 취약점 탐지, 패치 검증, 위협 모델링, 보안 코드 리뷰를 더 빠르게 수행하도록 돕는 사이버 보안 이니셔티브다. OpenAI 공식 문서 기준으로 Daybreak는 GPT-5.5, GPT-5.5 with Trusted Access for Cyber, GPT-5.5-Cyber처럼 접근 수준을 나눠 운영한다.
+                    </p>
+                    <p class="body-text mt-3">
+                        이번 발표의 한국적 의미는 “모델 공개”보다 <strong>접근 권한의 제도화</strong>에 있다. GPT-5.5-Cyber는 일반 공개 모델이 아니라, 검증된 방어자와 기관이 승인된 환경에서 쓰는 제한 접근 모델이다. 한국 기관이 GTAC에 합류하면 공공 사이버 방어 업무에서 OpenAI의 사이버 특화 모델을 활용할 통로가 열린다.
+                    </p>
+                    <p class="body-text mt-3">
+                        다만 “한국 정부 전체가 즉시 GPT-5.5-Cyber를 쓴다”로 읽으면 과하다. 실제 접근 대상, 승인 절차, 예산, 사용 범위, 데이터 처리 조건은 아직 공개되지 않았다. 현재 확인된 것은 <strong>OpenAI 측 발표와 현장 브리핑 보도 기준의 참여 방향</strong>이다.
+                    </p>
+                </div>
+
+                <!-- 핵심 사실 -->
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 확인된 핵심 사실</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/4">항목</th>
+                                    <th class="px-4 py-2.5">내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">발표</td>
+                                    <td class="px-4 py-2.5">2026/05/27 서울 JW 메리어트 호텔 기자간담회에서 OpenAI CSO Jason Kwon이 Korea Cyber Action Plan 발표.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">정부 트랙</td>
+                                    <td class="px-4 py-2.5">한국·일본이 미국·캐나다에 이어 OpenAI의 정부·공공기관용 사이버 신뢰 접근 트랙(GTAC)에 합류. 아시아 첫 사례로 보도됨.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">모델 접근</td>
+                                    <td class="px-4 py-2.5">참여 기관은 GPT-5.5-Cyber 등 사이버 특화 모델 접근 권한을 얻는 것으로 보도. OpenAI 공식 문서상 GPT-5.5-Cyber는 전문·승인 워크플로우를 위한 제한 프리뷰 모델.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">한국 운영</td>
+                                    <td class="px-4 py-2.5">KISA가 한국 내 프로그램 실무 운영을 맡는 것으로 보도. 다만 부처 간 역할 분담, 기관별 권한 등급, 계약 구조는 미공개.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">민간 트랙</td>
+                                    <td class="px-4 py-2.5">OpenAI는 한국 주요 기업과 민간용 TAC 확대를 논의 중이라고 밝혔다. 참여 기업명·규모·요금 조건은 공개되지 않음.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">미래 모델</td>
+                                    <td class="px-4 py-2.5">Kwon CSO는 향후 GPT-5.6·GPT-6 등 더 최신 사이버 역량도 신뢰된 방어자에게 빠르게 제공하는 방향을 언급한 것으로 보도됨.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 왜 중요한가 -->
+                <div class="bg-safe-50 border border-safe-100 rounded-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-safe-700 uppercase mb-2 block">✅ 왜 중요한가</span>
+                    <ul class="text-sm text-gray-800 leading-relaxed space-y-2 list-disc pl-5">
+                        <li><strong>공공 사이버 보안 AI 도입의 기준점이 생긴다.</strong> 공공기관이 사이버 특화 모델을 도입할 때 “모델 성능”뿐 아니라 승인 절차, 사용 통제, 로그·감사, 데이터 처리 조건까지 함께 물을 가능성이 커진다.</li>
+                        <li><strong>평가 기준이 모델 중심에서 워크플로우 중심으로 이동한다.</strong> OpenAI 공식 Daybreak 문서는 취약점 탐지, 패치 검증, 감사 가능한 증거, 개발 루프 내 보안 적용을 강조한다. 평가도 단순 정답률보다 “방어 업무를 실제로 얼마나 안전하게 수행했는가”로 옮겨간다.</li>
+                        <li><strong>Anthropic Glasswing과 비교 구도가 만들어진다.</strong> 한국이 OpenAI GTAC에 들어가면서, 향후 공공·금융권은 OpenAI 계열과 Anthropic 계열의 사이버 모델을 같은 기준으로 비교해야 하는 상황을 맞을 수 있다.</li>
+                    </ul>
+                </div>
+
+                <!-- 한계 -->
+                <div class="bg-gray-50 rounded-lg p-5 mb-6">
+                    <span class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-2">⚠️ 한계와 표현 주의</span>
+                    <ul class="text-xs text-gray-700 leading-relaxed space-y-2 list-disc pl-5">
+                        <li><strong>GTAC의 정확한 영문 풀이는 매체별로 다르게 표기됐다.</strong> 본문에서는 ‘정부·공공기관용 사이버 신뢰 접근 트랙’으로 풀어 설명했다.</li>
+                        <li><strong>OpenAI 공식 영문 사이트에는 본 호 작성 시점 기준 별도 Korea Cyber Action Plan 포스트가 확인되지 않았다.</strong> Korea-specific 세부 내용은 현장 브리핑 보도에 의존한다.</li>
+                        <li><strong>GPT-5.5-Cyber의 한국 내 실제 사용 범위·기관 명단·예산·성능 메트릭은 미공개다.</strong> “접근권 부여”와 “즉시 전면 도입”은 구분해야 한다.</li>
+                        <li><strong>KISA가 실무 운영을 맡는다는 보도는 확인되지만, KISA가 모든 평가 기준을 단독으로 정한다는 의미는 아니다.</strong> 과기정통부·국정원·K-AISI 등과의 역할 분담은 추가 확인이 필요하다.</li>
+                    </ul>
+                </div>
+
+                <!-- Datumo -->
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 관점에서의 맥락</span>
+                    <p class="body-text">
+                        이번 발표의 핵심은 한국 공공기관이 사이버 특화 AI 모델을 다루는 과정에서 <strong>“승인된 접근, 안전한 사용, 검증 가능한 산출물”</strong>을 요구하게 될 가능성이 커졌다는 점이다. Datumo 입장에서는 단순 모델 성능 평가보다, 공공·금융권이 바로 쓸 수 있는 <strong>사이버 AI 평가 패키지</strong>를 먼저 정리하는 것이 중요하다.
+                    </p>
+                    <p class="body-text mt-3">
+                        우선순위는 두 가지다. 첫째, KISA·과기정통부의 AI 보안 요구사항과 Datumo 평가 산출물을 연결한 <strong>매핑표</strong>를 준비해야 한다. KISA와 과기정통부가 발간한 AI 보안 안내서는 개발자·서비스 제공자·이용자 관점의 보안 요구사항을 제시하고 있어, 공공 RFP에서 참조될 가능성이 높다.
+                    </p>
+                    <p class="body-text mt-3">
+                        둘째, OpenAI GPT-5.5-Cyber 계열과 Anthropic Glasswing/Mythos 계열, 국내 보안 모델을 같은 기준으로 비교할 수 있는 <strong>벤더 중립형 평가 리포트</strong>가 필요하다. 앞으로 고객이 묻는 질문은 “어느 모델이 더 똑똑한가”가 아니라 “우리 조직의 보안 업무에서 어떤 모델을, 어떤 통제 아래, 어떤 근거로 써도 되는가”가 될 가능성이 크다.
+                    </p>
+                    <p class="body-text mt-3">
+                        따라서 Datumo의 포지션은 <strong>한국 공공·금융 도메인에 맞는 사이버 AI 검증 레이어</strong>다. 모델 접근권이 열릴수록 평가 회사의 역할은 줄어드는 것이 아니라, 오히려 도입 전후의 리스크를 설명하고 감사 가능한 산출물로 남기는 쪽에서 더 중요해진다.
+                    </p>
+                </div>
+
+                <!-- 출처 -->
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-5">
+                    <strong class="text-gray-700">출처 · 직접 확인한 링크 중심</strong><br>
+                    <a href="https://openai.com/daybreak/" class="text-accent-600 hover:underline">OpenAI Daybreak 공식 페이지</a> ·
+                    <a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/" class="text-accent-600 hover:underline">OpenAI TAC/GPT-5.5-Cyber 공식 설명</a> ·
+                    <a href="https://zdnet.co.kr/view/?no=20260527113016" class="text-accent-600 hover:underline">ZDNet Korea</a> ·
+                    <a href="https://www.koreatimes.co.kr/amp/business/tech-science/20260527/openai-includes-korea-in-cybersecurity-program" class="text-accent-600 hover:underline">Korea Times</a> ·
+                    <a href="https://www.digitaltoday.co.kr/en/view/58646/openai-cso-says-gtac-broader-than-anthropics-glasswing-confirms-south-korea-japan-as-partners" class="text-accent-600 hover:underline">DigitalToday EN</a> ·
+                    <a href="https://www.kisa.or.kr/2060204/form?page=1&postSeq=19" class="text-accent-600 hover:underline">KISA AI 보안 안내서</a>
+                </div>
+            </article>
+        </div>
+
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
