@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 019</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+        code { font-size: 0.92em; background: #F3F4F6; color: #1F2937; padding: 0.1rem 0.32rem; border-radius: 0.3rem; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 019</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.05.29 (금)</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <ul class="space-y-3 text-sm text-gray-800 leading-relaxed">
+                    <li class="flex gap-3">
+                        <span class="flex-shrink-0 font-bold text-accent-600">①</span>
+                        <span><strong>Anthropic은 5/28 Claude Opus 4.8을 출시</strong>하고, Claude Code가 한 세션에서 수십~수백 개 서브에이전트를 병렬 운영하는 <strong>Dynamic Workflows</strong>를 research preview로 공개했다.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="flex-shrink-0 font-bold text-accent-600">②</span>
+                        <span><strong>Claude Code Security Guidance</strong>는 코드 작성 중 위험 패턴과 변경분을 검토하는 공식 플러그인이다. 전 플랜에서 쓸 수 있지만, <strong>모델 기반 검토는 별도 사용량을 소비</strong>하며 보안 검토 전체를 대체하지 않는다.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리(5고정)</strong>: Foundation Model · Competitor Watch · Enterprise Eval · Korea Watch · Methodology/Research &nbsp; · &nbsp;
+                <strong>Confidence</strong>: <span class="star3">★★★ 공식 발표·공식 문서 확인</span> / <span class="star2">★★ 회사 주장·보도 기반 수치 포함</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * 본 호는 Anthropic의 모델 성능 고도화와 개발 단계 보안 검토 기능을 함께 보며, 확인된 제품 사실과 Datumo 해석을 분리해 작성했다.
+            </div>
+        </header>
+
+        <div class="px-8 py-2">
+            <!-- CARD 1 -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Foundation Model</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Methodology / Research</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Anthropic, Claude Opus 4.8 출시<br class="hidden sm:block"> — 장기 실행 에이전트와 병렬 워크플로우를 전면에
+                </h2>
+
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        Anthropic은 <strong class="text-white">5/28 Claude Opus 4.8</strong>을 기존 Opus 4.7과 같은 표준 가격으로 공개했고, Claude Code가 큰 작업을 병렬 서브에이전트로 나눠 수행·검증하는 <strong class="text-white">Dynamic Workflows</strong>를 함께 선보였다.
+                    </p>
+                </div>
+
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        이번 발표의 핵심은 “더 똑똑한 채팅 모델”보다 <strong>더 오래, 더 큰 일을 맡길 수 있는 코딩 에이전트</strong>다. Anthropic은 Opus 4.8이 전작보다 코딩·에이전트 작업 전반에서 개선됐다고 설명했고, 모델이 작성한 코드의 결함을 지적하지 않고 넘기는 비율도 <strong>Opus 4.7 대비 약 4배 낮아졌다</strong>고 밝혔다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Dynamic Workflows는 Claude가 작업을 계획한 뒤 한 세션에서 <strong>수십~수백 개의 병렬 서브에이전트</strong>를 실행하고, 결과를 검증한 뒤 하나의 답으로 정리하게 하는 기능이다. 연구 프리뷰 단계이며, 일반 Claude Code 세션보다 사용량이 크게 늘 수 있다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 공식 발표에서 확인되는 핵심 사실</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/3">항목</th>
+                                    <th class="px-4 py-2.5">확인된 내용</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">출시·가격</td>
+                                    <td class="px-4 py-2.5">5/28 출시. 표준 사용료는 Opus 4.7과 동일한 입력 $5 / 출력 $25 per 1M tokens. Fast mode는 입력 $10 / 출력 $50.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">품질·정렬</td>
+                                    <td class="px-4 py-2.5">Anthropic은 작성 코드의 결함을 지적 없이 통과시키는 비율이 전작 대비 약 4배 낮아졌다고 발표.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Dynamic Workflows</td>
+                                    <td class="px-4 py-2.5">Claude Code에서 큰 작업을 수십~수백 개 병렬 서브에이전트로 나눠 수행하고, 결과를 검증·통합하는 research preview 기능.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">Dynamic Workflows 제공 범위</td>
+                                    <td class="px-4 py-2.5">Opus 4.8 모델 자체는 전 채널에 즉시 제공. <strong>Dynamic Workflows는</strong> Claude Code CLI·Desktop·VS Code extension의 Max·Team·Enterprise(관리자 활성화 필요 시) 플랜과 API·Amazon Bedrock·Vertex AI·Microsoft Foundry에서 research preview로 제공.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">주의점</td>
+                                    <td class="px-4 py-2.5">Dynamic Workflows는 일반 Claude Code 세션보다 토큰 사용량이 유의미하게 늘 수 있다고 Anthropic이 명시.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>정확도 주의:</strong> 초안의 세부 벤치마크 순위·타사 대비 우위·“최대 1,000개 서브에이전트” 표현은 본문에서 제외했다. 공식 공개 글에서 직접 확인되는 설명은 <strong>성능 개선</strong>과 <strong>수십~수백 개 병렬 서브에이전트</strong>이며, 벤치마크가 실제 고객 업무 성능을 그대로 보장하지는 않는다.
+                    </p>
+                </div>
+
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 관점에서의 맥락</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        Opus 4.8보다 더 중요한 변화는 <strong>평가 단위가 한 번의 답변에서 장기 실행 워크플로우로 넓어진다는 점</strong>이다. 수십~수백 개 서브에이전트가 작업을 나누고 다시 합치는 환경에서는 최종 정답률만으로 품질을 설명하기 어렵다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        글로벌 평가 인프라를 지향하는 Datumo라면, 모델 단위 성능표를 넘어 <strong>계획 수립, 작업 위임, 중간 검증, 결과 병합, 실패 전파, 비용·지연</strong>을 함께 측정하는 agent workflow eval로 확장할 필요가 있다. 특정 모델에 종속되지 않고 여러 에이전트 스택을 같은 기준으로 비교할 수 있다는 점이 독립 평가사의 차별점이 된다.
+                    </p>
+                </div>
+
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong> ·
+                    <a href="https://www.anthropic.com/news/claude-opus-4-8" class="text-accent-600 hover:underline">Anthropic 공식 발표 (5/28)</a> ·
+                    <a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" class="text-accent-600 hover:underline">Claude 공식 블로그: Dynamic Workflows (5/28)</a> ·
+                    <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" class="text-accent-600 hover:underline">TechCrunch (5/28)</a>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Competitor Watch</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★</span>
+                    <span class="ml-auto text-xs"><span class="star2">★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Claude Code Security Guidance<br class="hidden sm:block"> — 코드 작성 중 보안 검토를 기본 흐름으로
+                </h2>
+
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        Anthropic의 <strong class="text-white">Security Guidance</strong> 플러그인은 Claude가 작성하는 코드를 편집 시점·턴 종료 시점·Claude가 수행하는 커밋/푸시 시점에 검토한다. <strong class="text-white">전 플랜에서 사용 가능</strong>하지만, 모델 기반 검토는 일반 요청처럼 사용량을 소비한다.
+                    </p>
+                </div>
+
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        Claude Code가 코드를 만든 뒤 나중에 별도 검사를 기다리는 대신, <strong>코드를 작성하는 세션 안에서 위험 신호를 먼저 잡고 수정하도록 돕는 플러그인</strong>이다. 파일 편집 직후에는 위험 함수나 DOM injection 같은 패턴을 빠르게 찾고, 턴 종료 단계에서는 별도 Claude 검토가 <strong>변경된 git diff</strong>를 살피며, Claude가 커밋·푸시하는 단계에서는 <strong>주변 코드·sanitizer·관련 파일까지 읽는 더 깊은 검토</strong>가 이뤄진다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        다만 이 기능은 보안 승인 게이트가 아니다. 공식 문서는 플러그인이 <strong>쓰기나 커밋을 차단하지 않으며</strong>, 놓치는 취약점이 있을 수 있으므로 정적 분석·의존성 스캔·CI 정책과 함께 써야 한다고 명시한다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📊 작동 구조와 비용 — 공식 문서 기준</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2.5 w-1/3">시점</th>
+                                    <th class="px-4 py-2.5">무엇을 하는가</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">파일 편집 시</td>
+                                    <td class="px-4 py-2.5">모델 호출 없이 위험 패턴을 매칭. <code>eval()</code>, unsafe deserialization, DOM injection 등 예시가 공식 문서에 명시됨. 추가 사용 비용 없음.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">각 턴 종료 후</td>
+                                    <td class="px-4 py-2.5">변경된 git diff를 별도의 Claude 리뷰가 검토. authorization bypass, IDOR, SSRF, weak cryptography 등 맥락형 문제를 찾을 수 있음.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Claude의 commit/push 시</td>
+                                    <td class="px-4 py-2.5">주변 코드·sanitizer·관련 파일까지 읽는 더 깊은 agentic review. 사용자가 직접 실행한 shell commit은 검토 대상이 아님.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">요금·사용량</td>
+                                    <td class="px-4 py-2.5">플러그인은 전 플랜에서 제공. 패턴 매칭은 비용이 없지만, 턴 종료·커밋 검토는 추가 Claude 사용량으로 계산됨.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">요구 환경</td>
+                                    <td class="px-4 py-2.5">Claude Code CLI 2.1.144 이상, Python 3.8 이상. 턴 종료·커밋 검토는 git repository에서만 동작.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>정확도 주의:</strong> 공식 문서는 취약점 클래스의 총수를 “약 25개”로 제시하지 않는다. 또한 <strong>30~40% PR 보안 코멘트 감소</strong>는 Anthropic이 내부 도입·벤치마크 기준으로 발표한 수치이며, 외부 검증 결과가 아니다.
+                    </p>
+                </div>
+
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 Datumo 관점에서의 맥락</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        모델 공급사가 코딩 세션 안에 보안 검토를 기본 기능처럼 제공하면, 단순한 “생성 코드의 1차 취약점 검사”는 독립 평가사의 차별점이 되기 어려워진다. 특히 글로벌 고객은 이미 사용하는 개발 도구 안에서 가장 빠른 1차 검토를 받으려 할 가능성이 크다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Datumo가 가져갈 수 있는 자리는 그 바깥이다. <strong>모델·코딩 도구에 종속되지 않는 검증</strong>, 조직별 보안 정책과 규제 기준의 매핑, 실제 에이전트 행동·산출물에 대한 감사 가능 리포트가 필요하다. 즉, 벤더 내장 기능과 경쟁하기보다 여러 벤더를 가로질러 “도입 가능한 수준인지” 판단해주는 독립 평가 레이어로 가는 것이 글로벌 포지션에 더 가깝다.
+                    </p>
+                </div>
+
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong> ·
+                    <a href="https://code.claude.com/docs/en/security-guidance" class="text-accent-600 hover:underline">Claude Code 공식 문서: Security Guidance</a> ·
+                    <a href="https://www.helpnetsecurity.com/2026/05/27/anthropic-claude-code-security-guidance-plugin/" class="text-accent-600 hover:underline">Help Net Security (5/27)</a>
+                </div>
+            </article>
+        </div>
+
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
