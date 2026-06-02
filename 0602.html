@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 022</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 022</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.06.02 (화)</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <p class="text-sm text-gray-800 leading-relaxed">
+                    <strong>Snowflake는 데이터 플랫폼 안에서 생성형 AI 앱의 평가와 추적 기능을 제공하고 있습니다.</strong>
+                    현지시간 6월 1일 개막한 <strong>Snowflake Summit 26</strong>에서 Snowflake는 Anthropic과의 전략적 파트너십 성과와 공동 혁신 영역을 공개했습니다.
+                    공식 발표에 따르면 <strong>Cortex AI</strong>는 Snowflake 데이터 위에서 작동하는 Claude에 거버넌스·보안·관측성을 제공합니다.
+                    커스텀 생성형 AI 앱 대상 <strong>AI Observability</strong>는 2025년 7월 GA됐고, 2월 완료된 <strong>Observe 인수</strong>도 관측 역량 강화 흐름에 더해졌습니다.
+                    <strong>Datumo 관점에서는 플랫폼·모델을 가로지르는 평가와 채점기 신뢰성 검증이 차별 축으로 더 중요해집니다.</strong>
+                </p>
+                <p class="text-[11px] text-gray-500 leading-relaxed mt-3 pt-3 border-t border-gray-200">
+                    <strong>오늘 일정</strong> — Summit 26은 6월 1~4일(샌프란시스코) 진행 중이며,
+                    Benoit Dageville·Christian Kleinerman의 <strong>플랫폼 키노트는 6월 2일 오전 9시 PDT, 한국시간 6월 3일 오전 1시 예정</strong>입니다.
+                </p>
+            </div>
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리</strong>: Competitor Watch · Methodology/Research &nbsp; · &nbsp;
+                <strong>Confidence</strong>: <span class="star3">★★★ 행사·기능·파트너십은 Snowflake 공식 자료와 공식 문서 기준</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * Datumo 시사점은 공식 발표 사실을 바탕으로 한 전략 해석입니다.
+            </div>
+        </header>
+        <div class="px-8 py-2">
+            <article class="py-10">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Competitor Watch</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Methodology/Research</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                    <span class="ml-auto text-xs"><span class="star3">★★★</span> <span class="text-gray-500">Confidence</span></span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Snowflake Summit 26 개막 — 평가와 추적을 데이터 플랫폼 안으로<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— Cortex AI Observability GA, Observe 인수, 멀티모델 연동이 보여주는 플랫폼 전략</span>
+                </h2>
+
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">Snowflake Summit 26</strong>이 6월 1일 샌프란시스코에서 개막했습니다.
+                        Snowflake는 같은 날 Anthropic과의 <strong class="text-white">전략적 파트너십 성과와 공동 혁신 영역</strong>을 공개하며, <strong class="text-white">Cortex AI</strong>에서 Claude를 기업 데이터와 연결할 때
+                        <strong class="text-white">거버넌스·보안·관측성</strong>을 함께 제공한다고 설명했습니다.
+                        여기에 2025년 7월 GA된 <strong class="text-white">커스텀 생성형 AI 앱용 AI Observability</strong>의 평가·추적 기능,
+                        2026년 2월 완료된 <strong class="text-white">Observe 인수</strong>,
+                        Anthropic·OpenAI·Google 모델 연동이 맞물리며,
+                        <strong class="text-white">평가와 관측을 데이터 플랫폼의 운영 레이어로 묶으려는 전략</strong>이 분명해지고 있습니다.
+                    </p>
+                </div>
+
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면 — 30초 안에 결론까지</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        기업이 Snowflake 안에 보유한 데이터를 AI가 활용하게 되면, 이제 같은 환경에서
+                        <strong>“답이 적절한가, 근거에 맞는가, 위험하지 않은가”를 평가</strong>하고
+                        <strong>어떤 입력·도구·출력을 거쳤는지 추적</strong>할 수 있습니다.
+                        Snowflake의 AI Observability는 커스텀 생성형 AI 앱의 평가와 실행 추적을 지원하며,
+                        LLM-as-judge 방식으로 관련성·근거성·유해성 등의 지표를 다룹니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        동시에 Snowflake는 Observe를 인수해 운영 관측 역량을 강화했고,
+                        Claude·OpenAI 모델·Gemini 등 여러 모델 선택지를 플랫폼 안으로 확대했습니다.
+                        즉 고객에게는 <strong>데이터, 모델, 평가, 추적을 한 환경에서 연결하는 선택지</strong>가 커지고 있습니다.
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-4 pt-3 border-t border-explain-100">
+                        <em>용어 풀이 — <strong>eval(평가)</strong>: AI 답변이나 행동이 정확하고 안전한지 측정하는 작업.
+                        <strong>LLM-as-judge</strong>: 다른 LLM이 응답을 채점하는 평가 방식.
+                        <strong>observability(관측성)</strong>: AI 앱이 입력·도구 사용·출력에 이르는 과정을 추적해 문제 원인을 찾게 하는 기능.
+                        <strong>OpenTelemetry</strong>: 실행 추적 데이터를 기록·연동하기 위한 표준.</em>
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📋 핵심 사실 — 공식 자료 기준</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Summit 26</td>
+                                    <td class="px-4 py-2.5">
+                                        6월 1~4일 샌프란시스코 개최. Snowflake는 자사 역대 최대 사용자 행사로 소개하며,
+                                        <strong>현장 참석자 2만 명 이상 예상</strong>, <strong>500개 이상 세션</strong>,
+                                        <strong>200개 이상 현장 파트너</strong>, <strong>39개 핸즈온 랩</strong>을 공지했습니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">플랫폼 키노트</td>
+                                    <td class="px-4 py-2.5">
+                                        6월 2일 오전 9시 PDT(<strong>한국시간 6월 3일 오전 1시</strong>) 예정.
+                                        Benoit Dageville·Christian Kleinerman이 발표하고 Thomson Reuters·Under Armour 리더가 참여합니다.
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">6/1 최신 발표</td>
+                                    <td class="px-4 py-2.5">
+                                        Snowflake와 Anthropic은 Summit 개막일에 전략적 파트너십의 성과와 공동 혁신 영역을 발표했습니다.
+                                        Snowflake는 Cortex AI가 Snowflake 데이터 위에서 작동하는 Claude에
+                                        <strong>거버넌스·보안·관측성</strong>을 제공한다고 설명했습니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">AI Observability</td>
+                                    <td class="px-4 py-2.5">
+                                        커스텀 생성형 AI 앱 대상 기능이 <strong>2025년 7월 31일 GA</strong>됐습니다. Snowflake는 해당 기능이 에이전트·앱 평가에서
+                                        <strong>LLM-as-judge</strong>를 활용하고, 입력·도구 사용·최종 응답 생성 단계를 추적한다고 설명합니다.
+                                        평가 지표 예시로 <strong>relevance·groundedness·harmfulness</strong>가 제시됩니다.
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Observe 인수</td>
+                                    <td class="px-4 py-2.5">
+                                        Snowflake는 <strong>2026년 2월 2일</strong> Observe 인수 종료를 발표했습니다.
+                                        공식 설명 기준, Observe의 AI 기반 관측 기능은 장애 원인 분석과 AI·데이터 애플리케이션 운영을 보강합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">모델 파트너십</td>
+                                    <td class="px-4 py-2.5">
+                                        Anthropic과는 <strong>2억 달러 규모 다년 계약</strong>(2025/12),
+                                        OpenAI와는 <strong>2억 달러 규모 다년 파트너십</strong>(2026/02)을 발표했습니다.
+                                        Snowflake는 2026년 1월 <strong>Gemini 3 Pro·Gemini 2.5 Flash</strong>를 Cortex AI Functions의 public preview로 발표했습니다.
+                                        현재 공식 문서에는 <strong>Gemini 3.1 Pro·Gemini 2.5 Flash</strong> 등이 Cortex AI Functions 지원 모델로 기재돼 있습니다.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🔎 무엇이 달라지는가</h3>
+                    <div class="space-y-3 text-sm text-gray-800 leading-relaxed">
+                        <p>
+                            <strong>1. 플랫폼 내 평가 기능이 구매 대안으로 들어옵니다.</strong>
+                            Cortex AI 사용자는 별도 평가 솔루션과 함께, 데이터를 운영하는 환경 안에서 제공되는 평가·추적 기능도 검토할 수 있습니다.
+                        </p>
+                        <p>
+                            <strong>2. 독립 평가사는 검증 깊이를 보여줘야 합니다.</strong>
+                            LLM-as-judge가 플랫폼에 내장될수록, 독립 평가사의 가치는
+                            <strong>채점 결과의 신뢰성을 별도로 검증하는 능력</strong>과
+                            <strong>플랫폼·모델을 가로질러 비교 가능한 평가 기준</strong>에 더 크게 걸립니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-4">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 So What for Datumo</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        <strong>의미 한 줄 —</strong>
+                        Snowflake처럼 데이터 플랫폼이 평가·관측을 제품 안에 통합할수록,
+                        Datumo의 차별점은 <strong>플랫폼 비종속 평가</strong>,
+                        <strong>도메인별 정교한 평가 기준</strong>,
+                        <strong>내장 judge의 신뢰성 감사</strong>로 구체화될 필요가 있습니다.
+                    </p>
+                    <ul class="mt-4 space-y-3 text-sm text-gray-800">
+                        <li class="flex gap-2">
+                            <span class="font-bold text-accent-600 flex-shrink-0">①</span>
+                            <span><strong>Judge audit 기준 정의.</strong> 플랫폼 내장 LLM-as-judge 결과를 사람 검수 기준과 비교해
+                            일치율·거짓양성·거짓음성·도메인별 편차를 보여주는 평가 항목을 정리합니다.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="font-bold text-accent-600 flex-shrink-0">②</span>
+                            <span><strong>비종속 비교 리포트 설계.</strong> 특정 플랫폼 내부 점수만 제시하는 대신,
+                            여러 모델·플랫폼에서 동일 데이터셋과 동일 기준으로 결과를 비교할 수 있는 리포트 구조를 우선 검토합니다.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧵 Theme Tracker</span>
+                    <p class="text-xs text-gray-700 leading-relaxed mb-2">
+                        <strong>Theme D: "eval의 플랫폼 내장화 — 데이터 플랫폼이 평가 기능을 제공"</strong> ·
+                        <strong>022 (Snowflake: AI Observability·Observe·멀티모델 연동이 한 플랫폼 구도로 연결) ← 오늘</strong>.<br>
+                        <span class="text-gray-500">다음 트리거: 플랫폼 키노트의 평가·관측 신규 발표 / Databricks·하이퍼스케일러의 동급 기능 확대</span>
+                    </p>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Theme B: "평가 그 자체의 신뢰도 — judge를 검증한다"</strong> ·
+                        019 → 020 → 021 → <strong>022 (Snowflake의 내장 평가 기능을 기준으로 독립 검증 가치를 검토) ← 오늘</strong>.<br>
+                        <span class="text-gray-500">다음 트리거: 플랫폼 내장 judge와 사람 판정의 일치율 공개 비교 / 조달 문서의 평가 감사 항목 등장</span>
+                    </p>
+                </div>
+
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong><br>
+                    <a href="https://www.snowflake.com/en/news/press-releases/snowflake-makes-ai-real-at-snowflake-summit-26-featuring-anthropics-daniela-amodei-and-other-industry-leaders/" class="text-accent-600 hover:underline">Snowflake — Summit 26 일정·규모·키노트 (공식, 2026/04/22)</a><br>
+                    <a href="https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/" class="text-accent-600 hover:underline">Snowflake × Anthropic — Summit 26 협력 발표 (공식, 2026/06/01)</a><br>
+                    <a href="https://docs.snowflake.com/en/release-notes/2025/other/2025-07-31-ai-observability-ga" class="text-accent-600 hover:underline">Snowflake Docs — AI Observability GA (공식, 2025/07/31)</a><br>
+                    <a href="https://www.snowflake.com/en/blog/ai-observability-trust-cortex-enterprise/" class="text-accent-600 hover:underline">Snowflake — AI Observability & Evaluations (공식, 2025/08/01)</a><br>
+                    <a href="https://www.snowflake.com/en/blog/observe-acquisition-ai-powered-observability/" class="text-accent-600 hover:underline">Snowflake — Observe 인수 종료 (공식, 2026/02/02)</a><br>
+                    <a href="https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/" class="text-accent-600 hover:underline">Snowflake × Anthropic — $200M 파트너십 (공식, 2025/12/03)</a><br>
+                    <a href="https://www.snowflake.com/en/news/press-releases/snowflake-and-openAI-forge-200-million-partnership-to-bring-enterprise-ready-ai-to-the-worlds-most-trusted-data-platform/" class="text-accent-600 hover:underline">Snowflake × OpenAI — $200M 파트너십 (공식, 2026/02/02)</a><br>
+                    <a href="https://www.snowflake.com/en/blog/gemini-3-snowflake-cortex-ai/" class="text-accent-600 hover:underline">Snowflake × Google Cloud — Gemini 3 in Cortex AI (공식, 2026/01/06)</a><br>
+                    <a href="https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-regional-availability" class="text-accent-600 hover:underline">Snowflake Docs — Cortex AI Functions 지원 모델·지역 가용성 (공식 문서 · 현재 지원 모델 확인)</a>
+                </div>
+            </article>
+        </div>
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
