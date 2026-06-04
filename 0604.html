@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 025</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' }, accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' }, explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' }, conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' } } } } }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 025</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.06.04 (목)</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <p class="text-sm text-gray-800 leading-relaxed">
+                    <strong>AI 평가에서 ‘신뢰’는 이제 평가 결과뿐 아니라 평가의 명분과 시장 언어까지 포함합니다.</strong> Sophos는 AI가 보조한 EDR 우회 테스트 프레임워크를 분석하며, <strong>‘레드팀’ 명목이 악성 개발을 가리는 수단으로 쓰일 수 있다</strong>고 지적했습니다. 한편 Arize는 현지시간 6월 4일 <strong>“The AI Agent Evals Conference”</strong>를 개최할 예정이며, 에이전트 평가를 전면 메시지로 내세우고 있습니다. Datumo에는 <strong>악용을 가려내는 안전성 평가</strong>와 <strong>독립 평가 포지셔닝</strong>을 함께 구체화할 시점이라는 신호입니다.
+                </p>
+            </div>
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리</strong>: AI Security / Red Team · Competitor Watch / Agent Evals &nbsp; · &nbsp;
+                <strong>Source Confidence</strong>: <span class="star3">★★★ Sophos·Arize 공식 원문 직접 확인</span>
+            </div>
+        </header>
+        <div class="px-8 py-2">
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">AI Security / Red Team</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Agentic AI</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Sophos, AI가 보조한 EDR 우회 테스트 프레임워크 분석<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— ‘레드팀’ 명목이 Claude의 멀웨어 안전장치를 우회하는 데 쓰였을 가능성을 제기</span>
+                </h2>
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">Sophos X-Ops</strong>는 위협 행위자가 AI 기술을 활용해 <strong class="text-white">EDR 우회 기법을 개발·시험하는 프레임워크</strong>를 운영한 사례를 분석했다. 이 환경에는 일부가 AI로 생성된 Python 스크립트와 Git 저장소가 있었고, <strong class="text-white">Claude Opus 4.5 에이전트는 핵심 운영과 다른 에이전트의 규칙 설정</strong>을 맡았다. 별도 에이전트들은 EDR 시험·문서화·OPSEC 보강·가상머신 배포 등을 수행했다. Sophos는 프레임워크가 표면상 레드팀 목적으로 제시됐지만, 실제로는 <strong class="text-white">은밀한 사후 침투 활동</strong>을 위해 구축됐다고 판단했다.
+                    </p>
+                </div>
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">이 사건은 AI가 혼자 공격을 수행했다는 이야기가 아닙니다. Sophos의 결론은 <strong>사람이 설계한 멀웨어 개발·시험 과정에서 AI가 작업 분담과 반복 실험을 빠르게 만들었다</strong>는 것입니다. 더 중요한 지점은 공격자가 위험한 개발 요청을 <strong>“방어를 위한 레드팀 작업”처럼 포장</strong>했을 가능성입니다.</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">모델 안전성 평가에서는 단순한 악성 요청 거부 여부뿐 아니라, <strong>정당한 보안 업무처럼 설명된 위험 요청을 끝까지 구분할 수 있는지</strong>도 확인해야 합니다.</p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-4 pt-3 border-t border-explain-100"><em><strong>EDR</strong>: PC·서버에서 악성 행위를 탐지·대응하는 보안 솔루션. <strong>레드팀</strong>: 방어력을 점검하기 위해 공격자 관점에서 수행하는 승인된 보안 테스트. <strong>MCP</strong>: AI가 외부 도구·데이터와 연결되도록 하는 표준. <strong>OPSEC</strong>: 활동 노출 위험을 낮추기 위한 운영 보안.</em></p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📋 확인된 사실</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold"><tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr></thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40"><td class="px-4 py-2.5 font-bold">발견 경위</td><td class="px-4 py-2.5">고객 환경의 이상 단말에서 악성 페이로드 경보가 발생했고, Sophos는 탐지 회피에 초점을 둔 더 넓은 프레임워크를 확인했다.</td></tr>
+                                <tr><td class="px-4 py-2.5 font-bold">AI의 역할</td><td class="px-4 py-2.5">Claude Opus 4.5 기반 에이전트는 핵심 운영과 에이전트 규칙 설정을 담당했다. 다른 에이전트들은 EDR 시험·문서화·OPSEC 보강·프록시 부하시험·VM 배포를 맡았다.</td></tr>
+                                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">시험 환경</td><td class="px-4 py-2.5">Windows Server 2022 가상머신에서 Sophos·CrowdStrike 대상 시험과 EDR 없는 대조 환경을 운영했으며, Ubuntu 가상머신에는 Sliver C2 서버가 있었다.</td></tr>
+                                <tr><td class="px-4 py-2.5 font-bold">개발 규모</td><td class="px-4 py-2.5">Python 기반 페이로드 생성 도구로 <strong>약 80개 모듈</strong>이 개발됐고, <strong>70개가 넘는 기법</strong>을 시험했다.</td></tr>
+                                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">Sophos 판단</td><td class="px-4 py-2.5">Sophos는 ‘레드팀’이라는 명목이 Claude의 멀웨어 개발 가드레일을 우회하는 데 사용됐을 가능성이 높으며, 해당 개발 활동을 알려진 랜섬웨어 배포 및 데이터 탈취 작전과 연결했다.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 So What for Datumo</span>
+                    <p class="text-gray-800 text-sm leading-relaxed"><strong>확인 사실에서 도출되는 평가 과제 —</strong> 위험 요청은 노골적인 형태로만 들어오지 않습니다. 모델 안전성 평가에 <strong>“승인된 레드팀 작업”처럼 가장한 멀웨어 개발·탐지회피 요청</strong>을 포함하고, 단일 응답뿐 아니라 <strong>여러 에이전트가 역할을 나누는 도구 연결형 워크플로우</strong>까지 평가 범위에 넣을 필요가 있습니다.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-800 leading-relaxed"><li><strong>평가 시나리오:</strong> benign framing(정당한 목적을 가장한 요청) 기반 안전성 테스트 세트 구축.</li><li><strong>추적 항목:</strong> 모델 거부 여부뿐 아니라 도구 호출·Git 반영·실험 반복 과정의 감사 추적 가능성 측정.</li></ul>
+                </div>
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong><br>
+                    <a href="https://www.sophos.com/en-us/blog/pointing-a-cursor-at-evading-detection" class="text-accent-600 hover:underline">Sophos Counter Threat Unit Research Team — Pointing a Cursor at evading detection (공식 분석)</a><br>
+                    <a href="https://www.helpnetsecurity.com/2026/06/02/ai-agents-edr-evasion-techniques/" class="text-accent-600 hover:underline">Help Net Security — Sophos uncovers AI-powered malware lab built for EDR evasion (2026/06/02)</a>
+                </div>
+            </article>
+            <article class="py-10">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Competitor Watch</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Agent Evals</span>
+                    <span class="text-sm text-accent-600 font-bold">사이드 · ★★★</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Arize, 현지시간 6월 4일 ‘The AI Agent Evals Conference’ 개최 예정<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— Anthropic·OpenAI·Cursor 연사를 앞세워 ‘agent evals’를 전면 메시지로 제시</span>
+                </h2>
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">AI 관측·평가 플랫폼 사업자 <strong class="text-white">Arize</strong>는 현지시간 <strong class="text-white">2026년 6월 4일</strong> 샌프란시스코 Ferry Building의 Shack15에서 <strong class="text-white">Arize:Observe 2026</strong>을 개최할 예정이다. 공식 페이지의 행사 제목은 <strong class="text-white">“The AI Agent Evals Conference”</strong>이며, 연사에는 <strong class="text-white">Anthropic·OpenAI·Cursor</strong> 소속 인사가 포함돼 있다. Arize가 자사 행사 전면에 <strong class="text-white">agent evals</strong>를 내세운 점은, 평가·관측 사업자들이 이 영역의 시장 언어를 적극적으로 만들어가고 있음을 보여준다.</p>
+                </div>
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">Arize는 행사 이름 자체를 <strong>“AI Agent Evals”</strong>로 정했습니다. 에이전트 평가가 무엇인지, 어떤 문제가 중요한지, 어떤 도구가 필요한지를 논의하는 무대를 자사 브랜드 아래 만들고 있는 셈입니다.</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">Datumo가 <strong>독립 평가</strong>를 차별점으로 삼는다면, 기능 소개만으로는 부족합니다. <strong>플랫폼 내부 관측·평가와 달리, 외부에서 결과를 검증하고 신뢰성을 설명하는 역할</strong>을 명확한 언어로 제시해야 합니다.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📋 공식 페이지에서 확인된 내용</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold"><tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr></thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40"><td class="px-4 py-2.5 font-bold">행사</td><td class="px-4 py-2.5"><strong>Arize:Observe 2026</strong> — “The AI Agent Evals Conference”, 2026/06/04, San Francisco Ferry Building의 Shack15.</td></tr>
+                                <tr><td class="px-4 py-2.5 font-bold">연사(일부)</td><td class="px-4 py-2.5">Marius Buleandra(Anthropic), Stuart Sy(OpenAI), John Gilhuly(Cursor), Rajoshi Ghosh(PromptQL), Michael Grinich(WorkOS), Eno Reyes(Factory), Ivan Burazin(Daytona).</td></tr>
+                                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">공개 세션(일부)</td><td class="px-4 py-2.5">“Building reliable agent on a frontier model” · “Harnessing the customer feedback loop” · “The Hardest Part of Evals Isn’t the Tooling”.</td></tr>
+                                <tr><td class="px-4 py-2.5 font-bold">후원사(일부)</td><td class="px-4 py-2.5">AWS · Microsoft · Swift Ventures · CrewAI 등.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 So What for Datumo</span>
+                    <p class="text-gray-800 text-sm leading-relaxed"><strong>전략 해석 —</strong> Arize가 행사명과 세션을 통해 ‘agent evals’를 브랜드 중심 메시지로 묶고 있습니다. Datumo는 평가 기능의 존재보다 <strong>독립 검증·도메인 특화 평가·감사 가능한 결과 설명</strong>을 어떤 고객 문제와 연결할지 명확히 제시해야 합니다.</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3"><strong>실행 포인트:</strong> Arize 행사 어젠다를 기준으로 ‘플랫폼 내장 평가’와 ‘독립 제3자 평가’가 각각 해결하는 문제를 1페이지 비교 메시지로 정리해, 영업·시장 분석 자료의 공통 언어로 사용합니다.</p>
+                </div>
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong><br>
+                    <a href="https://arize.com/observe/" class="text-accent-600 hover:underline">Arize AI — Observe 2026 공식 행사 페이지 (행사명·일정·장소·연사·세션·후원사 확인)</a>
+                </div>
+            </article>
+        </div>
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100"><p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p></footer>
+    </main>
+</body>
+</html>
