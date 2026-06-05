@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 026</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        .star2 { color: #CA8A04; font-weight: 700; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 026</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.06.05 (금)</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <p class="text-sm text-gray-800 leading-relaxed">
+                    <strong>독립 검증·평가가 기업 보안과 규제 집행의 공통 인프라로 들어오고 있습니다.</strong>
+                    Anthropic은 <strong>Project Glasswing</strong>을 약 150개 신규 기관으로 확대하면서, Mythos급 모델이 취약점을 대량으로 찾아내는 시대의 병목이
+                    <strong>“검증·공개·패치”</strong>로 이동했다고 밝혔습니다. EU 집행위는 AI Act 집행을 지원할
+                    <strong>과학 패널 60인과 자문 포럼</strong>을 임명하며, 과학 패널의 업무 범위에
+                    <strong>평가 방법론·모델 분류·기술 감사</strong>를 명시했습니다.
+                    Datumo 관점에서는 “AI가 만든 결과를 누가 검증하고 책임 있게 설명할 것인가”가 기업과 규제 양쪽에서 커지는 핵심 질문입니다.
+                </p>
+            </div>
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리</strong>: AI Security / Verification · Policy / Regulation · Evaluation Methodology &nbsp; · &nbsp;
+                <strong>Source Confidence</strong>: <span class="star3">★★★ Anthropic·European Commission 공식 원문 직접 확인</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * 본 호는 카드 2개. 기업 보안의 “취약점 검증 병목”과 규제 집행의 “평가 방법론 제도화”를 한 흐름으로 읽는다.
+            </div>
+        </header>
+        <div class="px-8 py-2">
+            <!-- CARD 1 -->
+            <article class="py-10 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">AI Security / Verification</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Critical Infra</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Anthropic, Project Glasswing을 약 150개 신규 기관으로 확대<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— 취약점 “탐지” 이후의 검증·공개·패치가 새 병목으로 부상</span>
+                </h2>
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">Anthropic</strong>은 2026년 6월 2일,
+                        미공개 프런티어 모델 <strong class="text-white">Claude Mythos Preview</strong>를 활용해 중요 소프트웨어의 취약점을 찾는 협업 프로그램
+                        <strong class="text-white">Project Glasswing</strong>을 약 <strong class="text-white">150개 신규 기관</strong>으로 확대한다고 발표했습니다.
+                        초기 약 50개 파트너는 지금까지 <strong class="text-white">고위험·치명 등급 보안 결함 1만 건 이상</strong>을 찾았습니다.
+                        이번 확대 대상은 15개국 이상에 기반을 둔 조직이며, 전력·수도·의료·통신·하드웨어처럼 기존 코호트에 상대적으로 덜 포함됐던
+                        핵심 인프라 영역이 추가됐습니다.
+                    </p>
+                </div>
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        Glasswing은 AI로 보안 취약점을 대량 탐지하는 프로그램입니다. 중요한 변화는 “AI가 취약점을 잘 찾는다”가 아니라,
+                        <strong>너무 많이 찾아낸 취약점을 누가 진짜인지 확인하고, 어떤 순서로 고치며, 어떻게 공개할지</strong>가 더 큰 일이 됐다는 점입니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Anthropic은 직접 <strong>“이제 사이버보안의 병목은 Mythos급 모델이 찾아낸 대량의 취약점을 검증·공개·패치하는 일”</strong>이라고 썼습니다.
+                        또한 오픈소스 취약점의 검토와 패치를 확장하기 위해 <strong>제3자들과 논의 중</strong>이라고 밝혔습니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Datumo에 중요한 지점은 여기입니다. 앞으로 모델이 취약점 후보를 대량 생산할수록,
+                        기업은 그 결과를 그대로 믿기보다 <strong>독립적으로 검증·우선순위화·설명해 줄 평가자</strong>를 필요로 하게 됩니다.
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-4 pt-3 border-t border-explain-100">
+                        <em>
+                            <strong>Project Glasswing</strong>: Anthropic의 사이버 방어 협업 프로그램.
+                            <strong>Claude Mythos Preview</strong>: 취약점 탐지에 특화된 미공개 프런티어 모델.
+                            <strong>트리아지(triage)</strong>: 발견된 취약점 후보의 진위·심각도·우선순위를 가르는 작업.
+                            <strong>패치(patch)</strong>: 취약점을 수정하는 코드 변경.
+                        </em>
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📋 공식 원문 기준 핵심 사실</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">확대 규모</td>
+                                    <td class="px-4 py-2.5">초기 약 50개 파트너에서 출발했고, 이번에 약 150개 신규 기관으로 확대. 각 기관은 접근 전 Anthropic의 보안 요건을 충족해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">지역·산업</td>
+                                    <td class="px-4 py-2.5">신규 그룹은 15개국 이상에 기반을 둔 조직이며, 대부분은 더 많은 국가에 핵심 인프라를 제공한다. 전력·수도·의료·통신·하드웨어가 새로 강조된 산업군이다.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">초기 성과</td>
+                                    <td class="px-4 py-2.5">초기 파트너들은 지금까지 1만 건 이상의 high 또는 critical severity 보안 결함을 찾았다.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">보도상 기관명</td>
+                                    <td class="px-4 py-2.5">TechCrunch는 Financial Times 보도를 인용해 삼성·SK하이닉스·SK텔레콤·Okta·NATO·ENISA 등이 포함됐다고 전했다. Anthropic 공식 발표에는 개별 기관명이 적혀 있지 않다.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">다음 병목</td>
+                                    <td class="px-4 py-2.5">Anthropic은 취약점 탐지 이후의 검증·공개·패치를 새 병목으로 지목했고, 오픈소스 취약점의 검토와 패치를 확장하기 위해 제3자와 논의 중이라고 밝혔다.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">확대 계획</td>
+                                    <td class="px-4 py-2.5">향후 essential infrastructure providers, critical open-source maintainers, safety testers를 우선하고, Cyber Verification Program을 확장할 계획이라고 설명했다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🎤 원문 확인 인용</h3>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">
+                            “The bottleneck in cybersecurity is now verifying, disclosing, and patching the large numbers of vulnerabilities that Mythos-class models can surface.”
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">— Anthropic, “Expanding Project Glasswing” (2026/06/02)</p>
+                        <p class="text-[11px] text-gray-500 mt-1 italic">
+                            번역: “이제 사이버보안의 병목은 Mythos급 모델이 드러낼 수 있는 대량의 취약점을 검증·공개·패치하는 일이다.”
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 So What for Datumo</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        이 소식의 의의는, AI 보안에서 가치의 무게중심이 <strong>“탐지”에서 “검증·트리아지·책임 있는 설명”</strong>으로 옮겨가는 신호라는 점입니다.
+                        모델을 만든 회사조차 검증·패치를 병목으로 지목하고 제3자와의 협력을 언급한 만큼,
+                        “누가 AI의 발견을 독립적으로 검증하고 책임 있게 설명하는가”가 평가·레드팀 벤더의 새로운 입지가 됩니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Datumo 입장에서는 <strong>‘탐지 도구’와 구별되는 ‘독립 검증자’ 정체성</strong>이 더 또렷해지는 환경 변화로 읽힙니다.
+                        당장의 액션보다는, 검증·트리아지가 시장의 다음 격전지가 된다는 방향성을 기억해 둘 만합니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧵 Theme Tracker</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Theme H: “검증 병목 — AI가 찾은 것을 누가 검증·책임지나”</strong><br>
+                        Project Glasswing 확대는 AI 보안의 병목이 취약점 탐지에서 검증·패치·공개로 이동하고 있음을 보여준다.
+                    </p>
+                </div>
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong><br>
+                    <a href="https://www.anthropic.com/news/expanding-project-glasswing" class="text-accent-600 hover:underline">Anthropic — Expanding Project Glasswing (공식, 2026/06/02)</a><br>
+                    <a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/" class="text-accent-600 hover:underline">TechCrunch — Anthropic scales Claude Mythos to critical infrastructure in 15+ countries (2026/06/02)</a>
+                </div>
+            </article>
+            <!-- CARD 2 -->
+            <article class="py-10">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Policy / Regulation · EU</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Evaluation Methodology</span>
+                    <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    EU, AI Act 집행 지원 과학 패널·자문 포럼 임명<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— 평가 방법론·모델 분류·기술 감사가 규제 집행의 공식 자문 영역으로 진입</span>
+                </h2>
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">European Commission</strong>은 2026년 6월 1일,
+                        AI Act 집행을 지원할 <strong class="text-white">Scientific Panel</strong>과 <strong class="text-white">Advisory Forum</strong>을 임명했습니다.
+                        두 기구는 Commission의 <strong class="text-white">AI Office</strong>와 회원국 당국에 규칙 적용을 자문하며, 임기는 2년입니다.
+                        Scientific Panel은 <strong class="text-white">독립 전문가 60인</strong>으로 구성되고,
+                        업무 범위에는 <strong class="text-white">GPAI 모델·시스템적 위험·모델 분류·평가 방법론·국경 간 시장감시</strong>가 포함됩니다.
+                    </p>
+                </div>
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        EU는 AI Act를 실제로 집행하기 위해 기술 전문가 자문 체계를 만들었습니다.
+                        중요한 점은 자문 대상이 단순한 법 해석이 아니라 <strong>모델을 어떻게 분류하고, 어떤 방법론으로 평가하며, 어떤 방식으로 기술 감사를 할지</strong>까지 포함한다는 것입니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        EU 공식 타임라인상 GPAI 모델 관련 규칙은 <strong>2025년 8월</strong>부터 적용되기 시작했고,
+                        이에 대한 집행 권한(위반 시 제재 포함)은 <strong>2026년 8월 2일</strong>부터 발효됩니다.
+                        즉, 규제가 실제 집행 단계로 들어갈수록 <strong>평가 방법론과 기술 감사의 신뢰도</strong>가 더 중요해집니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        한국도 AI 기본법이 2026년 1월 시행되면서 고영향 AI·생성형 AI의 투명성·안전성 의무 틀을 갖췄습니다.
+                        EU의 평가·감사 제도화는 국내 대응에서도 참고할 만한 레퍼런스가 됩니다.
+                    </p>
+                    <p class="text-[11px] text-gray-600 leading-relaxed mt-4 pt-3 border-t border-explain-100">
+                        <em>
+                            <strong>AI Office</strong>: EU AI Act 집행을 지원하는 집행위 내 조직.
+                            <strong>GPAI(General-Purpose AI)</strong>: 범용 AI 모델.
+                            <strong>모델 분류(model classification)</strong>: 모델이 어떤 위험 범주에 들어가는지 판단하는 절차.
+                            <strong>기술 감사(technical auditing)</strong>: 모델·시스템의 위험과 성능을 기술적으로 점검하는 활동.
+                            <strong>ENISA</strong>: EU 사이버보안청.
+                        </em>
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">📋 공식 원문 기준 핵심 사실</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr class="bg-accent-50/40">
+                                    <td class="px-4 py-2.5 font-bold">발표</td>
+                                    <td class="px-4 py-2.5">European Commission은 2026년 6월 1일 AI Act 집행 지원을 위한 Scientific Panel과 Advisory Forum 임명을 발표했다(공식 페이지 Publication·Last update 모두 2026년 6월 1일).</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">역할</td>
+                                    <td class="px-4 py-2.5">두 기구는 Commission의 AI Office와 회원국 당국에 AI Act 규칙 적용을 자문하며, 구성원 임기는 2년이다.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Scientific Panel</td>
+                                    <td class="px-4 py-2.5">프런티어 AI·엔지니어링·기술 감사·산업 및 사회 영향 경험을 갖춘 독립 전문가 60인으로 구성된다.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">패널 업무 범위</td>
+                                    <td class="px-4 py-2.5">GPAI 모델과 시스템, 시스템적 위험, 모델 분류, 평가 방법론, 국경 간 시장감시에 집중한다.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">Advisory Forum</td>
+                                    <td class="px-4 py-2.5">AI Act 관련 폭넓은 이슈에 독립적 기술 전문성과 자문을 제공하며, 표준화와 이행 과제도 다룬다. 구성원은 학계·시민사회·산업계, 중소기업·스타트업을 포함한다. (공식 발표에는 포럼 인원 수가 명시되지 않았다.)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">상시 역할 기관</td>
+                                    <td class="px-4 py-2.5">EU 기본권청, EU 사이버보안청 ENISA, 표준화 기구가 포럼에서 상시 역할을 맡는다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🎤 원문 확인 인용</h3>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">
+                            “It will focus on general-purpose AI (GPAI) models and systems, systemic risks, model classification, evaluation methodologies and cross-border market surveillance.”
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">— European Commission, “AI Act enforcement gets independent expert support” (Publication 01 June 2026)</p>
+                        <p class="text-[11px] text-gray-500 mt-1 italic">
+                            번역: “패널은 범용 AI 모델과 시스템, 시스템적 위험, 모델 분류, 평가 방법론, 국경 간 시장감시에 집중한다.”
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 So What for Datumo</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        이 소식의 의의는, <strong>“평가 방법론·모델 분류·기술 감사”가 규제 집행의 공식 자문 언어로 올라섰다</strong>는 점입니다.
+                        그동안 기업의 자율 영역으로 여겨지던 독립 평가가, 이제 규제가 신뢰하고 의존하는 인프라의 일부가 되어가고 있습니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Datumo 입장에서는 “모델을 평가한다”를 넘어 <strong>‘규제가 인정하는 평가 방법론·기술 감사’</strong>라는 언어로 정체성을 넓힐 근거가 생기는 흐름으로 읽힙니다.
+                        EU의 제도화 사례는 한국 AI 기본법 대응 맥락에서도 참고점이 됩니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧵 Theme Tracker</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Theme H: “검증·평가의 제도화 — 독립 평가가 인프라가 된다”</strong><br>
+                        EU의 Scientific Panel·Advisory Forum 임명은 평가 방법론과 기술 감사가 규제 집행의 자문 언어로 들어왔음을 보여준다.
+                    </p>
+                </div>
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처</strong><br>
+                    <a href="https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support" class="text-accent-600 hover:underline">European Commission — AI Act enforcement gets independent expert support (공식, Publication 01 June 2026)</a><br>
+                    <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" class="text-accent-600 hover:underline">European Commission — AI Act timeline and GPAI rules</a>
+                </div>
+            </article>
+        </div>
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
