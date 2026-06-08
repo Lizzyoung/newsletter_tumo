@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEOP Daily Briefing - Issue 027</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+                    colors: {
+                        gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+                        accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+                        explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+                        conf: { 3: '#16A34A', 2: '#CA8A04', 1: '#9CA3AF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+        .article-container { max-width: 720px; margin: 0 auto; }
+        .quote { font-style: italic; color: #374151; }
+        .tldr { font-size: 1.0625rem; line-height: 1.75; }
+        .star3 { color: #16A34A; font-weight: 700; }
+        code { background:#F3F4F6; padding:1px 5px; border-radius:4px; font-size:0.85em; }
+        .kbd { display:inline-flex; align-items:center; justify-content:center; min-width:1.4rem; height:1.4rem; padding:0 .35rem; border-radius:.4rem; background:#1E3A8A; color:#fff; font-size:.72rem; font-weight:800; }
+    </style>
+</head>
+<body class="text-gray-800 py-12 px-4 sm:px-6">
+    <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+        <header class="px-8 pt-12 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 027 · Single-Card Deep Dive</span>
+                    <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+                </div>
+                <div class="text-right">
+                    <span class="block text-xl font-bold text-gray-900">이지영</span>
+                    <span class="block text-sm text-gray-500 font-medium">2026.06.08 (월)</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+                <p class="text-sm text-gray-800 leading-relaxed">
+                    <strong>Microsoft가 1년간의 실전 레드팀 데이터로 “에이전트 AI 위협 지도”를 갱신하며, 평가의 단위를 ‘모델’에서 ‘시스템’으로 끌어올렸습니다.</strong>
+                    핵심 결론은 한 문장입니다 — <strong>“이 위협들은 모델 하나만 시험해서는 안 보이고, 다단계 공격 체인을 시스템 전체로 돌려봐야 드러난다.”</strong>
+                    이는 ‘독립 시스템 단위 평가·레드팀’을 표방하는 Datumo의 포지셔닝과 정확히 같은 방향입니다.
+                </p>
+            </div>
+            <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+                <strong>카테고리</strong>: AI Security / Red Team · Agentic AI · Evaluation Methodology &nbsp; · &nbsp;
+                <strong>Source Confidence</strong>: <span class="star3">★★★ Microsoft 공식 블로그 + v2.0 백서 PDF 전문 직접 확인</span>
+            </div>
+            <div class="mt-2 text-[10px] text-gray-400">
+                * 본 호는 단독 카드 심층본. 에이전트 AI 보안 평가의 기준이 왜 모델 단위에서 시스템 단위로 이동하는지 한 카드로 정리했다.
+            </div>
+        </header>
+
+        <div class="px-8 py-2">
+            <article class="py-10">
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">AI Security / Red Team</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Evaluation Methodology</span>
+                    <span class="text-sm text-accent-600 font-bold">단독 메인 · ★★★</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+                    Microsoft, 에이전트 AI ‘실패 모드 분류 v2.0’ 공개<br>
+                    <span class="text-xl sm:text-2xl font-bold text-gray-600">— 1년 실전 레드팀이 확인한 7개 신규 위협, “모델 평가만으로는 안 잡힌다”</span>
+                </h2>
+
+                <!-- TL;DR -->
+                <div class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+                    <p class="tldr text-white font-medium">
+                        <strong class="text-white">Microsoft AI Red Team</strong>이 2026년 6월 4일,
+                        에이전트 AI 시스템의 <strong class="text-white">실패 모드 분류(taxonomy)를 v2.0</strong>으로 갱신했습니다.
+                        2025년 4월 v1.0이 ‘예상’ 기반이었다면, v2.0은 <strong class="text-white">12개월간 실제 배포된 에이전트를 공격해 본 레드팀 실증 데이터</strong>에 기반합니다.
+                        <strong class="text-white">7개 신규 실패 모드</strong>와 <strong class="text-white">5개 신규 방어 체계</strong>를 추가했고,
+                        실전에서 가장 자주 뚫린 지점은 <strong class="text-white">사람 승인 절차(HitL) 우회</strong> — 외부 입력 하나에서 시작해
+                        <strong class="text-white">사람 개입 없이(zero-click) 데이터 유출까지</strong> 도달하는 체인이 다수 확인됐습니다.
+                    </p>
+                </div>
+
+                <!-- 쉽게 풀면 -->
+                <div class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면 (30초 컷)</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        ‘에이전트 AI’는 사람이 일일이 시키지 않아도 스스로 도구(파일 읽기·웹 접속·메일 전송 등)를 골라 쓰며 일을 끝내는 AI입니다.
+                        편리한 만큼, <strong>나쁜 지시가 외부 입력(이메일·이슈 글·웹페이지·이미지)에 숨어 들어오면 AI가 그걸 ‘명령’으로 착각</strong>해 사고가 납니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Microsoft가 1년간 실제로 공격해 보니, 가장 잘 뚫린 곳은 <strong>“사람이 한 번 확인하고 승인하는 단계”</strong>였습니다.
+                        승인 피로를 노리거나, 위험한 작업을 잘게 쪼개 개별 단계는 멀쩡해 보이게 만드는 식으로,
+                        <strong>사람이 손도 안 댔는데 자동으로 데이터가 새는 경로(zero-click)</strong>가 여러 건 나왔습니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        가장 중요한 한 문장은 이것입니다 — 이런 위협은 <strong>모델 하나만 따로 시험해서는 안 보이고,
+                        여러 단계가 이어진 ‘시스템 전체’를 공격자처럼 끝까지 돌려봐야</strong> 드러납니다.
+                        평가·레드팀의 기준이 ‘모델’에서 ‘시스템·워크플로우’로 올라가는 신호입니다.
+                    </p>
+                </div>
+
+                <!-- 핵심 숫자 스트립 -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-7">
+                    <div class="bg-accent-50 rounded-xl p-4 text-center border border-accent-100">
+                        <div class="text-2xl font-black text-accent-900">7</div>
+                        <div class="text-[11px] text-gray-600 mt-1 leading-tight">신규 실패 모드</div>
+                    </div>
+                    <div class="bg-accent-50 rounded-xl p-4 text-center border border-accent-100">
+                        <div class="text-2xl font-black text-accent-900">5</div>
+                        <div class="text-[11px] text-gray-600 mt-1 leading-tight">신규 방어 체계</div>
+                    </div>
+                    <div class="bg-accent-50 rounded-xl p-4 text-center border border-accent-100">
+                        <div class="text-2xl font-black text-accent-900">12개월</div>
+                        <div class="text-[11px] text-gray-600 mt-1 leading-tight">실전 레드팀 기반</div>
+                    </div>
+                    <div class="bg-accent-50 rounded-xl p-4 text-center border border-accent-100">
+                        <div class="text-2xl font-black text-accent-900">v1.0→v2.0</div>
+                        <div class="text-[11px] text-gray-600 mt-1 leading-tight">2025/04 → 2026/06 공개</div>
+                    </div>
+                </div>
+
+                <!-- 왜 지금 -->
+                <div class="mb-7">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">⏱️ 왜 지금 갱신했나 — 4가지 변화</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                        v1.0(2025/04)은 ‘위협 모델링·전문가 인터뷰’ 기반의 예측이었습니다. 1년 사이 생태계가 보안 준비보다 빠르게 커지면서, 예측이 ‘실측’으로 바뀐 게 갱신의 동인입니다.
+                    </p>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold w-2/5">오픈소스 에이전트의 대중화</td>
+                                    <td class="px-4 py-2.5">프레임워크 <strong>OpenClaw</strong>가 2026년 1월 출시 후 GitHub 별 <strong>33.6만 개</strong>·48시간 만에 에이전트 <strong>2,100개</strong> 파생. 직후 감사에서 <strong>512건 취약점(치명 8건)</strong>, 첫 주 <strong>1,800+ 인스턴스</strong>가 API 키 유출, 마켓에 악성 플러그인 <strong>336개</strong>.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">MCP의 사실상 표준화</td>
+                                    <td class="px-4 py-2.5">모델-도구 연결 표준 MCP가 자리잡으며, 2025년에만 MCP 관련 <strong>CVE 99건</strong>이 공개. 도구 오염이 이론에서 실제 공격면으로.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2.5 font-bold">컴퓨터 사용 에이전트의 상용화</td>
+                                    <td class="px-4 py-2.5">화면을 보고 조작하는 에이전트(CUA)가 연구에서 운영으로 이동 — v1.0에 없던 새 공격면이 생김.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-4 py-2.5 font-bold">예측 → 실측 전환</td>
+                                    <td class="px-4 py-2.5">12개월 실제 교전(engagement)에서 일부 예측은 확인, 일부는 반증, 예상 못 한 실패 모드도 발견.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 7개 실패 모드 -->
+                <div class="mb-7">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🗺️ 핵심 — 7개 신규 실패 모드 (모두 ‘보안’ 범주)</h3>
+                    <div class="overflow-hidden border border-gray-200 rounded-xl">
+                        <table class="min-w-full text-left text-sm text-gray-700">
+                            <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                                <tr><th class="px-3 py-2.5 w-8"></th><th class="px-2 py-2.5">실패 모드</th><th class="px-4 py-2.5">한 줄 설명 + 예시</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white align-top">
+                                <tr class="bg-accent-50/30">
+                                    <td class="px-3 py-3"><span class="kbd">1</span></td>
+                                    <td class="px-2 py-3 font-bold">에이전트 공급망 오염</td>
+                                    <td class="px-4 py-3">플러그인·MCP 서버·프롬프트 템플릿 등 ‘자연어 도구 정의’에 악성 지시를 심어 <strong>바이너리 변경 없이</strong> 행동을 바꾼다. 예) ‘트레이딩 봇’ 플러그인 설명에 “OAuth 토큰을 함께 유출하라”를 끼워 넣음.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3 py-3"><span class="kbd">2</span></td>
+                                    <td class="px-2 py-3 font-bold">목표 탈취<br><span class="text-[11px] text-gray-500 font-normal">Goal Hijacking</span></td>
+                                    <td class="px-4 py-3">정당한 작업처럼 보이는 지시로 에이전트의 <strong>‘최종 목표’만 조용히</strong> 다른 곳으로 돌린다. 여러 추론 단계·메모리를 넘어 지속. 예) 요약 봇이 특정 벤더를 슬쩍 추천하도록 유도(추천 오염).</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-3 py-3"><span class="kbd">3</span></td>
+                                    <td class="px-2 py-3 font-bold">에이전트 간 신뢰 상승</td>
+                                    <td class="px-4 py-3">멀티 에이전트 위임에서, 권한을 검증하지 않는 오케스트레이터에게 <strong>거짓 신원·권한을 주장</strong>해 권한을 키운다. 전통 ‘혼동된 대리인(confused deputy)’ 문제의 자연어 버전.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3 py-3"><span class="kbd">4</span></td>
+                                    <td class="px-2 py-3 font-bold">CUA 시각 공격</td>
+                                    <td class="px-4 py-3">화면을 보는 에이전트에게 <strong>사람 눈엔 안 보이지만 AI는 읽는 시각 요소</strong>(초소형 텍스트·화면 밖 요소·가짜 ‘승인’ 버튼)로 조종. 입력단 방어가 통하지 않는다.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-3 py-3"><span class="kbd">5</span></td>
+                                    <td class="px-2 py-3 font-bold">세션 맥락 오염</td>
+                                    <td class="px-4 py-3">긴 세션 <strong>초반에 데이터를 심어</strong> 이후 추론을 편향. 개별 단계는 정상으로 보여, 세션 전체 행동 분석 없이는 탐지 불가.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3 py-3"><span class="kbd">6</span></td>
+                                    <td class="px-2 py-3 font-bold">MCP / 플러그인 남용</td>
+                                    <td class="px-4 py-3">도구 설명 오염, 서버 측 지시 주입, <strong>신뢰 서버를 덮어쓰는 교차 서버 명령</strong> 등 프로토콜 신뢰 가정을 악용. 사람에겐 안 보이고 모델만 따른다.</td>
+                                </tr>
+                                <tr class="bg-gray-50/40">
+                                    <td class="px-3 py-3"><span class="kbd">7</span></td>
+                                    <td class="px-2 py-3 font-bold">역량·아키텍처 노출</td>
+                                    <td class="px-4 py-3">도구 이름·스키마·시스템 프롬프트 구조·HitL 트리거 로직을 흘려, <strong>블랙박스 탐색을 화이트박스 공격으로</strong> 전환. 그 자체가 끝이 아니라 ‘정밀 공격의 발판(pivot)’.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-[11px] text-gray-500 mt-2">※ v1.0(2025/04)은 에이전트 변조·인젝션·위장·흐름 조작·멀티 에이전트 탈옥 등을 다뤘고, v2.0은 위 7개를 [New in v2.0]로 추가. 분류는 ‘신규 vs 기존 × 안전 vs 보안’ 두 축으로 정리된다.</p>
+                </div>
+
+                <!-- 실전이 보여준 것 -->
+                <div class="mb-7">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🔎 1년 실전 레드팀이 보여준 패턴 (평가 설계의 단서)</h3>
+                    <ul class="space-y-2.5 text-sm text-gray-700">
+                        <li class="flex gap-2"><span class="text-accent-600 font-bold">▸</span><span><strong>HitL 우회가 가장 빈번하게 악용됐다.</strong> 승인 피로, 확률적 호출 조작, 점진적 단계 상승으로 — 개별 단계는 검토가 불필요해 보이지만 합쳐진 결과는 고위험. <strong>제로클릭 체인</strong>이 외부 입력 하나에서 유출·횡적 이동까지 도달.</span></li>
+                        <li class="flex gap-2"><span class="text-accent-600 font-bold">▸</span><span><strong>XPIA + 메모리 오염이 자주 결합됐다.</strong> 외부 콘텐츠로 들어온 인젝션이 가장 신뢰도 높은 초기 침투 경로였고, 한 번 심으면 <strong>이후 세션으로 전파</strong>.</span></li>
+                        <li class="flex gap-2"><span class="text-accent-600 font-bold">▸</span><span><strong>세션 맥락 오염·점진 상승은 탐지가 어려웠다.</strong> 어느 단계도 단독으로는 비정상이 아니라, <strong>세션 전체 행동 분석</strong>이 있어야 잡힌다.</span></li>
+                        <li class="flex gap-2"><span class="text-accent-600 font-bold">▸</span><span><strong>역량 노출이 후속 공격의 핵심 발판이었다.</strong> 고임팩트 체인 다수가 “시스템에 직접 물어보는 것”만으로 아키텍처 정보를 얻어 시작됐다.</span></li>
+                    </ul>
+                </div>
+
+                <!-- 원문 인용 -->
+                <div class="mb-7">
+                    <h3 class="text-sm font-bold text-gray-900 mb-3">🎤 원문 확인 인용</h3>
+                    <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+                        <p class="quote text-sm leading-relaxed">
+                            “the seven new categories should be mandatory coverage areas. Zero-click HitL bypass chains, inter-agent trust escalation, and session context contamination will not be surfaced by model-level evaluation alone. They require system-level testing and multi-step attack chains evaluated across complete task flows.”
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">— Microsoft AI Red Team, “Updating the taxonomy of failure modes in agentic AI systems” (2026/06/04)</p>
+                        <p class="text-[11px] text-gray-500 mt-1 italic">
+                            번역: “이 7개 신규 범주는 반드시 다뤄야 하는 영역이다. 제로클릭 HitL 우회 체인, 에이전트 간 신뢰 상승, 세션 맥락 오염은 모델 단위 평가만으로는 드러나지 않는다. 완결된 작업 흐름 전반에 걸친 시스템 단위 테스트와 다단계 공격 체인 평가가 필요하다.”
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!-- 업계 정렬 -->
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-7">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧩 업계 표준과의 정렬 — 공통 언어에 가까워진다</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        v2.0은 독립적으로 만들어진 주요 프레임워크와 교차 참조됩니다 — <strong>OWASP Top 10 for Agentic Applications</strong>(ASI01~04), <strong>CSA 에이전트 AI 레드팀 가이드</strong>(62쪽·12개 위협 범주), <strong>MITRE SAFE-AI</strong>(ATLAS↔NIST SP 800-53 연결), <strong>NIST AI 600-1</strong>, <strong>CoSAI</strong>(Google·IBM·Microsoft·NVIDIA 공동) 원칙.
+                        서로 다른 출발점의 프레임워크가 비슷한 실패 모드를 지목한다는 ‘수렴’ 자체가 위험 신뢰도의 근거이며, Datumo가 에이전트 평가를 설명할 때 참고하기 좋은 표준 지도이기도 합니다.
+                    </p>
+                </div>
+
+                <!-- 한계·맥락 (정확성) -->
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-7">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧷 한계·맥락 (정확성 주석)</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        ① <strong>날짜</strong>: 공개(announcement)는 Microsoft Security Blog 2026년 6월 4일 게시 기준. 다만 첨부 백서 PDF의 표지 라벨은 “Version 2.0 · April 2026”으로, 문서 작성월과 블로그 공개일이 다를 수 있다(본 호는 ‘공개일 6/4’를 사건 시점으로 본다).
+                        ② <strong>성격</strong>: 본 분류는 ‘규정 체크리스트가 아니라 위협 모델링 도구’임을 원문이 명시. 권고는 강제 규범이 아니다.
+                        ③ <strong>수치 출처</strong>: OpenClaw·MCP CVE 등 수치는 모두 Microsoft 블로그/백서 자체 인용으로, 제3자 교차검증은 별도 필요.
+                    </p>
+                </div>
+
+                <!-- So What -->
+                <div class="bg-accent-50 border-l-4 border-accent-600 rounded-r-xl p-5 mb-7">
+                    <span class="text-[10px] font-bold tracking-widest text-accent-900 uppercase mb-2 block">🎯 So What for Datumo</span>
+                    <p class="text-gray-800 text-sm leading-relaxed">
+                        이 소식의 핵심은, Microsoft가 에이전트 AI 보안에서 <strong>“모델 단위 평가만으로는 부족하다”</strong>는 점을 실전 레드팀 경험을 통해 공식화했다는 것입니다.
+                        에이전트의 위험은 단일 답변이 아니라 <strong>도구 호출, 권한 위임, 사람 승인 절차, 외부 입력 처리</strong>가 이어지는 전체 업무 흐름에서 발생합니다.
+                    </p>
+                    <p class="text-gray-800 text-sm leading-relaxed mt-3">
+                        Datumo 입장에서는 독립 평가의 초점이 <strong>“모델이 정답을 냈는가”</strong>에서 <strong>“AI 시스템이 실제 환경에서 안전하게 작동하는가”</strong>로 넓어지고 있음을 보여주는 신호입니다.
+                        특히 시스템 단위 레드팀·다단계 시나리오 평가·도구 사용 검증은 에이전트 시대에 더 중요한 차별 축이 됩니다.
+                    </p>
+                </div>
+
+                <!-- Theme Tracker -->
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2 block">🧵 Theme Tracker</span>
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Theme I: “에이전트 보안 — 평가의 단위가 모델에서 시스템으로”</strong><br>
+                        실전 레드팀 데이터가 쌓이며, 에이전트 위협의 평가 기준이 모델 단독 시험에서 다단계·시스템 단위 테스트로 이동하고 있다. (다음 트리거: ‘societies of agents’ 네트워크 단위 위협을 다룰 v3.0 예고.)
+                    </p>
+                </div>
+
+                <!-- 용어 -->
+                <div class="bg-explain-50 border border-explain-100 rounded-xl p-4 mb-6">
+                    <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">📖 용어 풀이</span>
+                    <p class="text-[11px] text-gray-700 leading-relaxed">
+                        <strong>실패 모드 분류(taxonomy of failure modes)</strong>: AI가 오작동·악용되는 방식을 유형별로 정리한 지도 ·
+                        <strong>HitL(Human-in-the-Loop)</strong>: 위험 작업 전 사람이 확인·승인하는 안전장치 ·
+                        <strong>zero-click</strong>: 피해자 행동 없이 끝까지 진행되는 공격 ·
+                        <strong>MCP(Model Context Protocol)</strong>: 모델을 외부 도구에 연결하는 표준 규약 ·
+                        <strong>XPIA(cross-domain prompt injection)</strong>: 외부 콘텐츠에 숨긴 지시로 AI를 조종하는 인젝션 ·
+                        <strong>CUA(Computer Use Agent)</strong>: 화면을 보고 직접 조작하는 에이전트 ·
+                        <strong>SBOM</strong>: 소프트웨어 구성요소 명세서 ·
+                        <strong>confused deputy</strong>: 권한 있는 주체를 속여 대신 행동하게 만드는 고전적 권한 오용.
+                    </p>
+                </div>
+
+                <!-- 출처 -->
+                <div class="text-right text-xs text-gray-500 leading-relaxed mt-4">
+                    <strong class="text-gray-700">출처 (모두 직접 확인)</strong><br>
+                    <a href="https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/" class="text-accent-600 hover:underline">Microsoft Security Blog — Updating the taxonomy of failure modes in agentic AI systems (공식, 2026/06/04)</a><br>
+                    <a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Taxonomy-of-Failure-Modes-in-Agentic-AI-Systems-v2-0.pdf" class="text-accent-600 hover:underline">Microsoft — Taxonomy of Failure Modes in Agentic AI Systems v2.0 (백서 PDF, 표지 라벨 April 2026)</a>
+                </div>
+            </article>
+        </div>
+        <footer class="px-8 py-8 text-center bg-gray-50 border-t border-gray-100">
+            <p class="text-xs text-gray-500">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+        </footer>
+    </main>
+</body>
+</html>
