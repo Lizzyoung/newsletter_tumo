@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEOP Daily Briefing - Issue 029</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+          colors: {
+            gray: { 50:'#F9FAFB',100:'#F3F4F6',200:'#E5E7EB',300:'#D1D5DB',400:'#9CA3AF',500:'#6B7280',600:'#4B5563',700:'#374151',800:'#1F2937',900:'#111827' },
+            accent: { 50:'#EFF6FF',100:'#DBEAFE',500:'#3B82F6',600:'#2563EB',900:'#1E3A8A' },
+            explain: { 50:'#FFFBEB',100:'#FEF3C7',600:'#D97706',700:'#B45309',900:'#78350F' },
+            caution: { 50:'#FFF7ED',100:'#FFEDD5',700:'#C2410C',900:'#7C2D12' }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { -webkit-font-smoothing: antialiased; background-color:#F3F4F6; }
+    .article-container { max-width:760px; margin:0 auto; }
+    .tldr { font-size:1.0625rem; line-height:1.75; }
+    .body-text { font-size:.95rem; line-height:1.85; color:#374151; }
+    .body-text strong { color:#111827; }
+    .quote { font-style:italic; color:#374151; }
+    .star3 { color:#16A34A; font-weight:800; }
+    .star2 { color:#CA8A04; font-weight:800; }
+    .source-link { text-decoration:underline; text-decoration-color:#D1D5DB; text-underline-offset:4px; }
+  </style>
+</head>
+<body class="text-gray-800 py-10 px-4 sm:px-6">
+  <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+    <header class="px-7 sm:px-8 pt-11 pb-8 border-b border-gray-100">
+      <div class="flex justify-between items-end gap-6 mb-6">
+        <div>
+          <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 029</span>
+          <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+        </div>
+        <div class="text-right shrink-0">
+          <span class="block text-xl font-bold text-gray-900">이지영</span>
+          <span class="block text-sm text-gray-500 font-medium">2026.06.10 (수)</span>
+        </div>
+      </div>
+      <section class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+        <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+        <p class="text-sm text-gray-800 leading-relaxed">
+          <strong>AI 평가는 이제 “모델이 얼마나 똑똑한가”를 넘어 “누가 어디까지 쓰게 할 것인가, 그리고 운영 리스크를 어떻게 증명할 것인가”로 이동하고 있습니다.</strong>
+          FSB는 금융기관의 책임 있는 AI 도입을 위한 <strong>12개 관행</strong>을 공개했고, Anthropic은 같은 기반 모델을 <strong>일반 공개용 Fable 5</strong>와 <strong>제한 접근용 Mythos 5</strong>로 나눠 출시했습니다.
+          Reuters는 EU가 Meta에 경쟁 AI 챗봇의 WhatsApp Business API 접근을 허용하라는 임시 명령을 내렸다고 보도했습니다.
+          Datumo 관점에서 공통 메시지는 분명합니다. <strong>AI 시스템의 성능뿐 아니라 접근권한·운영 책임·감사 가능성까지 평가해야 하는 시대</strong>가 오고 있습니다.
+        </p>
+      </section>
+      <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+        <strong>카테고리</strong>: Policy / Regulation · Foundation Model · Platform Competition · Enterprise Eval<br />
+        <strong>Source Confidence</strong>: <span class="star3">★★★ FSB·Anthropic 공식 원문 확인</span> / <span class="star2">★★ Reuters 보도 기반</span>
+      </div>
+    </header>
+
+    <div class="px-7 sm:px-8 py-2">
+      <article class="py-10 border-b border-gray-100">
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Policy / Financial AI</span>
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Enterprise Eval</span>
+          <span class="text-sm text-accent-600 font-black">메인 · ★★★</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+          FSB, 금융기관의 책임 있는 AI 도입을 위한 12개 관행 공개<br />
+          <span class="text-xl sm:text-2xl font-bold text-gray-600">— AI 평가는 모델 성능을 넘어 이사회·리스크·제3자 관리 이슈가 된다</span>
+        </h2>
+        <section class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+          <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+          <p class="tldr text-white font-medium">
+            <strong class="text-white">금융안정위원회(FSB)</strong>는 2026년 6월 10일 <strong class="text-white">「Sound Practices for Responsible Adoption of AI」</strong> 공개 의견수렴 보고서를 발표했습니다.
+            보고서는 금융기관이 AI를 책임 있게 도입하기 위한 <strong class="text-white">12개 관행</strong>을 제안하며, 범위를 <strong class="text-white">전사 AI 거버넌스</strong>, <strong class="text-white">AI 개발·배포 생애주기 리스크 관리</strong>, <strong class="text-white">사이버·ICT·제3자 리스크 관리</strong>로 나눕니다.
+            의견 제출 마감은 <strong class="text-white">2026년 7월 22일</strong>, 최종 보고서는 <strong class="text-white">2026년 10월</strong> 예정입니다.
+          </p>
+        </section>
+        <section class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+          <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+          <p class="body-text">
+            금융기관이 AI를 쓰면 “답을 잘했는가”만으로는 충분하지 않습니다. 고객 상담, 신용 판단, 리스크 분석, 내부 자동화에 AI가 들어가는 순간 <strong>누가 승인했는지, 어떤 데이터와 공급자를 썼는지, 배포 후 문제를 어떻게 감지하는지</strong>까지 설명해야 합니다.
+          </p>
+          <p class="body-text mt-3">
+            FSB 보고서는 새 국제 표준이나 강제 규제가 아니라, 이사회와 고위 경영진이 AI 전략·기술 도입·리스크 관리를 검토할 때 참고할 수 있는 <strong>국제 금융 안정성 관점의 실무 가이드</strong>에 가깝습니다.
+          </p>
+        </section>
+        <section class="mb-6">
+          <h3 class="text-sm font-black text-gray-900 mb-3">📋 공식 원문 기준 핵심 사실</h3>
+          <div class="overflow-hidden border border-gray-200 rounded-xl">
+            <table class="min-w-full text-left text-sm text-gray-700">
+              <thead class="bg-gray-50 border-b border-gray-200 text-gray-900">
+                <tr><th class="px-4 py-2.5 w-[30%] font-black">항목</th><th class="px-4 py-2.5 font-black">확인된 내용</th></tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 bg-white">
+                <tr class="bg-accent-50/40"><td class="px-4 py-3 font-bold">발표</td><td class="px-4 py-3">2026년 6월 10일 FSB가 책임 있는 AI 도입 관행에 대한 공개 의견수렴 보고서를 발표.</td></tr>
+                <tr><td class="px-4 py-3 font-bold">12개 관행</td><td class="px-4 py-3">1~4는 전사 AI 거버넌스, 5~10은 AI 개발·배포 단계 리스크 관리, 11~12는 사이버·ICT·제3자 리스크 관리.</td></tr>
+                <tr class="bg-gray-50/50"><td class="px-4 py-3 font-bold">성격</td><td class="px-4 py-3">국제 표준을 새로 만들거나 특정 AI 기술 채택을 강제하려는 문서는 아님.</td></tr>
+                <tr><td class="px-4 py-3 font-bold">새 AI 형태</td><td class="px-4 py-3">의견수렴 문항에서 GenAI·agentic AI 같은 새롭고 복잡한 AI 형태의 리스크를 충분히 다루는지 묻고 있음.</td></tr>
+                <tr class="bg-gray-50/50"><td class="px-4 py-3 font-bold">일정</td><td class="px-4 py-3">의견 제출 마감 2026년 7월 22일, 최종 보고서 2026년 10월 예정.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+          <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+          <p class="text-sm text-accent-900/90 leading-relaxed">
+            금융권에서 AI 평가는 점수표가 아니라 <strong>운영 증거</strong>가 됩니다. Datumo는 “모델이 맞췄는가”를 넘어, <strong>거버넌스·개발 생애주기·제3자 리스크·배포 후 모니터링을 설명하는 평가 리포트</strong>로 가치를 확장할 수 있습니다.
+          </p>
+        </section>
+        <div class="mt-5 flex flex-wrap gap-3 justify-end">
+          <a href="https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-consultation-report/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">FSB Consultation Report →</a>
+          <a href="https://www.fsb.org/2026/06/fsb-consults-on-sound-practices-for-the-responsible-adoption-of-artificial-intelligence-ai/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">FSB Press Release →</a>
+        </div>
+      </article>
+
+      <article class="py-10 border-b border-gray-100">
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Foundation Model</span>
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Trusted Access</span>
+          <span class="text-sm text-accent-600 font-black">서브 · ★★★</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+          Anthropic, Claude Fable 5·Mythos 5 공개<br />
+          <span class="text-xl sm:text-2xl font-bold text-gray-600">— 같은 기반 모델도 공개 범위와 안전장치에 따라 다른 제품이 된다</span>
+        </h2>
+        <section class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+          <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+          <p class="tldr text-white font-medium">
+            <strong class="text-white">Anthropic</strong>은 2026년 6월 9일 <strong class="text-white">Claude Fable 5</strong>와 <strong class="text-white">Claude Mythos 5</strong>를 공개했습니다.
+            Fable 5는 일반 공개용 Mythos-class 모델이고, Mythos 5는 같은 기반 모델에서 일부 안전장치를 완화한 <strong class="text-white">제한 접근 모델</strong>입니다.
+            Fable 5는 일부 고위험 주제에서 <strong class="text-white">Claude Opus 4.8</strong>로 응답을 전환하는 안전장치를 적용하며, 두 모델 가격은 모두 <strong class="text-white">입력 $10 / 출력 $50 per 1M tokens</strong>입니다.
+          </p>
+        </section>
+        <section class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+          <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+          <p class="body-text">
+            이번 발표의 핵심은 “더 강한 모델”보다 <strong>강한 모델을 누구에게, 어떤 안전장치와 함께 제공할 것인가</strong>입니다. Anthropic은 Fable 5를 일반 공개하면서도, 사이버·생명과학 등 오용 위험이 큰 일부 영역에는 보수적인 fallback을 걸었습니다.
+          </p>
+          <p class="body-text mt-3">
+            반면 Mythos 5는 Project Glasswing 파트너 같은 검증된 사이버 방어자에게 제한적으로 제공됩니다. 프런티어 모델 경쟁이 <strong>성능 경쟁</strong>에서 <strong>접근권한·안전장치·데이터 보존·사후 감사 설계 경쟁</strong>으로 확장되는 신호입니다.
+          </p>
+        </section>
+        <section class="mb-6">
+          <h3 class="text-sm font-black text-gray-900 mb-3">📋 공식 원문 기준 핵심 사실</h3>
+          <div class="overflow-hidden border border-gray-200 rounded-xl">
+            <table class="min-w-full text-left text-sm text-gray-700">
+              <thead class="bg-gray-50 border-b border-gray-200 text-gray-900">
+                <tr><th class="px-4 py-2.5 w-[30%] font-black">항목</th><th class="px-4 py-2.5 font-black">확인된 내용</th></tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 bg-white">
+                <tr class="bg-accent-50/40"><td class="px-4 py-3 font-bold">Fable 5</td><td class="px-4 py-3">일반 공개용 Mythos-class 모델. 일부 주제는 Claude Opus 4.8 응답으로 전환되는 safeguard 적용.</td></tr>
+                <tr><td class="px-4 py-3 font-bold">Mythos 5</td><td class="px-4 py-3">Fable 5와 같은 기반 모델이며 일부 safeguard가 완화됨. Glasswing 파트너에게 우선 제공, 향후 trusted access 확대 예정.</td></tr>
+                <tr class="bg-gray-50/50"><td class="px-4 py-3 font-bold">Fallback</td><td class="px-4 py-3">생물·화학 요청 대부분은 당분간 Opus 4.8로 fallback. 안전장치가 평균적으로 세션의 5% 미만에서 작동한다고 설명.</td></tr>
+                <tr><td class="px-4 py-3 font-bold">데이터 보존</td><td class="px-4 py-3">Mythos-class 모델 트래픽에 대해 30일 보존 정책 적용. 신규 모델 학습이나 비안전 목적에는 사용하지 않는다고 설명.</td></tr>
+                <tr class="bg-gray-50/50"><td class="px-4 py-3 font-bold">가격·제공</td><td class="px-4 py-3">입력 $10 / 출력 $50 per 1M tokens. Fable 5는 오늘 제공, Mythos 5는 제한 접근.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="bg-caution-50 border-l-4 border-caution-700 rounded-r-xl p-4 mb-6">
+          <h3 class="text-xs font-black text-caution-900 uppercase tracking-wider mb-2">⚠️ 정확도 주의</h3>
+          <p class="text-xs text-caution-900 leading-relaxed">성능 우위·고객 사례는 Anthropic 공식 발표 기준입니다. 독립 벤치마크로 확정된 사실처럼 쓰지 않고, “Anthropic이 설명했다”는 범위로 읽는 것이 안전합니다.</p>
+        </section>
+        <section class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+          <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+          <p class="text-sm text-accent-900/90 leading-relaxed">
+            모델 평가는 이제 “성능이 높은가”만 묻지 않습니다. <strong>누가 접근할 수 있는가, 어떤 주제에서 차단·fallback이 걸리는가, 데이터 보존과 사후 감사는 어떻게 설계되는가</strong>까지 평가해야 합니다. Datumo가 다룰 수 있는 평가 범위가 모델 성능에서 <strong>trusted access 운영 신뢰성</strong>으로 넓어지고 있습니다.
+          </p>
+        </section>
+        <div class="mt-5 flex flex-wrap gap-3 justify-end">
+          <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">Anthropic — Claude Fable 5 and Mythos 5 →</a>
+        </div>
+      </article>
+
+      <article class="py-10">
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Platform Competition</span>
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">AI Distribution</span>
+          <span class="text-sm text-accent-600 font-black">서브 · ★★</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+          Reuters: EU, Meta에 경쟁 AI 챗봇의 WhatsApp 접근 허용 명령<br />
+          <span class="text-xl sm:text-2xl font-bold text-gray-600">— AI 경쟁은 모델 성능뿐 아니라 유통 채널·API 접근권에서도 갈린다</span>
+        </h2>
+        <section class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+          <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+          <p class="tldr text-white font-medium">
+            <strong class="text-white">Reuters</strong>에 따르면 EU 집행위는 반독점 조사 중 <strong class="text-white">Meta</strong>에 경쟁 AI 챗봇이 <strong class="text-white">WhatsApp Business API</strong>에 무료로 접근할 수 있도록 하라는 임시 명령을 내렸습니다.
+            Meta는 이를 규제 과잉이라고 비판하며 항소 의사를 밝혔고, 위반이 확정되면 전 세계 연매출의 최대 <strong class="text-white">10%</strong> 벌금이 가능하다고 보도됐습니다.
+          </p>
+        </section>
+        <section class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+          <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+          <p class="body-text">
+            AI 챗봇과 에이전트가 실제 사용자에게 닿으려면 모델 성능만으로는 부족합니다. 사용자가 매일 쓰는 메신저, 업무툴, 브라우저, 운영체제 안으로 들어갈 수 있어야 합니다.
+          </p>
+          <p class="body-text mt-3">
+            그래서 WhatsApp 같은 채널 접근권은 AI 경쟁의 핵심 인프라가 됩니다. 플랫폼 사업자가 자사 AI만 유리하게 붙이고 경쟁 AI를 막는다면, 경쟁은 모델 성능이 아니라 <strong>유통 경로</strong>에서 갈릴 수 있습니다.
+          </p>
+        </section>
+        <section class="mb-6">
+          <h3 class="text-sm font-black text-gray-900 mb-3">📋 보도 기준 핵심 사실</h3>
+          <div class="overflow-hidden border border-gray-200 rounded-xl">
+            <table class="min-w-full text-left text-sm text-gray-700">
+              <thead class="bg-gray-50 border-b border-gray-200 text-gray-900"><tr><th class="px-4 py-2.5 w-[30%] font-black">항목</th><th class="px-4 py-2.5 font-black">확인된 내용</th></tr></thead>
+              <tbody class="divide-y divide-gray-100 bg-white">
+                <tr class="bg-accent-50/40"><td class="px-4 py-3 font-bold">조치</td><td class="px-4 py-3">EU 반독점 당국이 Meta에 경쟁 AI 챗봇의 WhatsApp Business API 무료 접근을 허용하라는 임시 명령을 내림.</td></tr>
+                <tr><td class="px-4 py-3 font-bold">배경</td><td class="px-4 py-3">Poke.com 개발사 The Interaction Company, 프랑스 Agentik, 스페인 경쟁사의 불만 제기 이후 조사 진행.</td></tr>
+                <tr class="bg-gray-50/50"><td class="px-4 py-3 font-bold">기간</td><td class="px-4 py-3">임시 명령은 조사 종료 시까지 또는 늦어도 2029년 6월까지 유지될 수 있음.</td></tr>
+                <tr><td class="px-4 py-3 font-bold">Meta 입장</td><td class="px-4 py-3">Meta는 규제 과잉이라고 비판하며 항소 의사를 밝힘.</td></tr>
+                <tr class="bg-gray-50/50"><td class="px-4 py-3 font-bold">잠재 제재</td><td class="px-4 py-3">위반 확정 시 전 세계 연매출의 최대 10% 벌금 가능.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="bg-caution-50 border-l-4 border-caution-700 rounded-r-xl p-4 mb-6">
+          <h3 class="text-xs font-black text-caution-900 uppercase tracking-wider mb-2">⚠️ 정확도 주의</h3>
+          <p class="text-xs text-caution-900 leading-relaxed">아직 최종 위반 판단이 내려진 것은 아닙니다. 현재 정확한 표현은 <strong>“EU가 반독점 조사 중 임시 명령을 내렸고, Meta가 항소 의사를 밝혔다”</strong>입니다.</p>
+        </section>
+        <section class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+          <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+          <p class="text-sm text-accent-900/90 leading-relaxed">
+            AI 평가 대상은 모델 응답만이 아닙니다. 실제 서비스에서 AI가 동작하려면 <strong>플랫폼 접근권, API 정책, 데이터 경로, 사용자 동의, 운영 로그</strong>가 함께 얽힙니다. Datumo의 시스템 평가는 앞으로 모델 성능뿐 아니라 <strong>서비스 채널과 운영 책임</strong>까지 설명하는 방향으로 확장될 수 있습니다.
+          </p>
+        </section>
+        <div class="mt-5 flex flex-wrap gap-3 justify-end">
+          <a href="https://www.reuters.com/world/eu-regulators-order-meta-allow-rival-ai-chatbots-free-access-whatsapp-2026-06-09/" target="_blank" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">Reuters — EU orders Meta to open WhatsApp →</a>
+        </div>
+      </article>
+    </div>
+
+    <footer class="px-7 sm:px-8 py-8 bg-gray-50 border-t border-gray-100">
+      <div class="text-[11px] text-gray-500 leading-relaxed">
+        <strong>오늘의 결론</strong><br />
+        오늘의 세 뉴스는 같은 방향을 가리킵니다. AI가 금융기관, 프런티어 모델, 메신저 플랫폼 안으로 들어갈수록 평가 기준은 단순 성능에서 <strong>통제 가능성·접근권한·운영 책임·감사 가능성</strong>으로 이동합니다.
+        Datumo가 가져갈 메시지는 명확합니다. <strong>좋은 답변을 채점하는 회사를 넘어, AI 시스템이 실제 조직 안에서 안전하게 운영될 수 있는지 검증하는 회사</strong>가 되어야 합니다.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
