@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEOP Daily Briefing - Issue 030</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Pretendard', 'sans-serif'] },
+          colors: {
+            gray: { 50: '#F9FAFB', 100: '#F3F4F6', 200: '#E5E7EB', 300: '#D1D5DB', 400: '#9CA3AF', 500: '#6B7280', 600: '#4B5563', 700: '#374151', 800: '#1F2937', 900: '#111827' },
+            accent: { 50: '#EFF6FF', 100: '#DBEAFE', 500: '#3B82F6', 600: '#2563EB', 900: '#1E3A8A' },
+            explain: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 900: '#78350F' },
+            caution: { 50: '#FFF7ED', 100: '#FFEDD5', 700: '#C2410C', 900: '#7C2D12' }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { -webkit-font-smoothing: antialiased; background-color: #F3F4F6; }
+    .article-container { max-width: 760px; margin: 0 auto; }
+    .tldr { font-size: 1.0625rem; line-height: 1.75; }
+    .body-text { font-size: 0.95rem; line-height: 1.85; color: #374151; }
+    .body-text strong { color: #111827; }
+    .quote { font-style: italic; color: #374151; }
+    .star3 { color: #16A34A; font-weight: 800; }
+    .term { font-size: 0.78rem; line-height: 1.7; color: #6B7280; }
+    .term strong { color: #374151; }
+    .source-link { text-decoration: underline; text-decoration-color: #D1D5DB; text-underline-offset: 4px; }
+  </style>
+</head>
+<body class="text-gray-800 py-10 px-4 sm:px-6">
+  <main class="article-container bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden">
+
+    <!-- HEADER -->
+    <header class="px-7 sm:px-8 pt-11 pb-8 border-b border-gray-100">
+      <div class="flex justify-between items-end gap-6 mb-6">
+        <div>
+          <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-2">Today's Briefing · Issue No. 030</span>
+          <h1 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">AEOP Daily</h1>
+        </div>
+        <div class="text-right shrink-0">
+          <span class="block text-xl font-bold text-gray-900">이지영</span>
+          <span class="block text-sm text-gray-500 font-medium">2026.06.11 (목)</span>
+        </div>
+      </div>
+      <section class="bg-gray-50 rounded-xl p-5 border border-gray-100">
+        <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 block">오늘의 한 줄</span>
+        <p class="text-sm text-gray-800 leading-relaxed">
+          <strong>AI 평가의 질문이 "모델이 유해한 답을 막았는가"에서 "위험을 제대로 이해했는가, 그리고 누가 독립적으로 검증하는가"로 옮겨가고 있습니다.</strong>
+          Anthropic은 프런티어 모델에 대해 <strong>투명성 공개를 넘어 독립 평가와 정부 집행 권한</strong>이 필요하다고 제안했고,
+          XL-SafetyBench는 영어 안전 테스트를 번역하는 방식만으로는 <strong>각국의 법·문화·사기 맥락</strong>을 측정하기 어렵다는 점을 데이터로 보여줍니다.
+          Datumo 관점에서는 <strong>독립 평가의 필요성</strong>과 <strong>평가 기준의 정교화</strong>가 동시에 커지는 흐름입니다.
+        </p>
+      </section>
+      <div class="mt-4 text-[10px] text-gray-500 leading-relaxed">
+        <strong>카테고리</strong>: AI Policy / Independent Evaluation · Benchmark / Cross-Cultural Safety &nbsp; · &nbsp;
+        <strong>Source Confidence</strong>: <span class="star3">★★★ Anthropic 공식 정책 페이지·arXiv·Hugging Face·AIM 보도자료 모두 직접 열람·대조</span>
+      </div>
+    </header>
+
+    <div class="px-7 sm:px-8 py-2 divide-y divide-gray-100">
+
+      <!-- CARD 1 -->
+      <article class="py-10">
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">AI 정책·규제</span>
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">Independent Evaluation</span>
+          <span class="text-sm text-accent-600 font-bold">메인 · ★★★</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+          Anthropic, "투명성만으로는 부족하다" — 프런티어 모델에 독립 평가·정부 집행 권한 제안<br />
+          <span class="text-xl sm:text-2xl font-bold text-gray-600">— 자발적 공개 중심의 AI 안전 논의가 독립 검증과 배포 통제 논의로 이동</span>
+        </h2>
+
+        <section class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+          <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+          <p class="tldr text-white font-medium">
+            <strong class="text-white">Anthropic</strong>은 <strong class="text-white">2026년 6월 10일</strong> <strong class="text-white">Policy on the AI Exponential</strong>을 공개하며,
+            가장 강력한 AI 모델의 재앙적 위험을 다루기 위한 <strong class="text-white">Advanced AI Framework</strong>를 제안했습니다.
+            핵심은 프런티어 개발사가 모델을 테스트하고 결과를 공개하는 데서 끝나지 않고,
+            <strong class="text-white">자격 있는 독립 평가자에게 평가·위험 보고서 검토를 맡기며</strong>,
+            정부가 위험한 배포를 <strong class="text-white">차단하거나 억제할 법적 권한</strong>을 가져야 한다는 주장입니다.
+          </p>
+        </section>
+
+        <section class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+          <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+          <p class="body-text">지금까지 많은 AI 안전 논의는 "개발사가 어떤 테스트를 했고 그 결과가 어땠는지 공개하라"는 <strong>투명성</strong>에 가까웠습니다. Anthropic은 이번 제안에서 그 수준만으로는 충분하지 않다고 말합니다.</p>
+          <p class="body-text mt-3">더 강한 모델은 사이버·생물학·통제 상실·자동화된 AI 연구처럼 사회적 피해가 큰 영역에 영향을 줄 수 있어, 개발사 내부 평가만으로는 부족하고 <strong>외부 독립 평가자와 정부의 집행 권한</strong>이 필요하다는 논리입니다.</p>
+          <p class="body-text mt-3">중요한 점은 이것이 아직 법이 아니라 <strong>Anthropic의 정책 "제안"</strong>이라는 것입니다. 다만 모델을 만드는 당사자가 스스로 "독립 평가가 필요하다"고 공개적으로 요구했다는 점에서, 독립 AI 평가 시장에는 강한 신호입니다.</p>
+          <p class="term mt-4 pt-3 border-t border-explain-100">
+            <strong>프런티어 모델</strong> 현존 최고 수준의 대규모 AI 모델 ·
+            <strong>FLOPs</strong> 모델 학습 연산량 단위(규제 대상을 가르는 기준선) ·
+            <strong>system card</strong> 모델의 능력·위험을 정리한 공개 문서 ·
+            <strong>독립(제3자) 평가</strong> 모델 개발사가 아닌 외부 전문기관이 위험을 검증
+          </p>
+        </section>
+
+        <section class="mb-6">
+          <h3 class="text-sm font-bold text-gray-900 mb-3">📋 공식 원문 기준 핵심 사실</h3>
+          <div class="overflow-hidden border border-gray-200 rounded-xl">
+            <table class="min-w-full text-left text-sm text-gray-700">
+              <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                <tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 bg-white">
+                <tr class="bg-accent-50/40"><td class="px-4 py-2.5 font-bold">발표</td><td class="px-4 py-2.5">Anthropic 뉴스룸 기준 <strong>2026년 6월 10일</strong> 공개된 정책 제안.</td></tr>
+                <tr><td class="px-4 py-2.5 font-bold">적용 대상</td><td class="px-4 py-2.5"><strong>10²⁵ FLOPs 초과</strong>로 학습된 모델 중, AI 관련 매출이 <strong>5억 달러</strong>를 넘거나 AI R&amp;D 지출이 <strong>10억 달러</strong>를 넘는 기업이 개발한 모델.</td></tr>
+                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">4대 위험</td><td class="px-4 py-2.5">생물학적 위험, 사이버 위험, 통제 상실 위험, 자동화된 R&amp;D로 인한 위험 증폭.</td></tr>
+                <tr><td class="px-4 py-2.5 font-bold">개발사 의무</td><td class="px-4 py-2.5">모델 테스트, 결과 요약 공개, 안전 프레임워크·system card 공개, 정기 위험 보고서, 독립 평가자 참여, 보안 프로그램 유지.</td></tr>
+                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">독립 평가</td><td class="px-4 py-2.5">프런티어 개발사는 <strong>최소 1곳의 자격 있는 독립 평가자</strong>가 평가·위험 보고서 검토를 공개하도록 해야 한다고 제안. 정부·업계는 독립 평가자 생태계를 기준·자금·모델 접근권으로 육성.</td></tr>
+                <tr><td class="px-4 py-2.5 font-bold">정부 권한</td><td class="px-4 py-2.5">위험한 모델 배포를 <strong>차단·억제할 법적 권한</strong>과 반복 위반 시 가중되는 민사 벌금(전 세계 연매출 연동)을 제안. 동시에 권한 남용 방지 장치도 필요하다고 명시.</td></tr>
+                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">근거(증거)</td><td class="px-4 py-2.5">자사 <strong>Claude Mythos Preview</strong>가 "모든 주요 OS·브라우저를 포함해 수천 개의 고위험 취약점을 발견"한 사례를 가속의 증거로 인용.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="mb-6">
+          <h3 class="text-sm font-bold text-gray-900 mb-3">🎤 원문 확인 인용</h3>
+          <blockquote class="border-l-4 border-gray-300 pl-4 py-2">
+            <p class="quote text-sm leading-relaxed">"But the rapid pace of acceleration means that transparency alone is no longer sufficient. Governments need to play a more substantial role."</p>
+            <p class="text-xs text-gray-500 mt-2">— Anthropic, Advanced AI Framework (공식 정책 페이지, 2026.6.10)</p>
+            <p class="text-[11px] text-gray-500 mt-1 italic">번역: "가속 속도가 너무 빠르기 때문에 투명성만으로는 더 이상 충분하지 않다. 정부는 더 실질적인 역할을 해야 한다."</p>
+          </blockquote>
+          <blockquote class="border-l-4 border-accent-300 pl-4 py-2 mt-3">
+            <p class="quote text-sm leading-relaxed">"Frontier developers should engage at least one qualified independent evaluator to publish a review of their evaluations and risk reports."</p>
+            <p class="text-xs text-gray-500 mt-2">— Anthropic, Advanced AI Framework · Independent evaluation 항목 (2026.6.10)</p>
+            <p class="text-[11px] text-gray-500 mt-1 italic">번역: "프런티어 개발사는 자사의 평가와 위험 보고서에 대한 검토를 발표할 최소 1곳의 자격 있는 독립 평가자를 참여시켜야 한다."</p>
+          </blockquote>
+        </section>
+
+        <section class="bg-caution-50 border-l-4 border-caution-700 rounded-r-xl p-4 mb-6">
+          <h3 class="text-xs font-black text-caution-900 uppercase tracking-wider mb-2">⚠️ 정확도 주의</h3>
+          <p class="text-xs text-caution-900 leading-relaxed">이 내용은 현재 시행 중인 법이나 확정 규제가 아니라 <strong>Anthropic의 정책 제안</strong>입니다. 따라서 "의무화됐다"가 아니라 <strong>"의무화를 제안했다"</strong>로 써야 정확합니다.</p>
+        </section>
+
+        <section class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+          <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+          <p class="text-sm text-accent-900/90 leading-relaxed">이 소식의 의미는 <strong>독립 평가가 선택 사항에서 규제 설계의 핵심 부품으로 올라오고 있다</strong>는 점입니다. 앞으로 AI 평가사는 모델 점수만 제시하는 곳이 아니라, 개발사 평가와 위험 보고서가 믿을 만한지 검토하고 정부·고객·사용자가 이해할 수 있는 형태로 위험을 설명하는 역할을 요구받게 됩니다.</p>
+          <p class="text-sm text-accent-900/90 leading-relaxed mt-3">Datumo 입장에서는 "우리는 모델을 테스트합니다"보다 <strong>"AI 시스템의 위험을 독립적으로 검증하고 설명할 수 있습니다"</strong>라는 정체성이 더 중요해지는 흐름으로 읽을 수 있습니다. 가장 빠른 한 걸음은 Datumo 평가 방법론을 위 <strong>4대 위험 축(사이버·생물학·통제 상실·자동화 R&amp;D)</strong>에 매핑해, '자격 있는 독립 평가자' 자기소개서를 한 장으로 준비해 두는 것입니다.</p>
+        </section>
+
+        <div class="mt-5 flex flex-wrap gap-3 justify-end">
+          <a href="https://www.anthropic.com/policy-on-the-ai-exponential" target="_blank" rel="noopener" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">Anthropic — Policy on the AI Exponential →</a>
+          <a href="https://darioamodei.com/post/policy-on-the-ai-exponential" target="_blank" rel="noopener" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">Dario Amodei Essay →</a>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="py-10">
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">한국 AI 산업</span>
+          <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wider rounded-md">평가 벤치마크</span>
+          <span class="text-sm text-accent-600 font-bold">사이드 · ★★★</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-5">
+          XL-SafetyBench 공개 — 번역된 영어 안전 테스트만으로는 현지 위험을 못 본다<br />
+          <span class="text-xl sm:text-2xl font-bold text-gray-600">— 한국 AIM Intelligence 주도, 10개국 법·문화 맥락을 반영한 안전성·문화 민감성 벤치마크</span>
+        </h2>
+
+        <section class="bg-gray-900 text-white rounded-xl p-5 mb-5">
+          <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2 block">📍 한 줄 요약</span>
+          <p class="tldr text-white font-medium">
+            <strong class="text-white">XL-SafetyBench</strong>는 한국 AI 안전 스타트업 <strong class="text-white">AIM Intelligence</strong>(에임인텔리전스, CEO 유상윤)가 주도하고
+            Microsoft·Korea AISI·KT 등이 참여한 <strong class="text-white">국가 맥락 기반 LLM 안전 벤치마크</strong>입니다.
+            논문은 <strong class="text-white">2026년 5월 7일 arXiv</strong>에 제출됐고 데이터셋은 Hugging Face에 공개됐으며, 보도자료는 <strong class="text-white">6월 5일</strong> 배포됐습니다.
+            <strong class="text-white">10개 국가·언어 쌍 / 5,500개 테스트 케이스 / 37개 모델 평가</strong>로 구성됩니다.
+          </p>
+        </section>
+
+        <section class="bg-explain-50 border-l-4 border-explain-600 rounded-r-xl p-5 mb-6">
+          <span class="text-[10px] font-bold tracking-widest text-explain-700 uppercase mb-2 block">💡 쉽게 풀면</span>
+          <p class="body-text">기존 AI 안전 평가는 영어로 만든 위험 질문을 다른 언어로 <strong>번역</strong>해 쓰는 경우가 많았습니다. 하지만 위험은 나라마다 다르게 나타납니다. 한국의 <strong>전세 사기</strong>, 특정 국가의 플랫폼 사기, 프랑스에서 <strong>국화</strong>를 선물하는 일처럼, 법·제도·문화 맥락을 알아야만 위험을 이해할 수 있는 사례가 있습니다.</p>
+          <p class="body-text mt-3">XL-SafetyBench는 두 가지를 봅니다. 하나는 <strong>현지화된 위험 요청</strong>에 모델이 안전하게 대응하는지, 다른 하나는 평범한 요청 속에 숨은 <strong>문화적 민감성</strong>을 모델이 알아차리는지입니다.</p>
+          <p class="body-text mt-3">특히 중요한 발견은, 일부 로컬 모델이 "안전해 보이는" 이유가 실제로 잘 정렬돼서가 아니라 <strong>프롬프트를 제대로 이해하지 못해 엉뚱하거나 무관한 답</strong>을 했기 때문일 수 있다는 점입니다 — 논문이 말하는 'Illusion of Safety(안전의 착시)'입니다.</p>
+          <p class="term mt-4 pt-3 border-t border-explain-100">
+            <strong>전세(jeonse)</strong> 보증금을 맡기고 집을 빌리는 한국 특유의 임대 방식(관련 사기 유형도 한국 고유) ·
+            <strong>Illusion of Safety</strong> 답을 거부해 안전해 보이지만 실은 위험을 이해 못 한 채 회피한 상태 ·
+            <strong>ASR/NSR/CSR</strong> 각각 공격 성공률·무관답변율·문화 민감성 인식률
+          </p>
+        </section>
+
+        <section class="mb-6">
+          <h3 class="text-sm font-bold text-gray-900 mb-3">📋 논문·데이터셋 기준 핵심 사실</h3>
+          <div class="overflow-hidden border border-gray-200 rounded-xl">
+            <table class="min-w-full text-left text-sm text-gray-700">
+              <thead class="bg-gray-50 border-b border-gray-200 text-gray-900 font-bold">
+                <tr><th class="px-4 py-2.5 w-1/3">항목</th><th class="px-4 py-2.5">내용</th></tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 bg-white">
+                <tr class="bg-accent-50/40"><td class="px-4 py-2.5 font-bold">논문</td><td class="px-4 py-2.5">arXiv:2605.05662, <strong>2026년 5월 7일 제출</strong>. 보도자료는 6월 5일 배포.</td></tr>
+                <tr><td class="px-4 py-2.5 font-bold">구성</td><td class="px-4 py-2.5">Jailbreak Benchmark와 Cultural Benchmark의 <strong>두 트랙</strong>(= 로컬 리스크 / 문화 민감성).</td></tr>
+                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">규모</td><td class="px-4 py-2.5">10개 국가·언어 쌍, <strong>총 5,500개</strong> 케이스 — Jailbreak <strong>4,500개</strong>(국가별 450 = 150 기본질문 × 3 변형) + Cultural <strong>1,000개</strong>(국가별 100 = 20 민감요소 × 5 시나리오).</td></tr>
+                <tr><td class="px-4 py-2.5 font-bold">평가 모델</td><td class="px-4 py-2.5"><strong>frontier 10개 + local 27개 = 총 37개 LLM</strong> 평가.</td></tr>
+                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">국가</td><td class="px-4 py-2.5">미국, 프랑스, 독일, 스페인, 한국, 일본, 인도, 인도네시아, 튀르키예, UAE.</td></tr>
+                <tr><td class="px-4 py-2.5 font-bold">참여 기관</td><td class="px-4 py-2.5"><strong>17인 공저 / 10개 기관</strong> — AIM Intelligence(주도) 외 Microsoft, Korea AISI, KT, BMW Group, 뮌헨공대(TUM), 앙카라대, 서울대 등.</td></tr>
+                <tr class="bg-gray-50/40"><td class="px-4 py-2.5 font-bold">핵심 발견</td><td class="px-4 py-2.5">jailbreak 견고성과 cultural awareness는 <strong>함께 움직이지 않으며</strong>, 일부 local 모델의 낮은 공격 성공률은 진짜 정렬보다 <strong>이해 실패(comprehension failure)</strong>에 가까움(ASR–NSR 상관 r = −0.81).</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bg-caution-50 border-l-4 border-caution-700 rounded-r-xl p-4 mb-6">
+          <h3 class="text-xs font-black text-caution-900 uppercase tracking-wider mb-2">⚠️ 정확도 주의</h3>
+          <p class="text-xs text-caution-900 leading-relaxed">"6월 5일 공개"라고만 쓰면 논문 제출일과 보도자료 배포일이 섞입니다. 정확히는 <strong>논문 2026년 5월 7일 arXiv 제출 · 데이터셋 Hugging Face 공개(CC-BY-4.0, 연구용 동의 후 접근) · 보도자료 6월 5일 배포</strong>로 구분하는 편이 안전합니다.</p>
+        </section>
+
+        <section class="bg-accent-50 border border-accent-100 rounded-xl p-6">
+          <h3 class="text-sm font-black text-accent-900 uppercase tracking-widest mb-3">🎯 So What for Datumo</h3>
+          <p class="text-sm text-accent-900/90 leading-relaxed">이 사례의 의미는 <strong>안전 평가가 단순한 유해 답변 차단을 넘어, 현지 맥락을 이해했는지 측정하는 방향으로 정교해지고 있다</strong>는 점입니다. 같은 질문도 국가의 법·제도·문화에 따라 위험성이 달라지므로, <strong>평가 데이터셋 자체가 경쟁력</strong>이 됩니다.</p>
+          <p class="text-sm text-accent-900/90 leading-relaxed mt-3">Datumo 입장에서는 한국어·한국 제도·국내 산업 맥락을 반영한 평가가 단순 현지화가 아니라 <strong>차별화된 평가 자산</strong>이 될 수 있다는 신호입니다. 또한 빅테크·통신사·정부기관·대학을 한 데이터셋에 묶은 <strong>'컨소시엄형 신뢰성'</strong>과 <strong>'무료 공개 + 인용 축적'</strong>의 표준 선점 전략은, Datumo의 공개 벤치마크·외부 공동 검증 구조를 재검토할 레퍼런스입니다. 결국 핵심은 "잘 거절했는가"보다 <strong>"왜 위험한지 이해했는가"</strong>입니다.</p>
+        </section>
+
+        <div class="mt-5 flex flex-wrap gap-3 justify-end">
+          <a href="https://arxiv.org/abs/2605.05662" target="_blank" rel="noopener" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">arXiv — XL-SafetyBench →</a>
+          <a href="https://huggingface.co/datasets/AIM-Intelligence/XL-SafetyBench" target="_blank" rel="noopener" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">Hugging Face Dataset →</a>
+          <a href="https://tech.einnews.com/pr_news/917478117/aim-intelligence-unveils-xl-safetybench-an-ai-benchmark-reflecting-the-cultures-of-10-countries" target="_blank" rel="noopener" class="text-sm font-bold text-gray-500 hover:text-gray-900 source-link">AIM Intelligence Press Release →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="px-7 sm:px-8 py-8 bg-gray-50 border-t border-gray-100">
+      <div class="text-[11px] text-gray-500 leading-relaxed">
+        <strong>오늘의 결론</strong><br />
+        오늘의 두 뉴스는 같은 방향을 가리킵니다. 하나는 프런티어 모델의 위험을 <strong>외부 독립 평가자</strong>가 검증해야 한다는 규제 방향이고,
+        다른 하나는 안전 평가가 <strong>각국의 법·문화·사회 맥락</strong>까지 반영해야 한다는 방법론 변화입니다.
+        Datumo가 가져갈 메시지는 명확합니다 — <strong>AI 평가의 경쟁력은 "채점"이 아니라, 위험을 정확히 정의하고 독립적으로 설명할 수 있는 능력</strong>입니다.
+      </div>
+      <p class="mt-5 pt-4 border-t border-gray-200 text-xs text-gray-400 text-center">© 2026 Datumo Eval PO Team. 작성: 이지영</p>
+    </footer>
+
+  </main>
+</body>
+</html>
